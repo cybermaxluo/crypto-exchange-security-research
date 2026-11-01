@@ -2,7 +2,7 @@
 
 **English** | [简体中文](README.zh-CN.md)
 
-An investigation of exchange attacks from 2016 to November 1, 2026: how attackers reach funds, why controls fail, and how exchanges can test their defenses.
+An investigation of exchange attacks from 2016 to November 1, 2026: how attackers gain access to funds, why controls fail, and how exchanges can test their defenses.
 
 The research follows six routes to financial harm: signing-material compromise, transaction tampering, account takeover, trading and valuation manipulation, erroneous crediting and double spending, and customer deception. It connects technical failure to wallet operations, accounting, risk controls, engineering, and security responsibilities.
 
@@ -11,8 +11,8 @@ The research follows six routes to financial harm: signing-material compromise, 
 | Document | What it provides | Languages |
 | --- | --- | --- |
 | From Bybit to Binance: How Attackers Breach Crypto Exchanges | Five-part investigation, cross-case comparisons, actor attribution, response analysis, defense priorities, and 15 illustrations | [English](docs/en/research.md) · [中文](docs/zh-CN/research.md) |
-| Exchange Defense Lessons from Loss Incidents | Eighteen defense requirements, specialist responsibilities, departmental handoffs, and acceptance evidence | [English](docs/en/defense-matrix.md) · [中文](docs/zh-CN/defense-matrix.md) |
-| Six Attack Paths Against Crypto Exchanges | Attack mechanisms, case-level evidence, investigation records, and validation scenarios | [English](docs/en/attack-paths.md) · [中文](docs/zh-CN/attack-paths.md) |
+| Exchange Defense Matrix: Lessons from Security Incidents | Eighteen defense requirements, specialist responsibilities, departmental handoffs, and evidence required for sign-off | [English](docs/en/defense-matrix.md) · [中文](docs/zh-CN/defense-matrix.md) |
+| Six Attack Paths Against Crypto Exchanges | Attack mechanisms, case evidence, forensic artifacts to examine, and validation scenarios | [English](docs/en/attack-paths.md) · [中文](docs/zh-CN/attack-paths.md) |
 | Exchange Security Case Catalogue | All 98 records, with losses, attack sequences, attribution, evidence limits, and source links | [English](docs/en/case-catalogue.md) · [中文](docs/zh-CN/case-catalogue.md) |
 | Methodology and data | Sample boundaries, monetary estimates, response metrics, data schema, and reproducibility | [English](docs/en/methodology.md) · [中文](docs/zh-CN/methodology.md) |
 
@@ -23,11 +23,11 @@ Start with the investigation for the findings, then use the defense matrix to ex
 | Material | Scope |
 | --- | --- |
 | [Case registry](data/case-registry.csv) | 98 public incidents and leads; includes 38 index-only records |
-| [Monetary sample](data/loss-sample.csv) | 41 incidents included in the loss calculation; total $11,582.86 million |
+| [Loss sample](data/loss-sample.csv) | 41 incidents included in the loss calculation; total $11,582.86 million |
 | [Statistics](data/statistics.json) | Sample distribution, annual counts, and sensitivity calculations |
 | [Source index](data/sources.json) | 113 source URLs used in the underlying research |
 
-The article compares 15 cases and examines attribution and response in 12. Seven disclosed time observations are retained separately; their endpoints do not support a combined MTTR. Monetary values are incident-time nominal estimates, not audited net losses. See the methodology before reusing the data.
+The article compares 15 cases and examines attribution and response in 12. Seven reported time intervals are recorded separately because they measure different stages of an incident and cannot be combined into a mean time to recover (MTTR). Loss estimates use nominal dollar values at the time of each incident and are not audited net losses. See the methodology before reusing the data.
 
 The registry is a public-source research sample, not a census of all attacks or a claim that every record has a complete forensic investigation. Defense requirements are recommendations for validation, not completed production assessments.
 

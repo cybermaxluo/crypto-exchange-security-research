@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-01T23:17:56.857899</dc:date>
+    <dc:date>2026-11-01T23:56:00.420342</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -35,7 +35,7 @@ L 332.8 158.4
 L 332.8 177.6
 L 264 177.6
 z
-" clip-path="url(#p2569f06e4e)" style="fill: #376b88"/>
+" clip-path="url(#pf94a383c2f)" style="fill: #376b88"/>
    </g>
    <g id="patch_3">
     <path d="M 552 158.4
@@ -43,7 +43,7 @@ L 732.1528 158.4
 L 732.1528 177.6
 L 552 177.6
 z
-" clip-path="url(#p2569f06e4e)" style="fill: #bd554a"/>
+" clip-path="url(#pf94a383c2f)" style="fill: #bd554a"/>
    </g>
    <g id="patch_4">
     <path d="M 264 240
@@ -51,7 +51,7 @@ L 436 240
 L 436 259.2
 L 264 259.2
 z
-" clip-path="url(#p2569f06e4e)" style="fill: #376b88"/>
+" clip-path="url(#pf94a383c2f)" style="fill: #376b88"/>
    </g>
    <g id="patch_5">
     <path d="M 552 240
@@ -59,7 +59,7 @@ L 570.689348 240
 L 570.689348 259.2
 L 552 259.2
 z
-" clip-path="url(#p2569f06e4e)" style="fill: #bd554a"/>
+" clip-path="url(#pf94a383c2f)" style="fill: #bd554a"/>
    </g>
    <g id="patch_6">
     <path d="M 264 321.6
@@ -67,7 +67,7 @@ L 305.28 321.6
 L 305.28 340.8
 L 264 340.8
 z
-" clip-path="url(#p2569f06e4e)" style="fill: #376b88"/>
+" clip-path="url(#pf94a383c2f)" style="fill: #376b88"/>
    </g>
    <g id="patch_7">
     <path d="M 552 321.6
@@ -75,18 +75,18 @@ L 552.383044 321.6
 L 552.383044 340.8
 L 552 340.8
 z
-" clip-path="url(#p2569f06e4e)" style="fill: #bd554a"/>
+" clip-path="url(#pf94a383c2f)" style="fill: #bd554a"/>
    </g>
    <g id="line2d_1">
     <path d="M 38.4 432
 L 825.6 432
-" clip-path="url(#p2569f06e4e)" style="fill: none; stroke: #dce4e9; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#pf94a383c2f)" style="fill: none; stroke: #dce4e9; stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="text_1">
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #20333f" x="38.4" y="43.91875" transform="rotate(-0 38.4 43.91875)">Incident counts and losses by amount band</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #687985" x="38.4" y="71.95125" transform="rotate(-0 38.4 71.95125)">41 monetary observations; separate axes for counts and dollar values</text>
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #687985" x="38.4" y="71.95125" transform="rotate(-0 38.4 71.95125)">41 incidents with loss estimates; separate axes for counts and dollar values</text>
    </g>
    <g id="text_3">
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #376b88" x="264" y="120.046562" transform="rotate(-0 264 120.046562)">Incidents</text>
@@ -127,7 +127,7 @@ L 825.6 432
   </g>
  </g>
  <defs>
-  <clipPath id="p2569f06e4e">
+  <clipPath id="pf94a383c2f">
    <rect x="0" y="0" width="864" height="480"/>
   </clipPath>
  </defs>

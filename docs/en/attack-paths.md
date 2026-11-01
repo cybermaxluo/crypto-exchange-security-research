@@ -2,58 +2,58 @@
 
 **English** | [简体中文](../zh-CN/attack-paths.md)
 
-The paths describe how control over funds fails. Initial access methods, tools, and actor attribution are recorded separately. P1–P5 concern platform funds and accounts; P6 extends to customers. An incident can traverse multiple paths, so these are neither mutually exclusive statistical categories nor a complete inventory of cyber risk.
+These six paths describe how attackers bypass or compromise controls over funds. Initial access methods, tools, and actor attribution are recorded separately. P1–P5 concern platform funds and accounts; P6 extends to customers. One incident may involve several paths. The categories therefore overlap and do not cover every type of cyber risk.
 
 ## Classification and coverage
 
-Each case retains initial access, subsequent permission changes, actor attribution, and evidence type. Do not add path-level case counts as though they were distinct incidents.
+Each case records the initial access method, subsequent permission changes, attacker attribution, and source types. Do not add path-level case counts as though they were distinct incidents.
 
-| Risk branch | Path | Coverage |
+| Risk | Path | Coverage |
 | --- | --- | --- |
 | Private keys, backups, signing nonce defects | P1 | Distinguish secret exposure from implementation flaws |
-| Malicious frontend, API output, request display | P2 | Separate business confirmation from custody signing |
-| Account theft, recovery flaws, MFA bypass, production instructions, wallet permissions | P3 | Cloud compromise is not a common prerequisite |
-| Stolen trading API credentials; price or collateral manipulation using attacker-owned accounts | P4 | Valid authentication can coexist with economic exploitation |
+| Malicious frontend, API output, request display | P2 | Verify approval of the intended operation separately from the custody signature |
+| Account theft, recovery flaws, MFA bypass, production instructions, wallet permissions | P3 | These paths do not all require a cloud compromise |
+| Stolen trading API credentials; price or collateral manipulation using attacker-owned accounts | P4 | An authenticated trade can still cause losses through manipulation |
 | False deposits, erroneous credits, replay, reorganization, double spending | P5 | Test internal accounting flaws separately from external settlement changes |
-| Deception leading to customer transfers or grants | P6 | Customer-side extension; not necessarily platform-wallet compromise |
+| Deception that induces customers to transfer funds or grant permissions | P6 | Targets customers; does not necessarily compromise an exchange wallet |
 | Contract permissions and external protocols | Map to the affected control | Parity and Mango are mechanism comparisons outside the CEX sample; protocol risk is not exhaustively covered |
-| Ransomware, DDoS, data exposure without fund impact | Outside this model | Remain cyber risks; six fund paths do not replace a complete threat model |
+| Ransomware, DDoS, data exposure without fund impact | Outside this model | Still part of the threat model, but outside these six paths to financial loss |
 
 ## P1. Signing-material compromise
 
-**Sequence:** storage exposure or implementation flaw → sufficient signing material → valid signature → transfer outside the original business workflow.
+**Sequence:** exposed key storage or a signing-implementation flaw → attacker obtains enough material to sign → valid signature → transfer outside the exchange's approval workflow.
 
 **Failed control:** failures in key protection, backup isolation, or the signing implementation allow the attacker to produce valid signatures independently.
 
-**Evidence:** generation, read, export, backup, and recovery records; nonce behavior and implementation versions; correspondence between on-chain transactions, business requests, and signing records. On-chain data alone does not identify the broadcaster.
+**Evidence:** key-generation, access, export, backup, and recovery records; nonce behavior and implementation versions; correspondence between on-chain transactions, business requests, and signing records. On-chain data alone does not identify the broadcaster.
 
-**Validation:** within the actual architecture, simulate compromise of one host, backup, or one party's signing material, then test the remaining signing requirements. Where a complete private key is exposed, separately test asset migration and key retirement. Suspending the exchange's own signing service does not establish that the key is unusable.
+**Validation:** within the actual architecture, simulate compromise of one host, backup, or one party's signing material, then test which additional requirements still prevent signing. Where a complete private key is exposed, separately test asset migration and key retirement. Suspending the exchange's own signing service does not establish that the key is unusable.
 
 **Limits:** BitMart did not fully disclose initial entry. Zilliqa illustrates an implementation flaw and does not require prior endpoint intrusion.
 
 | Case | Disclosed access and failure | Attribution and limits | Sources |
 | --- | --- | --- | --- |
-| EX008 — Coincheck 2018 | Platform inference: malware on an employee endpoint led into the internal network and to NEM server keys; assets left a hot wallet | Unknown actor. Coin amounts, dollar estimates, and reimbursement figures differ and must be kept separate. | [COINCHECK](https://www.coincheckgroup.com/sec-filings/all-sec-filings/content/0001213900-25-007203/0001213900-25-007203.pdf) · [SM9](https://hacked.slowmist.io/?c=Exchange&page=9) · [CCFAQ](https://coincheck.com/info/faq_nem) · [CCUSD](https://www.investing.com/news/stock-market-news/exclusive-coincheck-hackers-attempting-to-sell-stolen-cryptocurrency--executive-1171410) |
-| EX042 — BitMart 2021 | Confirmed private-key theft; initial entry not fully disclosed; Ethereum and BSC hot wallets affected | Unknown actor. The monetary sample uses a later platform retrospective, with a $196 million sensitivity alternative. The revised total was not independently audited. | [BITMART](https://www.bitmart.com/en-US/support/articles/7922665245339/7923672421147/4411998987419) · [BITMART26](https://bitmart.zendesk.com/hc/en-us/articles/56571281537051-Announcement-on-BitMart-s-Initial-Indicative-Proposal-and-Roadmap) |
-| EX092 — KuCoin / Zilliqa Ledger application 2026 | Legacy signing nonce handling allowed particular account keys to be recovered from public signatures | Unknown actor. Zilliqa said a KuCoin cold-wallet anomaly triggered reporting. The approximately 683 million ZIL ecosystem figure includes later flows and is not a CEX net-loss estimate. | [ZIL](https://www.zilliqa.com/ledger-incident/post-mortem/) |
+| EX008 — Coincheck 2018 | Platform assessment: malware on an employee endpoint enabled access to the internal network and theft of keys from the NEM server; assets left a hot wallet | Unknown actor. Coin amounts, dollar estimates, and reimbursement figures differ and must be kept separate. | [COINCHECK](https://www.coincheckgroup.com/sec-filings/all-sec-filings/content/0001213900-25-007203/0001213900-25-007203.pdf) · [SM9](https://hacked.slowmist.io/?c=Exchange&page=9) · [CCFAQ](https://coincheck.com/info/faq_nem) · [CCUSD](https://www.investing.com/news/stock-market-news/exclusive-coincheck-hackers-attempting-to-sell-stolen-cryptocurrency--executive-1171410) |
+| EX042 — BitMart 2021 | Confirmed private-key theft; initial entry not fully disclosed; Ethereum and BSC hot wallets affected | Unknown actor. The loss sample uses a later platform retrospective, with $196 million used as an alternative estimate in the sensitivity analysis. The revised total was not independently audited. | [BITMART](https://www.bitmart.com/en-US/support/articles/7922665245339/7923672421147/4411998987419) · [BITMART26](https://bitmart.zendesk.com/hc/en-us/articles/56571281537051-Announcement-on-BitMart-s-Initial-Indicative-Proposal-and-Roadmap) |
+| EX092 — KuCoin / Zilliqa Ledger application 2026 | A nonce-handling flaw in the legacy signing flow allowed private keys for affected accounts to be recovered from public signatures | Unknown actor. Zilliqa said a KuCoin cold-wallet anomaly triggered reporting. The approximately 683 million ZIL ecosystem figure includes later flows and is not a CEX net-loss estimate. | [ZIL](https://www.zilliqa.com/ledger-incident/post-mortem/) |
 
-## P2. Transaction construction or display is altered
+## P2. Transaction tampering
 
-**Sequence:** transaction builder or display is tampered with → intended operation is replaced → the malicious operation receives business approval or a signature → an unintended asset operation executes.
+**Sequence:** transaction builder or display is tampered with → intended operation is replaced → the malicious operation is approved or signed → an unauthorized operation involving assets is executed.
 
-**Failed control:** output from an upstream service is accepted as evidence of business approval; the change in transaction semantics or permissions is not rejected.
+**Failed control:** output from an upstream service is accepted as proof that the requested operation was approved; the change in transaction semantics or permissions is not rejected.
 
-**Evidence:** CI/deployment identities; differences between running resources, API responses, and released artifacts; approved purpose, signed bytes, and resulting authority.
+**Evidence:** CI/deployment identities; differences between deployed resources, live API responses, and release artifacts; approved purpose, signed bytes, and resulting authority.
 
-**Validation:** replace a response used in the actual business workflow and verify the request source, business approval, final transaction bytes, and state at execution. Test whether the transaction builder can forge approval records, including wallet-specific triggers and authority changes. Record where business approval and transaction signing each reject the substituted operation.
+**Validation:** replace a response used in the actual business workflow and verify the request source, business approval, final transaction bytes, and state at execution. Test whether the transaction builder can forge approval records, including wallet-specific triggers and authority changes. Record whether the approval and signing checks each reject the substituted operation, and at which stage.
 
 **Limits:** Gate.io involved withdrawal-page request tampering, not a cold-wallet multisignature flow. Investigators assessed transaction-request manipulation at DMM as likely; they did not establish every step. The cases follow different attack sequences.
 
 | Case | Disclosed access and failure | Attribution and limits | Sources |
 | --- | --- | --- | --- |
 | EX016 — Gate.io / StatCounter 2018 | Compromised analytics JavaScript selectively changed transaction information on the withdrawal page | Unknown actor. Triggers included page path, amount, or balance. ESET did not establish a reliable theft total; this is not classified as private-key exposure. | [ESET](https://www.welivesecurity.com/2018/11/06/supply-chain-attack-cryptocurrency-exchange-gate-io/) |
-| EX070 — DMM Bitcoin 2024 | Recruitment-test lure compromised a Ginco employee endpoint/session; supplier communications were likely used to manipulate a legitimate request | TraderTraitor, attributed jointly by FBI/DC3/Japanese police. Retain the likely assessment. Regulatory deficiencies do not themselves prove exploitation. | [DMM](https://www.fbi.gov/news/press-releases/fbi-dc3-and-npa-identification-of-north-korean-cyber-actors-tracked-as-tradertraitor-responsible-for-theft-of-308-million-from-bitcoindmmcom) · [DMMREG](https://lfb.mof.go.jp/kantou/kinyuu/pagekthp0270000030.html) |
-| EX081 — Bybit 2025 | Safe developer endpoint and AWS session compromised; frontend tampering affected the transaction signed from a cold wallet | TraderTraitor, FBI attribution. This is not evidence of a broken multisignature cryptographic algorithm. | [BYBIT](https://www.sygnia.co/blog/sygnia-investigation-bybit-hack/) · [BYFBI](https://www.ic3.gov/PSA/2025/PSA250226) |
+| EX070 — DMM Bitcoin 2024 | Recruitment-test lure compromised a Ginco employee endpoint/session; supplier communications were likely used to manipulate a legitimate request | TraderTraitor, attributed jointly by FBI/DC3/Japanese police. Request manipulation remains an assessment of what likely happened. Regulatory deficiencies do not themselves prove exploitation. | [DMM](https://www.fbi.gov/news/press-releases/fbi-dc3-and-npa-identification-of-north-korean-cyber-actors-tracked-as-tradertraitor-responsible-for-theft-of-308-million-from-bitcoindmmcom) · [DMMREG](https://lfb.mof.go.jp/kantou/kinyuu/pagekthp0270000030.html) |
+| EX081 — Bybit 2025 | Safe developer endpoint and AWS session compromised; frontend tampering affected the transaction signed from a cold wallet | TraderTraitor, FBI attribution. The evidence does not show a break in the underlying multisignature cryptography. | [BYBIT](https://www.sygnia.co/blog/sygnia-investigation-bybit-hack/) · [BYFBI](https://www.ic3.gov/PSA/2025/PSA250226) |
 | EX089 — SwissBorg / Kiln 2025 | A stolen GitHub token led through CI to infrastructure credentials; the transaction-building API returned a malicious transaction that changed withdrawal authority after the customer signed it | Unknown actor. August 31 signing and September 8 discovery are distinct events. | [KILN](https://www.kiln.fi/post/re-enablement-of-kiln-services-and-security-incident-information) · [SWISS](https://swissborg.com/blog/swissborg-security-update-kiln-breach) |
 
 ## P3. Account or withdrawal-authorization takeover
@@ -64,22 +64,22 @@ Each case retains initial access, subsequent permission changes, actor attributi
 
 **Evidence:** login, recovery, MFA changes, sessions; production/database writes, service identities, withdrawal instructions; wallet owner, module, threshold, and execution-authority changes.
 
-**Validation:** test customer recovery, forged instructions from production identities, and wallet permission checks separately. Examine whether normal and recovery flows bypass the same intended protection.
+**Validation:** test customer recovery, forged instructions from production identities, and wallet permission checks separately. Check whether either the normal workflow or account recovery can bypass the intended control.
 
-**Limits:** Coinbase 2021 is a customer-recovery branch, WOO X a production-write branch, and Parity an external contract-permission example. They do not form one common intrusion chain.
+**Limits:** Coinbase 2021 involved customer account recovery; WOO X involved unauthorized changes to production data; Parity illustrates contract-permission abuse outside an exchange. Each followed a different intrusion sequence.
 
 | Case | Disclosed access and failure | Attribution and limits | Sources |
 | --- | --- | --- | --- |
-| EX098 — Coinbase SMS recovery 2021 | Attackers already had customers' email addresses, passwords, phone numbers, and email access; initial acquisition is unknown. The SMS-recovery flaw yielded authentication tokens, enabling account access and fund transfers | Unknown actor. This does not establish that every MFA mechanism failed. Precise detection, remediation, and recovery times were not given. | [CB21NOTICE](https://oag.ca.gov/system/files/09-24-2021%20Customer%20Notification.pdf) |
+| EX098 — Coinbase SMS recovery 2021 | Attackers already had customers' email addresses, passwords, phone numbers, and email access; initial acquisition is unknown. The SMS-recovery flaw yielded authentication tokens, enabling account access and fund transfers | Unknown actor. The disclosed flaw does not establish a bypass of other MFA methods. Precise detection, remediation, and recovery times were not given. | [CB21NOTICE](https://oag.ca.gov/system/files/09-24-2021%20Customer%20Notification.pdf) |
 | EX085 — BigONE 2025 | Third-party attack affected production; account and risk logic manipulated; platform stated keys remained safe | Unknown actor. Disclosure is not a complete independent forensic report. | [BIGONE](https://bigone.zendesk.com/hc/en-us/articles/48906456010393-Announcement-Regarding-BigONE-Security-Incident-on-16-July-2025) · [BIGLOGIC](https://bigoneeurasia.ladesk.com/275817-Temporary-Platform-Maintenance) · [SM1](https://hacked.slowmist.io/?c=Exchange) · [BIGUSD](https://www.theblock.co/news/regulation/2025-07-16-bigone-hack-362814) |
-| EX087 — WOO X 2025 | Malicious external collaboration project compromised a developer endpoint; development, Kubernetes, and database access extended into account/withdrawal control | Platform assessed North Korea-linked UNC4899/UNC5565 activity. Wording varies; aliases are not treated as unconditionally interchangeable. | [WOO](https://woox.io/blog/july-24th-security-incident-post-mortem) |
-| EX093 — Bitget 2026 | Third-party security-product vulnerability exposed privileged internal credentials; forged withdrawal commands executed through the wallet system | Chainalysis attributed North Korea-linked activity. Platform excluded key leakage. The revised amount reflected additional accounting, not continuing theft. | [BITGET](https://www.bitget.com/academy/bitget-security-incident-what-happened-timeline-impact-response) · [BGAMT](https://www.bitget.com/support/articles/12560603896108) · [BGCHAIN](https://www.chainalysis.com/blog/387m-bitget-theft-2026/) |
+| EX087 — WOO X 2025 | Malicious external collaboration project compromised a developer endpoint; development, Kubernetes, and database access extended into account/withdrawal control | Platform assessed North Korea-linked UNC4899/UNC5565 activity. The report uses different UNC labels; these are not assumed to identify the same group. | [WOO](https://woox.io/blog/july-24th-security-incident-post-mortem) |
+| EX093 — Bitget 2026 | Third-party security-product vulnerability exposed privileged internal credentials; forged withdrawal commands executed through the wallet system | Chainalysis attributed North Korea-linked activity. The platform ruled out private-key exposure. The revised amount reflected additional accounting, not continuing theft. | [BITGET](https://www.bitget.com/academy/bitget-security-incident-what-happened-timeline-impact-response) · [BGAMT](https://www.bitget.com/support/articles/12560603896108) · [BGCHAIN](https://www.chainalysis.com/blog/387m-bitget-theft-2026/) |
 
 ## P4. Trading and valuation manipulation
 
-**Sequence:** stolen trading access or own accounts → abusive trades/price movement → value transfer or inflated collateral → withdrawal or borrowing of real assets.
+**Sequence:** stolen trading credentials or attacker-owned accounts → abusive trades or price manipulation → value transferred to other accounts or collateral overvalued → withdrawal or borrowing of real assets.
 
-**Failed control:** trading authority or price input transfers value or exaggerates borrowing capacity. Accounts and signatures can remain valid.
+**Failed control:** trading or valuation controls allow harmful trades or inflated prices to transfer value or increase borrowing capacity. The accounts and signatures involved may be valid.
 
 **Evidence:** API-key creation, request origins, and deviations from normal use; order-book depth, concentrated trading, linked accounts, and valuation sources; positions, unrealized gains, borrowing limits, and actual liquidation capacity.
 
@@ -89,10 +89,10 @@ Each case retains initial access, subsequent permission changes, actor attributi
 
 | Case | Disclosed access and failure | Attribution and limits | Sources |
 | --- | --- | --- | --- |
-| EX010 — Binance VIA 2018 | Sustained phishing obtained customer credentials, which were used to create API keys; trading permissions transferred value across accounts; subsequent withdrawals were blocked | Unknown actor. Thirty-one prefunded accounts sold VIA; some victim buys matched uninvolved parties. Blocked external withdrawal does not mean zero customer loss. | [VIA](https://www.binance.com/en/support/announcement/detail/360001547431) |
+| EX010 — Binance VIA 2018 | Sustained phishing obtained customer credentials, which were used to create API keys; attackers used trading access to transfer value across accounts; subsequent withdrawals were blocked | Unknown actor. Thirty-one prefunded accounts sold VIA; some buy orders from victim accounts matched orders from uninvolved counterparties. Blocked external withdrawal does not mean zero customer loss. | [VIA](https://www.binance.com/en/support/announcement/detail/360001547431) |
 | EX050 — 3Commas / exchange accounts 2022 | Supplier database exposed API information; customer trading accounts suffered unauthorized trades | Unknown actor. These were not exchange master-wallet private keys; exposed-record count is not victim count. | [THREEC](https://3commas.io/blog/notice-on-api-data-disclosure-incident) · [THREEFAQ](https://3commas.io/blog/api-security-incident-faq) |
 
-## P5. Spendable balances lack valid settlement
+## P5. Erroneous crediting and double spending
 
 **Sequence:** crediting flaw or double spend → available balance → conversion/withdrawal → asset shortfall.
 
@@ -108,17 +108,17 @@ Each case retains initial access, subsequent permission changes, actor attributi
 | --- | --- | --- | --- |
 | EX017 — Gate.io / ETC 2019 | ETC reorganization/double spend removed deposits that had been credited | Unknown actor. Returned funds are not the total attack amount; exchange-server intrusion is not implied. | [GATEETC](https://www.gate.com/ru/announcements/article/16740) |
 | EX032 — OKEx / ETC 2020 | ETC majority-hashrate attack/reorganization invalidated deposits after confirmation and payout | Unknown actor. Settlement-finality risk, not a hot-wallet key leak. | [ETC20](https://etccooperative.org/ETC-Coop-Board-Package-August-2020.pdf) |
-| EX072 — Kraken 2024 | Crediting implementation created balances without completed real deposits | CertiK Skyfall research team; exploitation scope disputed. Technical mechanism and authorization dispute are separate; no Lazarus attribution. | [KRAKEN](https://blog.kraken.com/product/security/kraken-bug-bounty-program-patches-isolated-bug) · [CERTIK24](https://www.certik.com/blog/certik-statement-on-kraken-vulnerability) |
+| EX072 — Kraken 2024 | Crediting implementation created balances without completed deposits | CertiK Skyfall research team; exploitation scope disputed. Technical mechanism and authorization dispute are separate; no Lazarus attribution. | [KRAKEN](https://blog.kraken.com/product/security/kraken-bug-bounty-program-patches-isolated-bug) · [CERTIK24](https://www.certik.com/blog/certik-statement-on-kraken-vulnerability) |
 
 ## P6. Deceived customers authorize operations
 
 **Sequence:** misuse brand or customer information → fabricate trusted identity → customer accepts a false explanation → customer transfers funds or grants authority.
 
-**Failed control:** the attacker deceives the customer's understanding of the operation. Platform private keys need not be stolen, and not every attempt requires prior data leakage.
+**Failed control:** the customer confirms an operation based on a false account of its purpose or recipient. Platform private keys need not be stolen, and not every attempt requires prior data leakage.
 
 **Evidence:** support queries/exports, recovery records, customer reports, and links between exposed customer groups and unusual asset activity.
 
-**Validation:** use authorized exercises to test support-data access/export restrictions and coordinated treatment of recovery, sessions, and fund activity involving exposed customers.
+**Validation:** use authorized exercises to test support-data access/export restrictions and coordinated checks of account recovery, sessions, and fund activity for customers whose data was exposed.
 
 **Limits:** distinguish this from P3, where the attacker takes over and directly withdraws. Customer-side losses do not automatically mean platform custody assets were stolen.
 
@@ -131,7 +131,7 @@ Each case retains initial access, subsequent permission changes, actor attributi
 - **M01 — Mango Markets 2022 → P4.** The attacker used their own accounts to manipulate prices in a thin market and borrow against inflated unrealized gains. Stolen API credentials were not a prerequisite. This DEX example is excluded from exchange-event and loss counts.
 - **M02 — Parity 2017 → P3.** An initialization-permission flaw allowed owners and thresholds to be rewritten, enabling spending without the original keys. This external contract-wallet example is excluded from exchange-event and loss counts.
 
-Case identifiers resolve through the [registry](../../data/case-registry.csv), which lists source identifiers and URLs. The [source index](../../data/sources.json) retains the referenced URLs. Use the [defense matrix](defense-matrix.md) to assign implementation, review, and acceptance responsibilities.
+Case IDs link to the [registry](../../data/case-registry.csv), which lists source identifiers and URLs. The [source index](../../data/sources.json) retains the referenced URLs. Use the [defense matrix](defense-matrix.md) to assign implementation, review, and acceptance responsibilities.
 
 ## Sources
 

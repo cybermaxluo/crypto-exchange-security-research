@@ -83,7 +83,7 @@ class Figure:
 
 
 def numeric_figures(losses, cases, stats):
-    f=Figure("Loss concentration in the monetary sample", "Each subset is reranked; the source registry retains every case")
+    f=Figure("Concentration of reported losses", "Each subset is reranked; the source registry retains every case")
     for y,(label,key) in zip([330,520,710],[("Full sample","all"),("Without Binance 2026","without_binance_2026"),("Also without Bybit 2025","without_binance_2026_and_bybit")]):
         s=stats[key]
         f.text(80,y-22,label,14)
@@ -95,7 +95,7 @@ def numeric_figures(losses, cases, stats):
     f.text(700,240,"Top five share of each subset's losses",13,BLUE)
     f.save(1,"Source: loss-sample.csv. Sensitivity analysis does not remove disclosure bias or establish industry-wide losses.")
 
-    f=Figure("Largest eight loss observations", "Nominal incident-time estimates / USD million")
+    f=Figure("Eight largest reported losses", "Nominal estimates at the time of each incident / USD million")
     top=sorted(losses,key=lambda c:float(c["usd_million"]),reverse=True)[:8]
     for i,c in enumerate(top):
         y=260+i*72; v=float(c["usd_million"])
@@ -104,7 +104,7 @@ def numeric_figures(losses, cases, stats):
         f.text(1600,y,f"{v:,.2f}",12)
     f.save(2,"Source: loss-sample.csv. Freezing, recovery and reimbursement are not deducted. BitMart uses its retrospective estimate.")
 
-    f=Figure("Known intervals in three attacks", "Calendar days between disclosed events; endpoints differ")
+    f=Figure("Known intervals in three attacks", "Calendar days between disclosed events; start and end events differ")
     rows=[("Bybit / Safe","Earliest known activity to asset theft",17),("WOO X","Backdoor installation to loss date",16),("Kiln","Signing the authority change to discovery",8)]
     for i,(name,desc,days) in enumerate(rows):
         y=330+i*180
@@ -113,7 +113,7 @@ def numeric_figures(losses, cases, stats):
         f.ax.plot([720,end],[y,y],color=BLUE,lw=3)
         f.ax.plot([720,end],[y,y],"o",color=BLUE)
         f.text(end+25,y,f"{days} days",13,BLUE)
-    f.save(3,"Sources: Sygnia, WOO X and Kiln. These intervals are not complete dwell time, usable response windows, or MTTR.")
+    f.save(3,"Sources: Sygnia, WOO X and Kiln. These intervals do not establish total dwell time, available response time, or MTTR.")
 
     f=Figure("Annual coverage of the incident registry", "98 incidents and leads, including blocked attacks and disputed events")
     ax=f.fig.add_axes([.08,.22,.86,.52])
@@ -126,7 +126,7 @@ def numeric_figures(losses, cases, stats):
     ax.spines[["top","right"]].set_visible(False);ax.legend(frameon=False,loc="upper left")
     f.save(4,"Source: case-registry.csv. Counts describe research coverage, not incident rates. *2026 through November 1.")
 
-    f=Figure("Incident counts and losses by amount band", "41 monetary observations; separate axes for counts and dollar values")
+    f=Figure("Incident counts and losses by amount band", "41 incidents with loss estimates; separate axes for counts and dollar values")
     vals=[float(c["usd_million"]) for c in losses]
     groups=[("At least $100m",lambda v:v>=100),("$10m to below $100m",lambda v:10<=v<100),("Below $10m",lambda v:v<10)]
     f.text(550,240,"Incidents",13,BLUE);f.text(1150,240,"Losses / USD million",13,BLUE)
@@ -142,7 +142,7 @@ def numeric_figures(losses, cases, stats):
 
 def diagrams():
     f=Figure("Six principal attack paths", "Paths can combine within one incident; actor attribution is recorded separately",1100)
-    paths=[("P1 Signing material",["Expose material","Obtain signing power","Sign externally","Transfer assets"]),
+    paths=[("P1 Signing material",["Expose material","Gain signing capability","Sign externally","Transfer assets"]),
            ("P2 Transaction",["Tamper with builder","Replace operation","Obtain approval","Execute altered action"]),
            ("P3 Account authority",["Recovery / backend","Change identity","Withdrawal accepted","Platform pays out"]),
            ("P4 Trading / value",["Trading access","Manipulate trades","Transfer / inflate value","Withdraw / borrow"]),
@@ -151,9 +151,9 @@ def diagrams():
     for i,(name,steps) in enumerate(paths):
         y=240+i*120;f.text(80,y+40,name,12,BLUE,width=22)
         f.row(y,[(s,"",True) for s in steps],xs=[430,760,1090,1420],w=295,h=83)
-    f.save(6,"Source: attack-path analysis. Reorganizations can invalidate deposits after payout. Nodes do not encode time or frequency.")
+    f.save(6,"Source: attack-path analysis. Reorganizations can invalidate deposits after payout. Stages do not indicate duration or frequency.")
 
-    f=Figure("Controls across fund operations", "Check the business action at the point where it changes assets or entitlements")
+    f=Figure("Controls across custody, trading, and withdrawals", "Verify each operation where it changes assets or customer balances")
     f.box(80,220,1640,"Independent approval evidence, risk decisions, and restriction versions",h=70)
     nodes=[("Settlement / credit","Asset received; reorgs"),("Trading / lending","Depth; valuation"),("Withdrawal authority","Recovery; anti-fraud"),("Transaction contents","Request; signed bytes"),("Signing / broadcast","Keys; authority changes")]
     f.row(380,nodes,xs=[80,415,750,1085,1420],w=300,h=140)
@@ -173,7 +173,7 @@ def diagrams():
         obj=f.text((a+b)/2,y-35,label,10.5,BLUE,True)
         obj.set_bbox({"facecolor":"white","edgecolor":"none","pad":2})
     f.arrow([(140,1120),(1640,1120)],RED)
-    f.text(850,1085,"Any failure, timeout, or remaining external execution escalates immediately",10.5,RED,True)
+    f.text(850,1085,"Escalate failures, timeouts, and any remaining ability to execute transactions externally",10.5,RED,True)
     f.save(8,"Record receipt, execution and verified effect separately. Recovery requires evidence, security review, reconciliation and authorized approval.")
 
     f=Figure("Containment and staged recovery", "Keep unresolved areas isolated; assess residual signing and on-chain authority",1120)
@@ -217,7 +217,7 @@ def diagrams():
     f.arrow([(1295,660),(1330,660),(1330,510),(1370,510)],RED)
     f.save(12,"Sources: WOO X postmortem and Coinbase customer notice. Recovery and backend-write branches need separate tests.")
 
-    f=Figure("P4  Trading and valuation manipulation", "Customer value can be harmed before external withdrawal",1200)
+    f=Figure("P4  Trading and valuation manipulation", "Customer funds can be lost before a withdrawal leaves the exchange",1200)
     f.text(80,230,"BINANCE VIA 2018",13,BLUE)
     f.box(80,290,350,"Victim API keys","Market buy orders",True)
     f.box(80,470,350,"31 prepared accounts","Sell at elevated prices",True)
@@ -229,20 +229,20 @@ def diagrams():
     f.arrow([(910,440),(980,440),(980,350),(1050,350)])
     f.arrow([(910,440),(980,440),(980,530),(1050,530)],RED)
     f.text(80,735,"MANGO MARKETS 2022 — EXTERNAL DEX COMPARISON",13,BLUE)
-    f.row(810,[("Own accounts","No stolen API keys needed",True),("Thin-market price","Manipulated input",True),("Inflated collateral","Larger borrowing capacity",True),("Real assets borrowed","Asset shortfall",True)])
-    f.save(13,"Sources: Binance and Chainalysis. VIA's blocked withdrawals did not reverse all harmful trades. Mango is outside the CEX monetary sample.")
+    f.row(810,[("Attacker-owned accounts","No stolen API keys needed",True),("Thin-market price","Manipulated input",True),("Inflated collateral","Larger borrowing capacity",True),("Real assets borrowed","Asset shortfall",True)])
+    f.save(13,"Sources: Binance and Chainalysis. VIA's blocked withdrawals did not reverse all harmful trades. Mango is outside the CEX loss sample.")
 
     f=Figure("P5  Erroneous crediting and double spending", "A reorganization may remove the deposit only after the exchange has paid out")
     f.row(300,[("Deposit on-chain","Original history"),("Available balance","Credited by exchange",True),("Convert / withdraw","Real assets paid out",True),("Later reorganization","Original deposit removed",True)])
-    f.box(80,630,740,"Kraken's separate crediting branch","Incomplete deposits created spendable balances",True)
+    f.box(80,630,740,"Kraken: a flaw in deposit crediting","Incomplete deposits created spendable balances",True)
     f.box(980,630,740,"Shared consequence","Payout lacks valid deposit backing",True)
     f.arrow([(820,690),(980,690)],RED)
     f.arrow([(1537,420),(1537,630)],RED)
     f.save(14,"Sources: ETC Cooperative and Kraken. Arrows show sequence, not elapsed time. Kraken's research authorization was disputed.")
 
-    f=Figure("P6  Deceiving customers into transfers", "Coinbase 2025: customer information supported fraudulent support impersonation")
-    f.row(280,[("Bribe support staff","Obtain customer data",True),("Real account details","Credible impersonation",True),("False support identity","Mislead purpose / payee",True),("Customer believes","Fraudulent explanation",True)])
-    f.row(610,[("Customer authenticates","Own credentials"),("Customer confirms","Induced operation",True),("Fraudulent recipient","Customer loses funds",True)],xs=[505,930,1355])
+    f=Figure("P6  Deceiving customers into transfers", "Coinbase 2025: stolen customer information helped attackers impersonate support staff")
+    f.row(280,[("Bribe support staff","Obtain customer data",True),("Real account details","Credible impersonation",True),("False support identity","False purpose or recipient",True),("Customer deceived","Fraudulent explanation",True)])
+    f.row(610,[("Customer authenticates","Own credentials"),("Customer confirms","Fraudulent request",True),("Fraudulent recipient","Customer loses funds",True)],xs=[505,930,1355])
     f.arrow([(1537,400),(1537,500),(1112,500),(1112,610)],RED)
     f.save(15,"Source: Coinbase 2025 disclosure. The attackers did not obtain customer passwords or private keys.")
 
@@ -262,7 +262,7 @@ def diagrams():
 
     f=Figure("After transaction, identity, or balance records change", "Case comparison: the downstream operation can still be approved",1120)
     rows=[("Bybit 2025",("Transaction / display","Tampered frontend"),("Multiple approvals","Altered transaction signed"),("Execution logic changes","Later transfers")),
-          ("Kiln 2025",("API transaction","Authority-change instruction"),("Custody approves","Required signatures obtained"),("Authority changes","Subsequent loss")),
+          ("Kiln 2025",("API transaction","Authority-change instruction"),("Custody signing","Required signatures obtained"),("Authority changes","Subsequent loss")),
           ("WOO X 2025",("Identity records","Email, password, MFA"),("Account takeover","Withdrawal request"),("Platform pays out","9 accounts affected")),
           ("Kraken 2024",("Available balance","Deposit incomplete"),("Withdrawal allowed","Crediting flaw"),("Real assets leave","Research dispute"))]
     for i,(case,*nodes) in enumerate(rows):
@@ -274,7 +274,7 @@ def diagrams():
     rows=[("Coinbase","2019 / 2023",("Employee / endpoint attack","Exploit or social engineering",True),("Detected and interrupted","Endpoint action / staff contact",False),("No customer-fund loss","Reported in both cases",False)),
           ("Binance VIA","2018",("Abusive trades occur","Customer value affected",True),("Withdrawals suspended","External payout blocked",False),("Some trades irreversible","Uninvolved counterparties",True)),
           ("Binance / WOO / Kraken","2019 / 2025 / 2024",("Funds have left","Before disclosed intervention",True),("Alert / issue detected","Different discovery methods",False),("Suspension / mitigation","Earlier payout not prevented",False)),
-          ("Bybit / Kiln","2025",("Malicious transaction approved","Signing did not reject",True),("On-chain control changes","Logic or withdrawal authority",True),("Assets transferred","Local stop does not revoke",True))]
+          ("Bybit / Kiln","2025",("Malicious transaction approved","Signers approved the request",True),("On-chain control changes","Logic or withdrawal authority",True),("Assets transferred","Authority remains in effect",True))]
     for i,(case,year,a,b,c) in enumerate(rows):
         y=250+i*185;f.text(80,y+35,case,11,width=22);f.text(80,y+92,year,10,MUTED)
         f.row(y,[a,b],xs=[465,900],w=385)

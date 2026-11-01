@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-01T23:37:48.060498</dc:date>
+    <dc:date>2026-11-01T23:56:00.220296</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -32,11 +32,11 @@ z
    <g id="line2d_1">
     <path d="M 345.6 158.4
 L 700.56 158.4
-" clip-path="url(#p3535312698)" style="fill: none; stroke: #376b88; stroke-width: 3; stroke-linecap: square"/>
+" clip-path="url(#p4f66ee72c8)" style="fill: none; stroke: #376b88; stroke-width: 3; stroke-linecap: square"/>
    </g>
    <g id="line2d_2">
     <defs>
-     <path id="m50f9d07ded" d="M 0 3
+     <path id="md4dfbb2dee" d="M 0 3
 C 0.795609 3 1.55874 2.683901 2.12132 2.12132
 C 2.683901 1.55874 3 0.795609 3 0
 C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132
@@ -48,43 +48,43 @@ C -1.55874 2.683901 -0.795609 3 0 3
 z
 " style="stroke: #376b88"/>
     </defs>
-    <g clip-path="url(#p3535312698)">
-     <use xlink:href="#m50f9d07ded" x="345.6" y="158.4" style="fill: #376b88; stroke: #376b88"/>
-     <use xlink:href="#m50f9d07ded" x="700.56" y="158.4" style="fill: #376b88; stroke: #376b88"/>
+    <g clip-path="url(#p4f66ee72c8)">
+     <use xlink:href="#md4dfbb2dee" x="345.6" y="158.4" style="fill: #376b88; stroke: #376b88"/>
+     <use xlink:href="#md4dfbb2dee" x="700.56" y="158.4" style="fill: #376b88; stroke: #376b88"/>
     </g>
    </g>
    <g id="line2d_3">
     <path d="M 345.6 244.8
 L 679.68 244.8
-" clip-path="url(#p3535312698)" style="fill: none; stroke: #376b88; stroke-width: 3; stroke-linecap: square"/>
+" clip-path="url(#p4f66ee72c8)" style="fill: none; stroke: #376b88; stroke-width: 3; stroke-linecap: square"/>
    </g>
    <g id="line2d_4">
-    <g clip-path="url(#p3535312698)">
-     <use xlink:href="#m50f9d07ded" x="345.6" y="244.8" style="fill: #376b88; stroke: #376b88"/>
-     <use xlink:href="#m50f9d07ded" x="679.68" y="244.8" style="fill: #376b88; stroke: #376b88"/>
+    <g clip-path="url(#p4f66ee72c8)">
+     <use xlink:href="#md4dfbb2dee" x="345.6" y="244.8" style="fill: #376b88; stroke: #376b88"/>
+     <use xlink:href="#md4dfbb2dee" x="679.68" y="244.8" style="fill: #376b88; stroke: #376b88"/>
     </g>
    </g>
    <g id="line2d_5">
     <path d="M 345.6 331.2
 L 512.64 331.2
-" clip-path="url(#p3535312698)" style="fill: none; stroke: #376b88; stroke-width: 3; stroke-linecap: square"/>
+" clip-path="url(#p4f66ee72c8)" style="fill: none; stroke: #376b88; stroke-width: 3; stroke-linecap: square"/>
    </g>
    <g id="line2d_6">
-    <g clip-path="url(#p3535312698)">
-     <use xlink:href="#m50f9d07ded" x="345.6" y="331.2" style="fill: #376b88; stroke: #376b88"/>
-     <use xlink:href="#m50f9d07ded" x="512.64" y="331.2" style="fill: #376b88; stroke: #376b88"/>
+    <g clip-path="url(#p4f66ee72c8)">
+     <use xlink:href="#md4dfbb2dee" x="345.6" y="331.2" style="fill: #376b88; stroke: #376b88"/>
+     <use xlink:href="#md4dfbb2dee" x="512.64" y="331.2" style="fill: #376b88; stroke: #376b88"/>
     </g>
    </g>
    <g id="line2d_7">
     <path d="M 38.4 432
 L 825.6 432
-" clip-path="url(#p3535312698)" style="fill: none; stroke: #dce4e9; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#p4f66ee72c8)" style="fill: none; stroke: #dce4e9; stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="text_1">
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #20333f" x="38.4" y="45.85625" transform="rotate(-0 38.4 45.85625)">Known intervals in three attacks</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #687985" x="38.4" y="71.95125" transform="rotate(-0 38.4 71.95125)">Calendar days between disclosed events; endpoints differ</text>
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #687985" x="38.4" y="71.95125" transform="rotate(-0 38.4 71.95125)">Calendar days between disclosed events; start and end events differ</text>
    </g>
    <g id="text_3">
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #20333f" x="38.4" y="148.415" transform="rotate(-0 38.4 148.415)">Bybit / Safe</text>
@@ -115,12 +115,12 @@ L 825.6 432
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #376b88" x="524.64" y="334.787187" transform="rotate(-0 524.64 334.787187)">8 days</text>
    </g>
    <g id="text_12">
-    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #687985" x="38.4" y="457.799375" transform="rotate(-0 38.4 457.799375)">Sources: Sygnia, WOO X and Kiln. These intervals are not complete dwell time, usable response windows, or MTTR.</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #687985" x="38.4" y="457.799375" transform="rotate(-0 38.4 457.799375)">Sources: Sygnia, WOO X and Kiln. These intervals do not establish total dwell time, available response time, or MTTR.</text>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="p3535312698">
+  <clipPath id="p4f66ee72c8">
    <rect x="0" y="0" width="864" height="480"/>
   </clipPath>
  </defs>

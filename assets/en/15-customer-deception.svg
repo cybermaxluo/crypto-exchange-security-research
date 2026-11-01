@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-01T23:17:57.700673</dc:date>
+    <dc:date>2026-11-01T23:56:01.732264</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -35,7 +35,7 @@ L 213.6 134.4
 L 213.6 192
 L 38.4 192
 z
-" clip-path="url(#p9bfcaaa710)" style="fill: #faf0ed"/>
+" clip-path="url(#pff21987ab7)" style="fill: #faf0ed"/>
    </g>
    <g id="patch_3">
     <path d="M 38.4 134.4
@@ -43,7 +43,7 @@ L 40.32 134.4
 L 40.32 192
 L 38.4 192
 z
-" clip-path="url(#p9bfcaaa710)" style="fill: #bd554a"/>
+" clip-path="url(#pff21987ab7)" style="fill: #bd554a"/>
    </g>
    <g id="patch_4">
     <path d="M 242.4 134.4
@@ -51,7 +51,7 @@ L 417.6 134.4
 L 417.6 192
 L 242.4 192
 z
-" clip-path="url(#p9bfcaaa710)" style="fill: #faf0ed"/>
+" clip-path="url(#pff21987ab7)" style="fill: #faf0ed"/>
    </g>
    <g id="patch_5">
     <path d="M 242.4 134.4
@@ -59,7 +59,7 @@ L 244.32 134.4
 L 244.32 192
 L 242.4 192
 z
-" clip-path="url(#p9bfcaaa710)" style="fill: #bd554a"/>
+" clip-path="url(#pff21987ab7)" style="fill: #bd554a"/>
    </g>
    <g id="patch_6">
     <path d="M 446.4 134.4
@@ -67,7 +67,7 @@ L 621.6 134.4
 L 621.6 192
 L 446.4 192
 z
-" clip-path="url(#p9bfcaaa710)" style="fill: #faf0ed"/>
+" clip-path="url(#pff21987ab7)" style="fill: #faf0ed"/>
    </g>
    <g id="patch_7">
     <path d="M 446.4 134.4
@@ -75,7 +75,7 @@ L 448.32 134.4
 L 448.32 192
 L 446.4 192
 z
-" clip-path="url(#p9bfcaaa710)" style="fill: #bd554a"/>
+" clip-path="url(#pff21987ab7)" style="fill: #bd554a"/>
    </g>
    <g id="patch_8">
     <path d="M 650.4 134.4
@@ -83,7 +83,7 @@ L 825.6 134.4
 L 825.6 192
 L 650.4 192
 z
-" clip-path="url(#p9bfcaaa710)" style="fill: #faf0ed"/>
+" clip-path="url(#pff21987ab7)" style="fill: #faf0ed"/>
    </g>
    <g id="patch_9">
     <path d="M 650.4 134.4
@@ -91,37 +91,37 @@ L 652.32 134.4
 L 652.32 192
 L 650.4 192
 z
-" clip-path="url(#p9bfcaaa710)" style="fill: #bd554a"/>
+" clip-path="url(#pff21987ab7)" style="fill: #bd554a"/>
    </g>
    <g id="patch_10">
     <path d="M 215.600391 163.2
 Q 228.000771 163.2 239.059511 163.2
-" clip-path="url(#p9bfcaaa710)" style="fill: none; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#pff21987ab7)" style="fill: none; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 233.859511 160.6
 L 239.059511 163.2
 L 233.859511 165.8
 z
-" clip-path="url(#p9bfcaaa710)" style="fill: #376b88; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#pff21987ab7)" style="fill: #376b88; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="patch_11">
     <path d="M 419.600391 163.2
 Q 432.000771 163.2 443.059511 163.2
-" clip-path="url(#p9bfcaaa710)" style="fill: none; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#pff21987ab7)" style="fill: none; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 437.859511 160.6
 L 443.059511 163.2
 L 437.859511 165.8
 z
-" clip-path="url(#p9bfcaaa710)" style="fill: #376b88; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#pff21987ab7)" style="fill: #376b88; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="patch_12">
     <path d="M 623.600391 163.2
 Q 636.000771 163.2 647.059511 163.2
-" clip-path="url(#p9bfcaaa710)" style="fill: none; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#pff21987ab7)" style="fill: none; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 641.859511 160.6
 L 647.059511 163.2
 L 641.859511 165.8
 z
-" clip-path="url(#p9bfcaaa710)" style="fill: #376b88; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#pff21987ab7)" style="fill: #376b88; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="patch_13">
     <path d="M 242.4 292.8
@@ -129,7 +129,7 @@ L 417.6 292.8
 L 417.6 350.4
 L 242.4 350.4
 z
-" clip-path="url(#p9bfcaaa710)" style="fill: #f1f5f7"/>
+" clip-path="url(#pff21987ab7)" style="fill: #f1f5f7"/>
    </g>
    <g id="patch_14">
     <path d="M 242.4 292.8
@@ -137,7 +137,7 @@ L 244.32 292.8
 L 244.32 350.4
 L 242.4 350.4
 z
-" clip-path="url(#p9bfcaaa710)" style="fill: #376b88"/>
+" clip-path="url(#pff21987ab7)" style="fill: #376b88"/>
    </g>
    <g id="patch_15">
     <path d="M 446.4 292.8
@@ -145,7 +145,7 @@ L 621.6 292.8
 L 621.6 350.4
 L 446.4 350.4
 z
-" clip-path="url(#p9bfcaaa710)" style="fill: #faf0ed"/>
+" clip-path="url(#pff21987ab7)" style="fill: #faf0ed"/>
    </g>
    <g id="patch_16">
     <path d="M 446.4 292.8
@@ -153,7 +153,7 @@ L 448.32 292.8
 L 448.32 350.4
 L 446.4 350.4
 z
-" clip-path="url(#p9bfcaaa710)" style="fill: #bd554a"/>
+" clip-path="url(#pff21987ab7)" style="fill: #bd554a"/>
    </g>
    <g id="patch_17">
     <path d="M 650.4 292.8
@@ -161,7 +161,7 @@ L 825.6 292.8
 L 825.6 350.4
 L 650.4 350.4
 z
-" clip-path="url(#p9bfcaaa710)" style="fill: #faf0ed"/>
+" clip-path="url(#pff21987ab7)" style="fill: #faf0ed"/>
    </g>
    <g id="patch_18">
     <path d="M 650.4 292.8
@@ -169,54 +169,54 @@ L 652.32 292.8
 L 652.32 350.4
 L 650.4 350.4
 z
-" clip-path="url(#p9bfcaaa710)" style="fill: #bd554a"/>
+" clip-path="url(#pff21987ab7)" style="fill: #bd554a"/>
    </g>
    <g id="patch_19">
     <path d="M 419.600391 321.6
 Q 432.000771 321.6 443.059511 321.6
-" clip-path="url(#p9bfcaaa710)" style="fill: none; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#pff21987ab7)" style="fill: none; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 437.859511 319
 L 443.059511 321.6
 L 437.859511 324.2
 z
-" clip-path="url(#p9bfcaaa710)" style="fill: #376b88; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#pff21987ab7)" style="fill: #376b88; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="patch_20">
     <path d="M 623.600391 321.6
 Q 636.000771 321.6 647.059511 321.6
-" clip-path="url(#p9bfcaaa710)" style="fill: none; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#pff21987ab7)" style="fill: none; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 641.859511 319
 L 647.059511 321.6
 L 641.859511 324.2
 z
-" clip-path="url(#p9bfcaaa710)" style="fill: #376b88; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#pff21987ab7)" style="fill: #376b88; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="patch_21">
     <path d="M 533.76 242.00127
 Q 533.76 266.400721 533.76 289.458531
-" clip-path="url(#p9bfcaaa710)" style="fill: none; stroke: #bd554a; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#pff21987ab7)" style="fill: none; stroke: #bd554a; stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 536.36 284.258531
 L 533.76 289.458531
 L 531.16 284.258531
 z
-" clip-path="url(#p9bfcaaa710)" style="fill: #bd554a; stroke: #bd554a; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#pff21987ab7)" style="fill: #bd554a; stroke: #bd554a; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="line2d_1">
     <path d="M 737.76 192
 L 737.76 240
 L 533.76 240
-" clip-path="url(#p9bfcaaa710)" style="fill: none; stroke: #bd554a; stroke-width: 1.2; stroke-linecap: square"/>
+" clip-path="url(#pff21987ab7)" style="fill: none; stroke: #bd554a; stroke-width: 1.2; stroke-linecap: square"/>
    </g>
    <g id="line2d_2">
     <path d="M 38.4 432
 L 825.6 432
-" clip-path="url(#p9bfcaaa710)" style="fill: none; stroke: #dce4e9; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#pff21987ab7)" style="fill: none; stroke: #dce4e9; stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="text_1">
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #20333f" x="38.4" y="43.91875" transform="rotate(-0 38.4 43.91875)">P6  Deceiving customers into transfers</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #687985" x="38.4" y="71.95125" transform="rotate(-0 38.4 71.95125)">Coinbase 2025: customer information supported fraudulent support impersonation</text>
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #687985" x="38.4" y="71.95125" transform="rotate(-0 38.4 71.95125)">Coinbase 2025: stolen customer information helped attackers impersonate support staff</text>
    </g>
    <g id="text_3">
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bd554a" x="126" y="158.147188" transform="rotate(-0 126 158.147188)">Bribe support staff</text>
@@ -234,10 +234,10 @@ L 825.6 432
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bd554a" x="534" y="158.147188" transform="rotate(-0 534 158.147188)">False support identity</text>
    </g>
    <g id="text_8">
-    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #687985" x="534" y="182.225344" transform="rotate(-0 534 182.225344)">Mislead purpose / payee</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #687985" x="534" y="182.225344" transform="rotate(-0 534 182.225344)">False purpose or recipient</text>
    </g>
    <g id="text_9">
-    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bd554a" x="738" y="159.406563" transform="rotate(-0 738 159.406563)">Customer believes</text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bd554a" x="738" y="159.406563" transform="rotate(-0 738 159.406563)">Customer deceived</text>
    </g>
    <g id="text_10">
     <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #687985" x="738" y="182.225344" transform="rotate(-0 738 182.225344)">Fraudulent explanation</text>
@@ -252,7 +252,7 @@ L 825.6 432
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bd554a" x="534" y="317.806562" transform="rotate(-0 534 317.806562)">Customer confirms</text>
    </g>
    <g id="text_14">
-    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #687985" x="534" y="340.625344" transform="rotate(-0 534 340.625344)">Induced operation</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #687985" x="534" y="340.625344" transform="rotate(-0 534 340.625344)">Fraudulent request</text>
    </g>
    <g id="text_15">
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bd554a" x="738" y="316.547187" transform="rotate(-0 738 316.547187)">Fraudulent recipient</text>
@@ -266,7 +266,7 @@ L 825.6 432
   </g>
  </g>
  <defs>
-  <clipPath id="p9bfcaaa710">
+  <clipPath id="pff21987ab7">
    <rect x="0" y="0" width="864" height="480"/>
   </clipPath>
  </defs>

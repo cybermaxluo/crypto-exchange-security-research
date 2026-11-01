@@ -4,13 +4,13 @@
 
 ## Scope
 
-The research covers public material from 2016 through November 1, 2026. It does not include access to victim networks, private interviews, or exhaustive independent on-chain forensics.
+The research draws on public material from 2016 through November 1, 2026. It did not involve access to victim networks, private interviews, or exhaustive independent analysis of on-chain transactions.
 
-The registry contains **98 incidents and leads**: 90 involving exchanges or their customers and 8 related services. It retains successful interventions, data incidents, and researcher disputes as well as thefts. Thirty-eight records currently have only incident-index evidence; five records have disputed nature or attribution. Mango Markets and Parity are external mechanism comparisons, outside the registry and monetary sample. UNC1069 is a threat-research profile, not an additional counted loss event.
+The registry contains **98 incidents and leads**: 90 involving exchanges or their customers and 8 related services. It retains successful interventions, data incidents, and researcher disputes as well as thefts. Thirty-eight records currently have only incident-index evidence; the nature of the incident or responsibility for it is disputed in five records. Mango Markets and Parity illustrate comparable attack mechanisms outside centralized exchanges and are excluded from the registry and loss sample. UNC1069 is a threat-research profile, not an additional counted loss event.
 
-The 41-event monetary sample requires an identifiable loss involving exchange custody or business operations, a dollar estimate supported by more than an index entry, and figures that distinguish the loss from amounts involving other services, response costs, and funds returned. Missing estimates are not zero. The article's 15-case comparison and 12-case attribution/response review are different subsets with different purposes.
+The 41-event loss sample requires an identifiable loss involving exchange custody or business operations, a dollar estimate supported by more than an index entry, and figures that distinguish the loss from amounts involving other services, response costs, and funds returned. Missing estimates are not zero. The article's 15-case comparison and 12-case attribution/response review are different subsets with different purposes.
 
-The sample favors large incidents, English-language disclosure, and recent coverage. It cannot establish industry-wide incidence, attack success rates, or the failure probability of a technology. Annual counts describe this registry's coverage, not the number of attacks that actually occurred.
+The sample overrepresents large and recent incidents, as well as those with detailed English-language disclosures. It cannot establish industry-wide incidence, attack success rates, or the failure probability of a technology. Annual counts describe this registry's coverage, not the number of attacks that actually occurred.
 
 ## Monetary values
 
@@ -20,7 +20,7 @@ BitMart uses the platform's later retrospective estimate of **$319.5 million**, 
 
 | Calculation | Events | Total, USD million | Median, USD million | Largest share | Top five share |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Full monetary sample | 41 | 11,582.86 | 45.00 | 54.4% | 79.4% |
+| Full loss sample | 41 | 11,582.86 | 45.00 | 54.4% | 79.4% |
 | Temporarily omit Binance 2026 | 40 | 5,282.86 | 44.60 | 28.4% | 60.8% |
 | Also temporarily omit Bybit 2025 | 39 | 3,782.86 | 44.20 | 14.0% | 53.5% |
 | Apply listed alternative estimates | 41 | 11,572.76 | 45.00 | 55.6% | 80.3% |
@@ -30,7 +30,7 @@ The article uses the full sample. Calculations that exclude the largest events s
 
 ![Loss concentration under different subsets](../../assets/en/01-loss-concentration.png)
 
-![Largest eight monetary observations](../../assets/en/02-largest-losses.png)
+![Eight largest reported losses](../../assets/en/02-largest-losses.png)
 
 ![Annual registry coverage](../../assets/en/04-registry-by-year.png)
 
@@ -51,21 +51,21 @@ The six paths classify how fund controls fail. Initial access, attacker identity
 
 ## Response observations
 
-Seven time observations are available across five of the twelve response cases. Time to detect (TTD) starts at an established compromise and ends at detection. If initial compromise is unknown, label the interval from a known event to detection separately. Time to contain (TTC) runs from detection to verified effectiveness of the specified containment measure. Time to recover (TTR) requires an explicit starting point and a defined recovery condition. Mean time to detect (MTTD) and mean time to recover (MTTR) require observations with comparable scope, endpoints, and precision.
+Five of the twelve response cases provide seven usable measurements of elapsed time. Time to detect (TTD) starts at an established compromise and ends at detection. If initial compromise is unknown, label the interval from a known event to detection separately. Time to contain (TTC) runs from detection to verified effectiveness of the specified containment measure. Time to recover (TTR) requires an explicit starting point and a defined recovery condition. Mean time to detect (MTTD) and mean time to recover (MTTR) require measurements with comparable scope, start and end events, and timestamp precision.
 
-The observations include transfer spans, intervals within supplier-side intrusions, a platform-reported mitigation bound, timeline entries that combine detection and containment, and a recovery-status announcement. They cannot be averaged into one MTTR. Reimbursement, replenishment, freezing, and actual technical recovery remain separate.
+The measurements include transfer spans, intervals within supplier-side intrusions, a platform-reported upper bound on mitigation time, timeline entries that combine detection and containment, and a recovery-status announcement. They cannot be averaged into one MTTR. Reimbursement, replenishment, freezing, and actual technical recovery remain separate.
 
 ## Files and fields
 
 | File | Content |
 | --- | --- |
 | [case-registry.csv](../../data/case-registry.csv) | Stable case ID, disclosed date, target, scope, evidence types, source identifiers, source URLs |
-| [loss-sample.csv](../../data/loss-sample.csv) | Included case ID, date, target, selected USD-million estimate, amount source ID and URL |
+| [loss-sample.csv](../../data/loss-sample.csv) | Included case ID, date, target, selected loss estimate in millions of USD, amount source ID and URL |
 | [alternative-estimates.csv](../../data/alternative-estimates.csv) | Case-specific alternative values for the sensitivity calculation |
-| [response-observations.csv](../../data/response-observations.csv) | Seven observations with their definitions and limits |
+| [response-observations.csv](../../data/response-observations.csv) | Seven timing measurements with their definitions and limitations |
 | [sources.json](../../data/sources.json) | Research source identifiers mapped to URLs |
 | [statistics.json](../../data/statistics.json) | Monetary summaries, annual coverage, evidence counts, and intervals between disclosed events |
 
-Dates retain disclosed precision. A date range is not silently converted into one timestamp. Registry scope values are `custody_and_business_systems`, `customer_accounts_and_information`, and `related_service`. Multiple source identifiers and URLs are separated by semicolons. Absence from the monetary sample means **not included under its selection rules**, not no loss.
+Dates are recorded only to the precision given in the source; date ranges are not converted to single timestamps. Registry scope values are `custody_and_business_systems`, `customer_accounts_and_information`, and `related_service`. Multiple source identifiers and URLs are separated by semicolons. Absence from the loss sample means **not included under its selection rules**, not no loss.
 
 Run `python3 scripts/check.py` from the repository root to check local links, bilingual document presence, event identifiers, sample membership, totals, sensitivities, and figure references. The check validates repository consistency; it does not independently authenticate every external source or prove a proposed defense effective.

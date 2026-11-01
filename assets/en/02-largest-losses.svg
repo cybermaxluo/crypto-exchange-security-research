@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-01T23:17:56.690237</dc:date>
+    <dc:date>2026-11-01T23:56:00.129219</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -35,7 +35,7 @@ L 739.126154 117.6
 L 739.126154 132
 L 283.2 132
 z
-" clip-path="url(#p7beecf4dfe)" style="fill: #bd554a"/>
+" clip-path="url(#p96363f8b72)" style="fill: #bd554a"/>
    </g>
    <g id="patch_3">
     <path d="M 283.2 152.16
@@ -43,7 +43,7 @@ L 391.753846 152.16
 L 391.753846 166.56
 L 283.2 166.56
 z
-" clip-path="url(#p7beecf4dfe)" style="fill: #376b88"/>
+" clip-path="url(#p96363f8b72)" style="fill: #376b88"/>
    </g>
    <g id="patch_4">
     <path d="M 283.2 186.72
@@ -51,7 +51,7 @@ L 321.555692 186.72
 L 321.555692 201.12
 L 283.2 201.12
 z
-" clip-path="url(#p7beecf4dfe)" style="fill: #376b88"/>
+" clip-path="url(#p96363f8b72)" style="fill: #376b88"/>
    </g>
    <g id="patch_5">
     <path d="M 283.2 221.28
@@ -59,7 +59,7 @@ L 317.720123 221.28
 L 317.720123 235.68
 L 283.2 235.68
 z
-" clip-path="url(#p7beecf4dfe)" style="fill: #376b88"/>
+" clip-path="url(#p96363f8b72)" style="fill: #376b88"/>
    </g>
    <g id="patch_6">
     <path d="M 283.2 255.84
@@ -67,7 +67,7 @@ L 311.243077 255.84
 L 311.243077 270.24
 L 283.2 270.24
 z
-" clip-path="url(#p7beecf4dfe)" style="fill: #376b88"/>
+" clip-path="url(#p96363f8b72)" style="fill: #376b88"/>
    </g>
    <g id="patch_7">
     <path d="M 283.2 290.4
@@ -75,7 +75,7 @@ L 306.321969 290.4
 L 306.321969 304.8
 L 283.2 304.8
 z
-" clip-path="url(#p7beecf4dfe)" style="fill: #376b88"/>
+" clip-path="url(#p96363f8b72)" style="fill: #376b88"/>
    </g>
    <g id="patch_8">
     <path d="M 283.2 324.96
@@ -83,7 +83,7 @@ L 305.489723 324.96
 L 305.489723 339.36
 L 283.2 339.36
 z
-" clip-path="url(#p7beecf4dfe)" style="fill: #376b88"/>
+" clip-path="url(#p96363f8b72)" style="fill: #376b88"/>
    </g>
    <g id="patch_9">
     <path d="M 283.2 359.52
@@ -91,18 +91,18 @@ L 303.825231 359.52
 L 303.825231 373.92
 L 283.2 373.92
 z
-" clip-path="url(#p7beecf4dfe)" style="fill: #376b88"/>
+" clip-path="url(#p96363f8b72)" style="fill: #376b88"/>
    </g>
    <g id="line2d_1">
     <path d="M 38.4 432
 L 825.6 432
-" clip-path="url(#p7beecf4dfe)" style="fill: none; stroke: #dce4e9; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#p96363f8b72)" style="fill: none; stroke: #dce4e9; stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="text_1">
-    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #20333f" x="38.4" y="43.91875" transform="rotate(-0 38.4 43.91875)">Largest eight loss observations</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #20333f" x="38.4" y="43.91875" transform="rotate(-0 38.4 43.91875)">Eight largest reported losses</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #687985" x="38.4" y="72.642187" transform="rotate(-0 38.4 72.642187)">Nominal incident-time estimates / USD million</text>
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #687985" x="38.4" y="72.642187" transform="rotate(-0 38.4 72.642187)">Nominal estimates at the time of each incident / USD million</text>
    </g>
    <g id="text_3">
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #20333f" x="38.4" y="129.27375" transform="rotate(-0 38.4 129.27375)">Binance 2026</text>
@@ -158,7 +158,7 @@ L 825.6 432
   </g>
  </g>
  <defs>
-  <clipPath id="p7beecf4dfe">
+  <clipPath id="p96363f8b72">
    <rect x="0" y="0" width="864" height="480"/>
   </clipPath>
  </defs>

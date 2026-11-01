@@ -9,21 +9,21 @@ Max Luo — AI Security and Automation Lead, Crypto Exchange<br>
 
 > A review of exchange security incidents over the past decade: how attackers entered systems, obtained control over funds, and exploited recurring weaknesses in exchange defenses.
 
-On October 30, 2026, Binance disclosed a security incident involving approximately $6.3 billion in assets. Its initial investigation pointed to a DevOps engineer's laptop: an attacker may have used the compromised endpoint to access a service container and submit unauthorized withdrawals. Binance subsequently reported additional breach points. It had found no evidence of wallet private-key leakage, and the complete attack chain remained undisclosed. The following day, the FBI attributed the attack to North Korea-linked TraderTraitor activity.
+On October 30, 2026, Binance disclosed a security incident involving approximately $6.3 billion in assets. Its initial investigation pointed to a DevOps engineer's laptop: an attacker may have used the compromised endpoint to access a service container and submit unauthorized withdrawals. Binance subsequently reported additional breach points. It had found no evidence of wallet private-key exposure, and the complete attack sequence remained undisclosed. The following day, the FBI attributed the attack to North Korea-linked TraderTraitor activity.
 
-Over the past decade, attackers have reached exchange funds through development environments, service providers, and business backends. A tampered transaction display can persuade signers to approve a malicious operation. Altered identity or balance records can cause later withdrawal checks to authorize a payment using false information.
+Over the past decade, attackers have reached exchange funds through development environments, service providers, and backend systems. A tampered transaction display can persuade signers to approve a malicious operation. Altered identity or balance records can cause later withdrawal checks to authorize a payment using false information.
 
 ## 1. Binance and Bybit account for 67.3% of sampled losses
 
 ### 1.1 Forty-one loss incidents, approximately $11.583 billion
 
-The registry contains 98 records: 90 exchange or customer incidents and 8 related-service incidents. It includes theft, data exposure, successful interventions, and researcher testing. For 38 records, this research has collected only incident-index entries, without detailed technical material. Mango Markets and Parity illustrate external mechanisms and are excluded from both the registry count and the loss total.
+The registry contains 98 records: 90 exchange or customer incidents and 8 related-service incidents. It includes theft, data exposure, successful interventions, and researcher testing. For 38 records, the collected evidence is limited to entries in incident indexes, with no detailed technical analysis. Mango Markets and Parity provide comparisons with attacks outside centralized exchanges and are excluded from both the registry count and the loss total.
 
-Forty-one incidents have loss estimates that can be counted separately. The dataset uses publicly reported nominal dollar estimates at the time of each incident. Frozen assets, recoveries, and exchange reimbursements are not deducted.
+Forty-one incidents have estimates that distinguish the exchange loss from other losses or costs. The dataset uses publicly reported nominal dollar estimates at the time of each incident. Frozen assets, recoveries, and exchange reimbursements are not deducted.
 
 | Sample | Incidents | Total losses | Median loss | Largest incident's share | Top five share |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Full monetary sample | 41 | Approximately $11.583 billion | $45 million | 54.4% | 79.4% |
+| Full loss sample | 41 | Approximately $11.583 billion | $45 million | 54.4% | 79.4% |
 
 *Calculated from the event-level monetary dataset. The sample favors large, well-disclosed incidents and does not represent the industry's loss distribution. See the [methodology](methodology.md) for value selection and recalculation.*
 
@@ -45,9 +45,9 @@ Some attacks target customers directly. Impersonating support staff or another t
 
 ### 2.1 Signing-material compromise
 
-Coincheck's investigation into its 2018 NEM incident inferred that malware infected an employee endpoint, through which the attacker entered the internal network and stole private keys from the NEM server. BitMart also confirmed private-key theft in 2021, but did not fully disclose the initial entry point.
+Coincheck's investigation into its 2018 NEM incident assessed that an attacker had likely infected an employee's endpoint with malware, used it to enter the internal network, and stolen private keys from the NEM server. BitMart also confirmed private-key theft in 2021, but did not fully disclose the initial entry point.
 
-An attacker with sufficient signing material can create transactions in an environment they control. The exchange application's approval checks, limits, and withdrawal suspension may never be invoked. Key generation, storage, use, backup, and recovery can all expose material. Defective signing implementations can also allow private-key recovery from historical public signatures.
+An attacker with sufficient signing material can create transactions in an environment they control. Those transactions may bypass the exchange application entirely, including its approval checks, limits, and withdrawal suspension. Key generation, storage, use, backup, and recovery can all expose material. Defective signing implementations can also allow private-key recovery from historical public signatures.
 
 ![P1: signing-material compromise](../../assets/en/10-signing-material.png)
 
@@ -65,7 +65,7 @@ Transaction checks did not reject the substituted operations. Signers reading th
 
 Coinbase notified at least 6,000 customers of unauthorized transfers in 2021. Attackers already possessed account credentials, phone numbers, and access to email. They then exploited an SMS account-recovery flaw to obtain authentication tokens.
 
-The WOO X attacker moved from a developer endpoint and an existing VPN session through cloud and container environments into backend access. The attacker changed email addresses, passwords, and second-factor seeds for 9 accounts, then requested withdrawals. BigONE described changes to production systems, accounts, and risk-control logic. Bitget's 2026 disclosure stated that a vulnerability in a third-party security product exposed privileged internal credentials that were used to forge withdrawal instructions.
+The WOO X attacker moved from a developer endpoint and an existing VPN session through cloud and container environments into backend access. The attacker changed email addresses, passwords, and second-factor seeds for 9 accounts, then requested withdrawals. BigONE reported that production systems, account records, and risk-control logic had been altered. Bitget's 2026 disclosure stated that a vulnerability in a third-party security product exposed privileged internal credentials that were used to forge withdrawal instructions.
 
 Contract-wallet permissions can also be bypassed. In the 2017 Parity incident, an initialization flaw allowed an attacker to change wallet owners and thresholds without possessing the original owners' private keys.
 
@@ -73,9 +73,9 @@ Contract-wallet permissions can also be bypassed. In the 2017 Parity incident, a
 
 ### 2.4 Trading and valuation manipulation
 
-In the 2018 Binance VIA incident, attackers phished user credentials, created API keys, and submitted concentrated market buy orders for VIA. They had prepared 31 accounts to sell at elevated prices. Automatic withdrawal suspension blocked external withdrawals, but some victim orders had traded against uninvolved counterparties. Binance explicitly stated that those trades could not be reversed.
+In the 2018 Binance VIA incident, attackers phished user credentials, created API keys, and submitted concentrated market buy orders for VIA. They had prepared 31 accounts to sell at elevated prices. An automatic withdrawal suspension blocked transfers out of the exchange, but some orders placed through victim accounts had matched those of uninvolved counterparties. Binance explicitly stated that those trades could not be reversed.
 
-In 2022, 3Commas disclosed exposure of at least 100,000 API records, involving trading credentials stored in an external tool. This counts API records, not victims or monetary losses.
+In 2022, 3Commas disclosed exposure of at least 100,000 API records, involving trading credentials stored in an external tool. The figure counts exposed API records; it does not establish the number of victims or the amount lost.
 
 In the 2022 Mango Markets DEX incident, the attacker used their own accounts to establish positions, move a thin market's price, and pledge inflated paper gains as collateral to borrow real assets.
 
@@ -83,7 +83,7 @@ In the 2022 Mango Markets DEX incident, the attacker used their own accounts to 
 
 ### 2.5 Erroneous crediting and double spending
 
-Kraken disclosed a 2024 flaw that created account balances before deposits had actually completed. Researchers used it to withdraw approximately $3 million, followed by a dispute over authorization. ETC reorganizations demonstrate a different failure: a deposit initially appeared on-chain, the exchange accepted it and paid out other assets, and a later chain history removed the deposit. OKEx's related 2020 double-spend loss was approximately $5.6 million.
+Kraken disclosed a 2024 flaw that created account balances before deposits had actually completed. Researchers used it to withdraw approximately $3 million, followed by a dispute over authorization. ETC reorganizations demonstrate a different failure: a deposit initially appeared on-chain, the exchange accepted it and paid out other assets, and a subsequent reorganization removed the deposit from the canonical chain. OKEx's related 2020 double-spend loss was approximately $5.6 million.
 
 When an incomplete or subsequently reversed deposit becomes an available balance, a later withdrawal can pay out assets unsupported by a real deposit. Crediting checks need to establish asset identity, received quantity, and successful execution, then apply chain-specific confirmation and reorganization handling.
 
@@ -91,7 +91,7 @@ When an incomplete or subsequently reversed deposit becomes an available balance
 
 ### 2.6 Deceiving customers into transfers or authorizations
 
-Coinbase disclosed in 2025 that attackers bribed some overseas support personnel, obtained customer information, and used it for impersonation and social engineering. The attackers did not obtain customer passwords or private keys. Accurate account details helped establish a false support identity.
+Coinbase disclosed in 2025 that attackers bribed some overseas support personnel, obtained customer information, and used it for impersonation and social engineering. The attackers did not obtain customer passwords or private keys. Accurate account details made the attackers' impersonation of support staff more convincing.
 
 The FBI's fraud advisory describes generative AI used for fictitious identities, text, and synthetic audio and video. In support impersonation, real customer records supply account details while synthetic content helps fabricate the person communicating with the customer.
 
@@ -103,7 +103,7 @@ The FBI's fraud advisory describes generative AI used for fictitious identities,
 
 | Cases | Attacker capability or exploited defect | Outcomes and differences |
 | --- | --- | --- |
-| Coinbase 2019 and 2023; WOO X 2025 | Employee credentials or endpoint access; WOO X progressed to production writes | Coinbase reported no customer-fund losses in either case. WOO X reached the backend, rewrote identity records, and initiated withdrawals. |
+| Coinbase 2019 and 2023; WOO X 2025 | Employee credentials or endpoint access; WOO X progressed to production writes | Coinbase reported no customer-fund losses in either case. The WOO X attacker gained backend access, rewrote identity records, and initiated withdrawals. |
 | Coincheck 2018; BitMart 2021 | Private-key material sufficient to sign | Funds left the platforms; signing was possible externally. Coincheck disclosed an inferred intrusion sequence; BitMart's initial entry remains unknown. |
 | Gate.io 2018; DMM 2024; Bybit and Kiln 2025 | Ability to alter withdrawal scripts, supplier communications, frontend resources, or API transaction responses | Malicious content affected fund operations. Request manipulation at DMM remains an investigative assessment. Bybit and Kiln changed on-chain control. Gate.io's total loss was not established. |
 | Coinbase recovery 2021; support-personnel incident 2025 | Recovery token in the first case; customer information and impersonation in the second | Attackers transferred funds after takeover in the first case; customers were induced to act in the second. |
@@ -114,9 +114,9 @@ Of these 15 cases, 4 involved an external service's input or communications, inc
 
 ### 3.2 Several checks can share one compromised input
 
-Bybit and Kiln signing processes approved modified transactions. At WOO X, the attacker changed customer identity records before requesting withdrawals. Kraken's crediting flaw converted incomplete deposits into withdrawable balances. Transaction, identity, or balance records were no longer trustworthy. Investigators need to trace approval back to original business requests, account changes, and actual settlement, and determine whether those records were altered.
+Bybit and Kiln signing processes approved modified transactions. At WOO X, the attacker changed customer identity records before requesting withdrawals. Kraken's crediting flaw converted incomplete deposits into withdrawable balances. The records used to approve transactions, authenticate customers, or calculate balances could no longer be trusted. Investigators need to trace approval back to original business requests, account changes, and actual settlement, and determine whether those records were altered.
 
-Bybit and Kiln used transactions constructed or displayed by external services. The customers' signing processes depended on those outputs. A supplier could therefore influence what the customer signed without holding all of the customer's signing material.
+Bybit and Kiln used transactions constructed or displayed by external services. The customers' signing processes depended on those outputs. A supplier could therefore influence what the customer signed without possessing enough signing material to authorize a transaction itself.
 
 BitMart's two wallets used one private key, so one leak affected both. At Bybit, multiple signers viewed the same tampered transaction display; their approvals did not provide independent checks.
 
@@ -132,9 +132,9 @@ Bybit's execution-logic change and Kiln's withdrawal-authority change preceded s
 
 EIP-7702 permits an externally owned account to delegate code execution through a signed authorization. This authorization signature is separate from the outer transaction signature, and another address can submit it. Setting the delegation and calling the delegated code may occur in the same transaction. Execution failure does not roll back a delegation that was already processed successfully.
 
-Blocking a transaction type only at broadcasting misses a route in which the signing service produces an authorization that an attacker submits externally. After delegation takes effect, external transfer capability depends on the delegated code's permission checks. Suspending the exchange's own withdrawals may not prevent it.
+A block enforced only at the broadcast stage cannot stop an attacker from obtaining a signed authorization and submitting it independently. After delegation takes effect, the attacker's ability to transfer funds independently depends on the delegated code's permission checks. Suspending withdrawals within the exchange may not stop those transfers.
 
-After a hot wallet is compromised, automated replenishment, cold/warm-wallet transfers, and customer deposits may continue supplying assets. Reachable funds depend on how long the attacker retains authority, subsequent inflows, and whether the attacker can change limits. Estimates must deduplicate the same assets reachable through multiple paths.
+After a hot wallet is compromised, automated replenishment, cold/warm-wallet transfers, and customer deposits may continue supplying assets. Reachable funds depend on how long the attacker retains authority, subsequent inflows, and whether the attacker can change limits. Exposure estimates must avoid counting the same assets more than once when they can be reached through several paths.
 
 Lowering the online balance reduces funds immediately exposed, while replenishment and transfers need separate restrictions. Stopping the business application does not invalidate existing signatures or revoke on-chain authority.
 
@@ -144,7 +144,7 @@ Removing an EIP-7702 delegation does not itself revoke allowances stored in toke
 
 Some VIA trades could not be reversed despite blocked withdrawals. At Kraken, available balances were created before deposits completed. In the ETC incidents, credited deposits later disappeared from the valid chain history. Mango demonstrates how an inflated valuation can become borrowing capacity.
 
-Unified accounts, spot conversion, and collateralized lending transmit these problems across products. An erroneous balance permitted to trade can leave through another asset's withdrawal channel. An inflated collateral value can unlock real loans. Impact depends on permitted conversions and collateral uses. Abusive trades can transfer customer value while the platform's total ledger remains balanced; asset reconciliation alone may not identify the harm.
+Unified accounts, spot conversion, and collateralized lending allow these problems to spread across products. An incorrectly credited balance can be traded for another asset and then withdrawn. An inflated collateral value can unlock real loans. Impact depends on permitted conversions and collateral uses. Abusive trades can transfer customer value while the platform's ledger still balances; asset reconciliation alone may not identify the harm.
 
 Completed trades and loans remain after withdrawal restrictions take effect. Resulting customer losses and credit exposure still need attention.
 
@@ -152,11 +152,11 @@ Completed trades and loans remain after withdrawal restrictions take effect. Res
 
 The Gate.io script activated based on the withdrawal page, amount, or balance. Bybit's malicious frontend selected a particular wallet. Kiln's API targeted accounts with more than 150,000 SOL staked under the relevant withdrawal authority.
 
-Ordinary accounts and small operations could continually receive normal responses. Kiln's malicious logic was changed directly in the running service, so inspecting source repositories or deployment images could miss the transaction actually returned to a customer. Validation needs to include target wallets, asset sizes, and the running environment.
+Requests involving ordinary accounts or small amounts could continue to receive legitimate responses. Kiln's malicious logic was changed directly in the running service, so inspecting source repositories or deployment images could miss the transaction actually returned to a customer. Validation needs to include target wallets, asset sizes, and the running environment.
 
 ### 3.6 Attribution in twelve incidents
 
-Attribution comes from law enforcement, platform disclosures, researchers, or actor claims, distinguished below. Tools and laundering routes can be shared by different groups. Identifying a common operator also requires intrusion evidence.
+The table identifies who attributed each incident: law enforcement, the affected platform, security researchers, or a group claiming responsibility. Tools and laundering routes can be shared by different groups. Identifying a common operator also requires intrusion evidence.
 
 | Incident | Actor and affiliation | Evidence and limits |
 | --- | --- | --- |
@@ -177,29 +177,29 @@ Attribution comes from law enforcement, platform disclosures, researchers, or ac
 
 ![Disclosed access, target selection, and outcomes](../../assets/en/16-actor-profiles.png)
 
-The UNC1069 profile comes from industry threat research and is not counted in the incident registry or monetary sample.
+The UNC1069 profile comes from industry threat research and is not counted in the incident registry or loss sample.
 
 ### 3.8 Changes in attack methods
 
-DMM and Bybit were both attributed to TraderTraitor. Request manipulation in DMM remains an investigative assessment, while Bybit frontend tampering was confirmed. Kiln's operator is unknown, but API transaction modification and its effect on what customers signed were confirmed.
+DMM and Bybit were both attributed to TraderTraitor. Investigators assessed request manipulation at DMM as likely; frontend tampering at Bybit was confirmed. The attacker behind the Kiln incident is unknown, but API transaction modification and its effect on what customers signed were confirmed.
 
-Developer and infrastructure-engineer tokens and sessions can provide access to repositories, deployment systems, or production. Attacks against signers can affect approvals; attacks against support personnel can yield information for later impersonation and fraud. The FBI's crypto-sector advisory describes researching employee backgrounds, contacting multiple people in parallel, and building relationships through recruitment or investment offers.
+Tokens and sessions used by developers and infrastructure engineers can provide access to repositories, deployment systems, or production. Attacks against signers can affect approvals; attacks against support personnel can yield information for later impersonation and fraud. The FBI's crypto-sector advisory describes researching employee backgrounds, contacting multiple people in parallel, and building relationships through recruitment or investment offers.
 
 AppleJeus trading-software lures and the Gate.io external-script attack appeared in 2018. More recent development collaborations, supplier APIs, and staking services have created additional opportunities to contact personnel and alter transactions. Key theft, social engineering, and supply-chain attacks coexist. Deployment systems, running APIs, and customer signing workflows all appear in disclosed intrusion records.
 
-Mandiant documented UNC1069's contact sequence: a compromised Telegram identity established contact; a fake meeting and an audio-repair pretext infected the endpoint; credentials, browser records, and sessions were collected. The report describes AI-assisted reconnaissance and tool development. The meeting video's suspected deepfake nature came from the victim's account and was not independently established through forensics. Stolen identities and sessions may also help attackers approach the victim's contacts.
+Mandiant documented UNC1069's contact sequence: a compromised Telegram identity established contact; a fake meeting and an audio-repair pretext infected the endpoint; credentials, browser records, and sessions were collected. The report describes AI-assisted reconnaissance and tool development. The victim suspected that the meeting video was a deepfake; this was not independently confirmed by forensic analysis. Stolen identities and sessions may also help attackers approach the victim's contacts.
 
 GTIG observed an attacker plan, build, and execute an agent-assisted credential-collection operation in under six hours after obtaining cloud resources. NCSC's assessment through 2027 also expects AI to increase the efficiency of known-vulnerability exploitation.
 
-Faster credential collection can accelerate the misuse of cloud, code, and administrative sessions on one endpoint. Cheaper lure production can increase attempts targeting developer collaboration and support conversations. Exchange exposure depends on whether those sessions can change fund systems and whether subsequent checks stop malicious operations.
+Faster credential collection can accelerate the misuse of cloud, code, and administrative sessions on one endpoint. Cheaper lure production can increase attempts targeting developer collaboration and support conversations. Exchange exposure depends on whether those sessions allow changes to systems that handle funds and whether subsequent checks stop malicious operations.
 
 ## 4. Incident response findings
 
 ### 4.1 Response measurements
 
-TTD measures an incident's interval from an established initial compromise to detection. MTTD averages comparable TTD observations. When initial compromise is unknown, the interval from a known behavior to detection is recorded separately, with its start identified. TTC runs from detection to verified effectiveness of a specified containment action, naming the operations, systems, and assets restricted. Eradication, such as removing persistence or fixing the entry point, is recorded separately. TTR runs from a stated start to a defined recovery condition; MTTR requires comparable endpoints, scope, and precision.
+Time to detect (TTD) measures the interval between a known initial compromise and its detection. Mean time to detect (MTTD) averages comparable TTD measurements. When initial compromise is unknown, the interval from a known behavior to detection is recorded separately, with its start identified. Time to contain (TTC) runs from detection to the point at which a specified containment action is verified to be effective. Each measurement identifies the operations, systems, and assets restricted. Eradication, such as removing persistence or fixing the entry point, is recorded separately. Time to recover (TTR) runs from an explicit starting point to a defined recovery condition. Calculating mean time to recover (MTTR) requires comparable start and end events, scope, and timestamp precision.
 
-The 12 cases provide 7 usable time observations. Four cases have intervals calculable from disclosed dates or timestamps; another provides only a platform-reported upper bound for mitigation. Different endpoints and recovery scopes prevent a combined MTTR.
+The 12 cases provide 7 usable measurements of elapsed time. Four cases have intervals calculable from disclosed dates or timestamps; another provides only a platform-reported upper bound for mitigation. These measurements cannot be combined into a single MTTR because their start and end events and recovery scopes differ.
 
 | Incident and measurement | Start → end | Result | Interpretation |
 | --- | --- | ---: | --- |
@@ -217,11 +217,11 @@ Dates refer to each incident's year. Date-only intervals are calendar days.
 
 ### 4.2 Intervention before external withdrawals
 
-**Binance VIA, 2018.** Phishing contact began around January; actual account-compromise times are unknown. Abnormal trades occurred from 14:58 to 14:59 UTC on March 7. The risk system automatically suspended withdrawals during that period, before the attackers requested them. Binance reported resumption after checks, without exact suspension or restoration timestamps. Withdrawals were blocked; some victim trades with uninvolved counterparties could not be reversed. The two-minute period describes trading, not MTTR.
+**Binance VIA, 2018.** The phishing campaign began around January; actual account-compromise times are unknown. Abnormal trades occurred from 14:58 to 14:59 UTC on March 7. The risk system automatically suspended withdrawals during that period, before the attackers requested them. Binance reported resumption after checks, without exact suspension or restoration timestamps. Withdrawals were blocked; some victim trades with uninvolved counterparties could not be reversed. The two-minute period describes trading, not MTTR.
 
-**Coinbase Firefox double zero-day, 2019.** Targeted emails were present by May 30. The exploit link was delivered at 06:31 on June 17; the report did not specify a time zone, and the host-compromise time was not precise. Coinbase reported detection and interruption within hours, with no customer-fund loss. Service restoration time is unknown.
+**Coinbase Firefox double zero-day, 2019.** Targeted emails had been sent by May 30. The exploit link was delivered at 06:31 on June 17; the report did not specify a time zone, and did not give a precise time for the endpoint compromise. Coinbase reported detection and interruption within hours, with no customer-fund loss. Service restoration time is unknown.
 
-**Coinbase employee social engineering, 2023.** An employee's password was phished on February 5; MFA blocked direct login. About 20 minutes later, the attacker impersonated IT by phone and induced workstation actions, exposing limited directory information. Customer funds and information were unaffected. Coinbase said its CSIRT intervened within the first 10 minutes of the attack but did not align that clock with the phone stage, leaving precise TTD unknown. Staff contact and access suspension were used. Cleanup was described as quick, without an exact restoration timestamp.
+**Coinbase employee social engineering, 2023.** An employee's password was phished on February 5; MFA blocked direct login. About 20 minutes later, the attacker impersonated IT by phone and persuaded the employee to carry out actions on the workstation, exposing limited directory information. Customer funds and information were unaffected. Coinbase said its CSIRT intervened within the first 10 minutes of the attack but did not align that clock with the phone stage, leaving precise TTD unknown. The response included contacting the employee and suspending access. Cleanup was described as quick, without an exact restoration timestamp.
 
 ### 4.3 Intervention after funds left
 
@@ -229,7 +229,7 @@ Dates refer to each incident's year. Date-only intervals are calendar days.
 
 **Binance, 2019.** Initial intrusion time is undisclosed. At 17:15:24 UTC on May 7, 7,000 BTC left the exchange. The announcement states that an alert followed execution and withdrawals were immediately suspended. It does not provide timestamps precise enough to calculate the response delay in seconds, or a completion time for technical recovery. The alert followed the first on-chain loss, unlike the pre-withdrawal control in VIA.
 
-**Coinbase SMS recovery, 2021.** At least 6,000 customers experienced unauthorized transfers between March and May 20. Per-customer initial-compromise times are unknown. Attackers obtained account control through recovery. Coinbase changed the recovery protocol after learning of the issue; exact discovery, remediation, and full-recovery times were not disclosed.
+**Coinbase SMS recovery, 2021.** At least 6,000 customers experienced unauthorized transfers between March and May 20. Per-customer initial-compromise times are unknown. Attackers took over accounts by abusing the recovery process. Coinbase changed the recovery protocol after learning of the issue; exact discovery, remediation, and full-recovery times were not disclosed.
 
 **Kraken crediting flaw, 2024.** First exploitation is unknown. Approximately $3 million in disputed withdrawals preceded reporting. Kraken stated that mitigation took under an hour after discovery and that the flaw was fixed. Exact reporting, mitigation, and full-recovery timestamps are unknown. The interval starts at awareness and excludes earlier exploitation, repayment, and service restoration.
 
@@ -237,11 +237,11 @@ Dates refer to each incident's year. Date-only intervals are calendar days.
 
 ### 4.4 Supplier compromise and changes to on-chain authority
 
-**DMM Bitcoin, 2024.** A supplier employee received a recruitment lure in late March. Session-information abuse occurred after mid-May; funds left on May 31. The joint investigation assessed likely manipulation of a legitimate request, without exact discovery, containment, or technical-recovery timestamps. The intrusion crossed from supplier to exchange, so this chronology cannot establish the exchange's own detection latency.
+**DMM Bitcoin, 2024.** A supplier employee received a recruitment lure in late March. The attacker began abusing the stolen session information after mid-May; funds left on May 31. The joint investigation assessed likely manipulation of a legitimate request, but did not establish exact times for detection, containment, or technical recovery. The intrusion crossed from supplier to exchange, so this chronology does not establish how long the exchange itself took to detect the attack.
 
 **Bybit, 2025.** The earliest known malicious activity on the Safe developer endpoint was February 4. The malicious transaction and asset transfer occurred on February 21, 17 calendar days later. Precise detection, containment, and technical-recovery times are unknown. The attacker removed frontend code and traces two minutes after the malicious transaction. Controls did not stop it before the wallet's execution logic changed.
 
-**SwissBorg / Kiln, 2025.** Initial GitHub-token compromise is undisclosed. The customer signed the malicious withdrawal-authority transaction on August 31; the supplier discovered unauthorized activity on September 8, 8 calendar days later. Kiln reported immediate containment and disabling potentially affected services without exact times. Its October 7 announcement said the listed services were available, 29 days after discovery; each service's actual restoration time is unknown. Control had changed before discovery, and disabling the API did not itself revoke that authority.
+**SwissBorg / Kiln, 2025.** The date of the initial GitHub-token theft is undisclosed. The customer signed the malicious withdrawal-authority transaction on August 31; the supplier discovered unauthorized activity on September 8, 8 calendar days later. Kiln reported immediate containment and disabling potentially affected services without exact times. Its October 7 announcement said the listed services were available, 29 days after discovery; each service's actual restoration time is unknown. Control had changed before discovery, and disabling the API did not itself revoke that authority.
 
 **Binance, 2026.** The FBI dated the theft to October 29. Binance's initial account described possible DevOps endpoint compromise, service-container access, and unauthorized withdrawals; it later reported additional breach points. The initial endpoint-compromise time and precise detection time are unknown. Binance reported suspending withdrawals and revoking authorizations for affected addresses, without timestamps from which the time to effective containment could be calculated. Its November 1 announcement described staged restoration plans and progress in replenishing assets. Actual service-restoration and complete-eradication times remained unknown.
 
@@ -249,25 +249,25 @@ Dates refer to each incident's year. Date-only intervals are calendar days.
 
 ![Intervention stage and protected assets](../../assets/en/18-intervention-outcomes.png)
 
-Bybit's 17 days and WOO X's 16 days cover different environments and stages. Some early evidence belonged to a supplier; subsequent exploitation depended on signing, transfers, or particular account states. After detection, an exchange still needs to map affected business operations, obtain action authority, and apply restrictions. Unrevoked on-chain authority or valid signatures held by the attacker can allow transfers after withdrawal suspension.
+Bybit's 17 days and WOO X's 16 days cover different environments and stages. Some of the earliest recorded activity occurred in a supplier's environment; subsequent exploitation depended on signing, transfers, or particular account states. After detection, an exchange still needs to map affected business operations, obtain action authority, and apply restrictions. Unrevoked on-chain authority or valid signatures held by the attacker can allow transfers after withdrawal suspension.
 
 ### 4.6 Residual risk after recovery
 
-CoinDCX disclosed in 2026 that a wallet address affected by the previous year's incident continued receiving customer deposits. The platform credited customers and used another service to sweep funds. When sweeping failed, assets accumulated at the old address, eventually resulting in approximately 15.99 million USDT lost. The announcement did not disclose the full sequence by which the attacker gained control of the assets in this second incident.
+CoinDCX disclosed in 2026 that a wallet address affected by the previous year's incident continued receiving customer deposits. The platform credited customers and used another service to sweep funds. When sweeping failed, assets accumulated at the old address, eventually resulting in a loss of approximately 15.99 million USDT. The announcement did not disclose the full sequence by which the attacker gained control of the assets in this second incident.
 
-Removing an address from the product interface does not prevent customers from paying an address they saved. If the platform continues recognizing and crediting these deposits, it also needs to establish that the assets can reach a controlled wallet. Sweep failures leave funds accumulating at the old address.
+Removing an address from the product interface does not prevent customers from sending funds to a saved address. If the platform continues recognizing and crediting these deposits, it also needs to establish that the assets can reach a controlled wallet. Sweep failures leave funds accumulating at the old address.
 
-ShapeShift's 2016 postmortem already documented renewed compromise during reconstruction: insider assistance and endpoint malware allowed continued access to new credentials. Replacing servers and keys did not remove the path to those credentials.
+ShapeShift's 2016 postmortem already documented renewed compromise while its infrastructure was being rebuilt: insider assistance and endpoint malware allowed continued access to new credentials. Replacing servers and keys did not remove the path to those credentials.
 
-In 2026, Zilliqa disclosed a nonce-handling defect in the Ledger application's legacy transaction-signing flow. Historical public signatures could expose affected private keys. A KuCoin cold-wallet anomaly helped trigger the investigation. The chain disabled affected old transaction types on July 20. Application fixes do not remove historical signature exposure; affected keys still need retirement.
+In 2026, Zilliqa disclosed a nonce-handling defect in the Ledger application's legacy transaction-signing flow. Historical public signatures could expose affected private keys. A KuCoin cold-wallet anomaly helped trigger the investigation. The network disabled the affected legacy transaction types on July 20. Application fixes do not remove historical signature exposure; affected keys still need retirement.
 
 ### 4.7 Conversion, freezing, and destruction
 
 Elliptic estimated approximately $97 million stolen in Liquid's 2021 incident, including about $45 million in Ethereum tokens converted to ETH. Conversion reduced the opportunity for token issuers to freeze those assets. The Binance incident likewise involved stablecoin freezing alongside transfers of other assets.
 
-Native assets generally lack an issuer-operated freezing interface. Once stolen tokens are exchanged for such assets, the original issuer cannot stop subsequent transfers by freezing the original tokens. Frozen assets still require an applicable return process.
+Native blockchain assets generally have no issuer that can freeze them. Once stolen tokens are exchanged for such assets, the original issuer cannot stop subsequent transfers by freezing the original tokens. Frozen assets still require an applicable return process.
 
-Predatory Sparrow claimed the 2025 Nobitex attack. Chainalysis assessed that assets were sent to addresses that could not normally be controlled, suggesting political destruction rather than monetization. Stopping later exchange or cash-out cannot recover assets already destroyed.
+Predatory Sparrow claimed the 2025 Nobitex attack. Chainalysis assessed that assets were sent to addresses that could not normally be controlled, suggesting a politically motivated effort to destroy assets rather than cash them out. Blocking subsequent conversion or cash-out cannot recover assets that have already been destroyed.
 
 ## 5. Priorities for exchange defense
 
@@ -277,13 +277,13 @@ Exposed credentials, active exploitation, and confirmed unauthorized production 
 
 Existing sessions and backend access at WOO X were used to rewrite account records. Repository tokens and CI credentials at Kiln enabled production access and alteration of transaction responses. People and service accounts that can deploy transaction code, reset customer identities, read keys, or relax controls over funds require particular attention. Endpoint, identity, cloud, and runtime controls protect these entry points. Asset limits, authorization checks, and replenishment restrictions limit losses after a compromise.
 
-Developers routinely run external code, debug production, and integrate suppliers. When an AI coding assistant shares an environment with production credentials, malicious dependencies, workspace configuration, or tool calls may expose those credentials. Separating experimentation from production access, shortening grants, and reducing persistent secrets have engineering and operational costs. Validation should identify systems reachable after identity compromise and test normal login, existing sessions, and recovery separately.
+Developers routinely run external code, debug production, and integrate suppliers. When an AI coding assistant shares an environment with production credentials, malicious dependencies, workspace configuration, or tool calls may expose those credentials. Separating experimentation from production access, shortening access-grant lifetimes, and reducing persistent secrets have engineering and operational costs. Validation should identify systems reachable after identity compromise and test normal login, existing sessions, and recovery separately.
 
-Separating the ability to change fund requests from the ability to change their validation rules is a priority where one identity holds both. Where independent checks already reject malicious requests, concentrate on detection delay, residual reachable assets, and post-recovery access. Use these results to allocate resources.
+Separating the ability to change fund requests from the ability to change their validation rules is a priority where one identity holds both. Where independent checks already reject malicious requests, concentrate on detection delay, assets that remain accessible to an attacker, and post-recovery access. Use these results to allocate resources.
 
 ### 5.2 Wallets, risk controls, and accounting
 
-Bybit and Kiln malicious transactions passed signing. VIA harmed customers during trading. Kraken and ETC losses involved the creation of available balances. Transaction verification, trading risk controls, and crediting checks therefore involve wallet, business, and accounting systems. Transfers signed externally with stolen private keys do not traverse the exchange application's withdrawal-risk controls.
+Malicious transactions received valid signatures in both the Bybit and Kiln incidents. VIA harmed customers during trading. Kraken and ETC losses involved the creation of available balances. Transaction verification, trading risk controls, and crediting checks therefore involve wallet, business, and accounting systems. Transfers signed externally with stolen private keys do not traverse the exchange application's withdrawal-risk controls.
 
 | Fund risk | Defense priority | Business impact and limits |
 | --- | --- | --- |
@@ -303,39 +303,39 @@ Limits also need concurrent-execution tests. Multiple requests can each read the
 
 Unified accounts, lending, staking, and multichain integrations give one balance more uses. Treasury manages liquidity; developers implement balances and state changes; wallets sign; risk functions constrain accounts, trading, and credit. Allowing a balance to serve as collateral affects accounting, loan capacity, and lendable funds. Review must follow balance changes through final withdrawal.
 
-The security team assigns specialist functions to the relevant risks. Application security and developers review authorization design, code, and exceptional states. Infrastructure and identity security examine production access. Wallet and contract security review signing and on-chain authority; data security reviews sensitive access. Security operations detect and respond, while red teams test cross-system attack paths. GRC tracks control operation and risk exceptions, with unresolved risk decided by an authorized business owner. System teams remain responsible for implementation, fixes, and maintenance.
+The security team assigns specialist functions to the relevant risks. Application security and developers review authorization design, code, and exceptional states. Infrastructure and identity security examine production access. Wallet and contract security review signing and on-chain authority; data security reviews sensitive access. Security operations detect and respond, while red teams test cross-system attack paths. GRC tracks control operation and risk exceptions, with unresolved risks referred to an authorized business owner for a decision. System teams remain responsible for implementation, fixes, and maintenance.
 
 Frontends, transaction-construction APIs, and security products with production privileges can all influence fund approval. Supplier review must examine what a service can actually change, including non-custodial services. The DMM regulatory findings describe concentrated development, operational, and security-management permissions, self-supervision, and insufficient external wallet evaluation.
 
 Supplier integration brings costs for log access, transaction checks, revocation, and migration. Without server-side logs, an exchange can still inspect returned transactions but may be unable to reconstruct upstream intrusion. Restricting assets and operations accessible to a supplier can reduce available functionality.
 
-After an employee leaves, service tokens, deployment accounts, and earlier exceptions may remain active. Disabling the personal account misses these dependencies. System owners, IT, and identity teams need to reconcile purpose, ownership, and revocation effects, leaving records for the next maintainer.
+After an employee leaves, service tokens, deployment accounts, and earlier exceptions may remain active. Disabling the personal account misses these dependencies. System owners, IT, and identity teams need to document what each credential is used for, who maintains it, and what revoking it would affect, so the next maintainer can identify which access is still required.
 
-When security operations identifies a compromised production identity, it needs to determine affected customers and withdrawal requests. Risk restrictions must reach the wallet's actual signing tasks. Batching, splitting, and retries can change requests, so orchestration must retain mappings to original business orders and approval versions. Engineering, risk, and wallet teams jointly verify that requeued jobs remain restricted. OWASP transaction-authorization guidance calls for renewed authorization after content changes and a final check before execution.
+When security operations identifies a compromised production identity, it needs to determine affected customers and withdrawal requests. Risk restrictions must reach the wallet's actual signing tasks. Batching, splitting, and retries can change requests, so orchestration must retain links to the original requests and the versions of the approvals that authorized them. Engineering, risk, and wallet teams jointly verify that requeued jobs remain restricted. OWASP transaction-authorization guidance calls for renewed authorization after content changes and a final check before execution.
 
-After confirmed takeover, access isolation and associated business restrictions can proceed in parallel. An unconfirmed signal meeting predefined high-risk conditions can justify temporary restrictions while investigation continues. Each restriction needs a review deadline and a designated authority to lift it. An unresolved investigation must be escalated when that deadline arrives. Withdrawal suspension, loan restrictions, and liquidation suspension have different costs, so business owners must agree response authority in advance. Customer reports, unusual queries, and anomalous fund activity can also trigger a backend-intrusion investigation. Records distinguish receipt of an instruction, execution, and verified effect. Results from compromised systems require independent checks.
+After confirmed takeover, access isolation and associated business restrictions can proceed in parallel. An unconfirmed signal meeting predefined high-risk conditions can justify temporary restrictions while investigation continues. Each restriction needs a review deadline and a designated authority to lift it. An unresolved investigation must be escalated when that deadline arrives. Withdrawal suspension, loan restrictions, and liquidation suspension have different costs, so business owners must agree in advance who can authorize each response action. Customer reports, unusual queries, and anomalous fund activity can also trigger a backend-intrusion investigation. Records distinguish receipt of an instruction, execution, and verified effect. Results from compromised systems require independent checks.
 
-![Signals, actions, receipts, and escalation](../../assets/en/08-incident-handoffs.png)
+![Signals, actions, acknowledgments, and escalation](../../assets/en/08-incident-handoffs.png)
 
 ### 5.4 Agent-based work across the security team
 
-Attackers continue from endpoints through production permissions into fund operations. Investigation, containment, repair, and retesting need to continue as well. Agents can undertake authorized queries, analysis, and execution. Engineers build those capabilities, supervise quality, and resolve difficult judgments. Departmental waits, repeated background collection, and duplicated evidence gathering consume time that could otherwise limit losses.
+An attacker can move from an endpoint into production and then into systems that move funds. The defensive response has to follow that progression through investigation, containment, remediation, and retesting. Agents can undertake authorized queries, analysis, and execution. Engineers build those capabilities, supervise quality, and resolve difficult judgments. Delays between teams, repeated requests for context, and duplicated evidence gathering consume time that could otherwise limit losses.
 
-Consider security operations investigating a compromised production identity. A real-time engine can query sessions, cloud permissions, deployments, and database changes in parallel, then map affected accounts and withdrawals. Investigations share case state distinguishing confirmed changes, reachable objects, and unknown scope. Once predefined conditions are met, execution restricts sessions and withdrawals, checking actual results through identity platforms, accounting, and the chain. Experts use one workbench to challenge evidence and add business context; authorized people approve actions beyond existing delegation. Continuing analysis is event-driven rather than dependent on a person starting each conversation. Existing products supply data and execution APIs; the exchange retains cases and evidence.
+Consider security operations investigating a compromised production identity. A real-time engine can query sessions, cloud permissions, deployments, and database changes in parallel, then map affected accounts and withdrawals. Investigators share a case record that distinguishes confirmed changes from systems or records the attacker could access, and from areas still under investigation. When predefined conditions are met, the execution layer restricts sessions and withdrawals, then checks the results against identity systems, accounting records, and on-chain state. Experts use one workbench to challenge evidence and add business context; authorized personnel approve actions outside the preauthorized scope. Continuing analysis is event-driven rather than requiring someone to initiate each new agent session. Existing products supply data and execution APIs; the exchange retains cases and evidence.
 
-Wallet, engineering, risk, and security personnel know production permissions, permitted staking operations, and legacy-address deposit arrangements. Matching that context to logs establishes which assets an action can affect. Confirmed judgments can become agent-callable skills, enforced policies, and evaluation cases with known answers, each with an owner, version, and scope. Successors can maintain them; replacement models or suppliers can be tested against the same cases.
+Wallet, engineering, risk, and security personnel know production permissions, permitted staking operations, and legacy-address deposit arrangements. Matching that context to logs establishes which assets an action can affect. Confirmed judgments can become agent-callable skills, enforced policies, and evaluation cases with verified expected outcomes, each with an owner, version, and scope. Successors can maintain them; replacement models or suppliers can be tested against the same cases.
 
 Application security establishes authorization and validation requirements during requirements analysis and design, then reviews implementation through code audits and business-logic tests. If an investigation finds that a transaction builder can forge business approval, remediation must verify the source of that approval and add regression tests for forged requests. Agents can inspect similar code, draft fixes, and extend tests. Application security verifies the fix, and deployment remains subject to independent approval gates. Changes to wallet code, identity-recovery rules, or withdrawal orchestration trigger the relevant attack tests again.
 
 Red-team work extends to continuous validation. Historical attack sequences can be replayed within an authorized scope, while specialists explore combinations outside existing tests and risks omitted by engineering or business teams. Agents producing work and those reviewing it can miss the same problem when they share a model, context, or decision rules. Validation needs independent attack hypotheses, testing permissions, and evidence channels, with direct checks of funds, permissions, and business state. Tests using malicious tickets, repository content, and supplier responses should also establish whether an agent can be induced to exceed its authority, alter security policies, or contaminate evaluation datasets.
 
-Security architecture and agent engineers maintain interfaces, policy enforcement, and execution boundaries. Specialist functions own their domain tasks. GRC can use agents to correlate control requirements, actual execution records, and outstanding issues. Exceptions require authorized approval, expiry, and review records. Security business partners coordinate with the business; material risk decisions remain with authorized business owners. Incident conclusions enter evaluations only after forensics and specialist review, rather than treating an agent's preliminary judgment as the answer key.
+Security architects and agent engineers maintain interfaces, policy enforcement, and execution boundaries. Specialist functions own their domain tasks. GRC can use agents to correlate control requirements, actual execution records, and outstanding issues. Exceptions require authorized approval, expiry, and review records. Security business partners coordinate with the business; material risk decisions remain with authorized business owners. Incident conclusions enter evaluations only after forensics and specialist review, rather than treating an agent's preliminary judgment as the answer key.
 
-Investment can begin with one workflow that moves funds. Reuse general-purpose models and runtimes while building the exchange's own business context, response policies, skills, evaluation cases, and evidence. Replay historical incidents and run in shadow mode to observe incorrect approvals, unnecessary restrictions, and human intervention before widening execution authority by scenario. Known urgent threats continue to be blocked under preauthorized policies. Measure time to locate an anomaly, verify containment, retest fixes, and validate new changes. Maintaining expert knowledge, evaluation cases, and corrected conclusions is part of the investment.
+An exchange can start with one workflow that moves funds. Reuse general-purpose models and runtimes while building the exchange's own business context, response policies, skills, evaluation cases, and evidence. Replay historical incidents and run in shadow mode to observe incorrect approvals, unnecessary restrictions, and human intervention before widening execution authority by scenario. Known urgent threats continue to be blocked under preauthorized policies. Measure time to locate an anomaly, verify containment, retest fixes, and validate new changes. Maintaining expert knowledge, evaluation cases, and corrected conclusions is part of the investment.
 
-Before restoration, verify that access, deployment, and fund paths between the proposed recovery scope and unresolved systems are restricted. Security and technical teams recheck sessions and service credentials; wallet teams examine on-chain authority; treasury and accounting reconcile assets and in-flight operations. Shared administrative or deployment access that remains exploitable keeps the associated business restricted. Confirmed losses may remain subject to recovery efforts; unexplained discrepancies constrain restoration.
+Before restoring a service, verify that access, deployment, and asset transfers between it and systems still under investigation are restricted. Security and technical teams recheck sessions and service credentials; wallet teams examine on-chain authority; treasury and accounting reconcile assets and in-flight operations. Shared administrative or deployment access that remains exploitable keeps the associated business restricted. Confirmed losses may remain subject to recovery efforts; unexplained discrepancies constrain restoration.
 
-Staged restoration limits reopened business and funds. Validation still needs high-value wallets and targeted triggers, old-address inflows, signed transactions, and historical grants. Monitoring failure or renewed anomalies must permit fresh restrictions. Broadcast transactions cannot be assumed reversible.
+Restoring services in stages limits the operations and assets exposed at each step. Validation must cover high-value wallets and targeted attack conditions, deposits to old addresses, signed transactions, and previously granted permissions. Monitoring failure or renewed anomalies must permit fresh restrictions. Broadcast transactions cannot be assumed reversible.
 
 ![Containment, residual authority, and staged recovery](../../assets/en/09-recovery.png)
 
@@ -343,9 +343,9 @@ See the [defense matrix](defense-matrix.md) for responsibility assignments and a
 
 ### 5.5 Conclusion
 
-Wallets sharing signing material are jointly exposed to one key leak. A tampered display can lead multiple signers to approve one malicious transaction. After identity changes or inflated balances, downstream systems checking only current account records may still approve withdrawals. Even after platform withdrawals stop, an attacker may transfer assets externally from addresses they control, including later deposits.
+Wallets sharing signing material are jointly exposed to one key leak. A tampered display can lead multiple signers to approve one malicious transaction. After customer identities have been altered or balances inflated, downstream systems checking only current account records may still approve withdrawals. Even after platform withdrawals stop, an attacker may transfer assets externally from addresses they control, including later deposits.
 
-Attack automation can accelerate credential collection and exploitation. Defenders also need to reduce waits between investigation, restriction, repair, and retesting, while retaining confirmed judgments for future work. Agent tool permissions, consumed content, and the evidence and test cases used to evaluate agents all require protection.
+Attack automation can accelerate credential collection and exploitation. Defenders also need to reduce waits between investigation, containment, remediation, and retesting, while retaining confirmed judgments for future work. The tools an agent can use, the content it reads, and the evidence and test cases used to evaluate it all require protection.
 
 With limited resources, prioritize permissions that can alter fund instructions, customer identity, and available balances. Preserve independent intervention capabilities in wallets, trading risk, and accounting. Validation should establish reachable assets, whether anomalous balances remain spendable, whether containment took effect, and whether old credentials and authorizations remain usable after recovery. Recheck those conclusions after new products, suppliers, and permission changes.
 
