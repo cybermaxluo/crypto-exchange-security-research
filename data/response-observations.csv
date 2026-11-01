@@ -1,0 +1,8 @@
+case_id,measurement,start,end,value,unit,interpretation
+EX008,transfer_span,2018-01-26 00:02 JST,2018-01-26 08:26 JST,504,minutes,transfer span; detection unknown
+EX072,awareness_to_mitigation,platform awareness,mitigation complete,<60,minutes,self-reported upper bound; not recovery or repayment
+EX081,supplier_compromise_to_asset_attack,2025-02-04,2025-02-21,17,calendar_days,Safe-side earliest known activity; not exchange detection latency
+EX087,backdoor_to_loss_date,2025-07-08,2025-07-24,16,calendar_days,known nodes; not full dwell time
+EX087,withdrawal_node_to_detection_containment_node,2025-07-24 13:50 UTC+8,2025-07-24 15:40 UTC+8,110,minutes,combined nodes; cannot separate detection and containment
+EX089,authority_signature_to_discovery,2025-08-31,2025-09-08,8,calendar_days,authority change to supplier discovery
+EX089,discovery_to_status_announcement,2025-09-08,2025-10-07,29,calendar_days,service-specific actual restoration unknown

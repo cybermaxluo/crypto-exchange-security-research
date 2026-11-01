@@ -1,0 +1,99 @@
+case_id,date,target,scope,evidence,source_ids,source_urls
+EX001,2016-03—04,ShapeShift,custody_and_business_systems,P,SHAPE,https://postmortem.io/incidents/shapeshift--2016-04-19--cyberattack-postmortem/
+EX002,2016-05,Gatecoin,custody_and_business_systems,I+M,GATECOIN;SM9;CERT2019,https://www.csidb.net/csidb/incidents/8673c914-86b4-47c8-b3fe-0e776431f512/;https://hacked.slowmist.io/?c=Exchange&page=9;https://cert.europa.eu/publications/threat-intelligence/threat-memo-191126-1/pdf
+EX003,2016-08-02,Bitfinex,custody_and_business_systems,P,BFDOJ;BFFAQ,https://www.justice.gov/usao-dc/2016-bitfinex-hack;https://support.bitfinex.com/hc/en-us/articles/4417401349657-2016-Security-Breach-Bitcoin-Recovery-Frequently-Asked-Questions-FAQ
+EX004,2016-10-13,Bitcurex,custody_and_business_systems,M,BITCUREX,https://news.bitcoin.com/bitcurex-forced-million-theft/
+EX005,2017-04,Yapizon,custody_and_business_systems,M,YOUBIT;SM9;CERT2019,https://en.yna.co.kr/view/AEN20171219015800320;https://hacked.slowmist.io/?c=Exchange&page=9;https://cert.europa.eu/publications/threat-intelligence/threat-memo-191126-1/pdf
+EX006,2017-06–07 (disclosed),Bithumb,customer_accounts_and_information,M,BITHUMB17,https://bravenewcoin.com/insights/fourth-largest-bitcoin-exchange-bithumb-hacked-for-billions-of-won
+EX007,2017-12-19,Youbit,custody_and_business_systems,M,YOUBIT,https://en.yna.co.kr/view/AEN20171219015800320
+EX008,2018-01-26,Coincheck,custody_and_business_systems,P+M,COINCHECK;SM9;CCFAQ;CCUSD,https://www.coincheckgroup.com/sec-filings/all-sec-filings/content/0001213900-25-007203/0001213900-25-007203.pdf;https://hacked.slowmist.io/?c=Exchange&page=9;https://coincheck.com/info/faq_nem;https://www.investing.com/news/stock-market-news/exclusive-coincheck-hackers-attempting-to-sell-stolen-cryptocurrency--executive-1171410
+EX009,2018-02 (disclosed),BitGrail,custody_and_business_systems,M,BITGRAIL,https://techcrunch.com/2018/02/12/bitgrail-hack-nano/
+EX010,2018-03-07,Binance VIA,customer_accounts_and_information,P,VIA,https://www.binance.com/en/support/announcement/detail/360001547431
+EX011,2018-04,Coinsecure,custody_and_business_systems,C,SM9,https://hacked.slowmist.io/?c=Exchange&page=9
+EX012,2018-06-10,Coinrail,custody_and_business_systems,M,SM9;COINRAILUSD,https://hacked.slowmist.io/?c=Exchange&page=9;https://en.yna.co.kr/view/AEN20180611009700320
+EX013,2018-06,Bithumb,custody_and_business_systems,C,SM9,https://hacked.slowmist.io/?c=Exchange&page=9
+EX014,2018-09-14,Zaif,custody_and_business_systems,M,SM9;ZAIFUSD,https://hacked.slowmist.io/?c=Exchange&page=9;https://www.investing.com/news/cryptocurrency-news/japan-hit-by-another-cryptocurrency-heist-60-million-stolen-1616872
+EX015,2018-10-20,Trade.io,custody_and_business_systems,C,SM9,https://hacked.slowmist.io/?c=Exchange&page=9
+EX016,2018-11-03—06,Gate.io / StatCounter,customer_accounts_and_information,I,ESET,https://www.welivesecurity.com/2018/11/06/supply-chain-attack-cryptocurrency-exchange-gate-io/
+EX017,2019-01,Gate.io / ETC,custody_and_business_systems,P,GATEETC,https://www.gate.com/ru/announcements/article/16740
+EX018,2019-01,Cryptopia,custody_and_business_systems,P+C,CRYPTOPIA;SM8,https://www.grantthornton.co.nz/globalassets/1.-member-firms/new-zealand/pdfs/cryptopia/2023/affidavit-of-david-ian-ruscoe-in-support-of-originating-application-1.pdf;https://hacked.slowmist.io/?c=Exchange&page=8
+EX019,2019-01-26,LocalBitcoins,customer_accounts_and_information,C,SM8,https://hacked.slowmist.io/?c=Exchange&page=8
+EX020,2019-02-15 (disclosed),Coinmama,customer_accounts_and_information,M,COINMAMA,https://www.ccn.com/breaking-major-crypto-brokerage-coinmama-hacked-450000-users-affected-in-massive-worldwide-breach/
+EX021,2019-03-24,DragonEx,custody_and_business_systems,C,SM8,https://hacked.slowmist.io/?c=Exchange&page=8
+EX022,2019-03-29,Bithumb,custody_and_business_systems,C,SM8,https://hacked.slowmist.io/?c=Exchange&page=8
+EX023,2019-05-02,BitoPro / XRP,custody_and_business_systems,P+C,BITOPRO19;SM8,https://www.bitopro.com/ns/announcements/173;https://hacked.slowmist.io/?c=Exchange&page=8
+EX024,2019-05-07,Binance,custody_and_business_systems,P,BINANCE19,https://www.binance.com/en-AU/support/announcement/detail/360028031711
+EX025,2019-06-27,Bitrue,custody_and_business_systems,C,SM7,https://hacked.slowmist.io/?c=Exchange&page=7
+EX026,2019-07-12,BITPoint,custody_and_business_systems,C,SM7,https://hacked.slowmist.io/?c=Exchange&page=7
+EX027,2019-11-08,VinDAX,custody_and_business_systems,C,SM7,https://hacked.slowmist.io/?c=Exchange&page=7
+EX028,2019-11-27,Upbit,custody_and_business_systems,M,SM7;UPBIT19USD,https://hacked.slowmist.io/?c=Exchange&page=7;https://www.koreatimes.co.kr/economy/20191128/security-concerns-grow-over-cryptocurrency-exchanges
+EX029,2020-02-05—06,Altsbit,custody_and_business_systems,C,SM7,https://hacked.slowmist.io/?c=Exchange&page=7
+EX030,2020-07-11,Cashaa,related_service,C,SM6,https://hacked.slowmist.io/?c=Exchange&page=6
+EX031,2020-07-31,2gether,custody_and_business_systems,C,CS;SM6,https://www.chainsec.io/exchange-hacks;https://hacked.slowmist.io/?c=Exchange&page=6
+EX032,2020-07-31—08,OKEx / ETC,custody_and_business_systems,P,ETC20,https://etccooperative.org/ETC-Coop-Board-Package-August-2020.pdf
+EX033,2020-09-08,Eterbase,custody_and_business_systems,C,SM6,https://hacked.slowmist.io/?c=Exchange&page=6
+EX034,2020-09-26,KuCoin,custody_and_business_systems,P,KUCOIN20,https://www.kucoin.com/fil/announcement/a-letter-from-kucoin-ceo-2020-2021-and-beyond
+EX035,2020-11-13,Liquid,customer_accounts_and_information,C,SM6,https://hacked.slowmist.io/?c=Exchange&page=6
+EX036,2020-12-21,EXMO,custody_and_business_systems,P+C,EXMO;SM6,https://exmo.com/blog/en/notifications/exmo-security-incident-update;https://hacked.slowmist.io/?c=Exchange&page=6
+EX037,2020-12-24,Livecoin,custody_and_business_systems,C,SM6,https://hacked.slowmist.io/?c=Exchange&page=6
+EX038,2020-12-26,Altilly,custody_and_business_systems,C,SM6,https://hacked.slowmist.io/?c=Exchange&page=6
+EX039,2021-04-29,Hotbit,custody_and_business_systems,C,SM5,https://hacked.slowmist.io/?c=Exchange&page=5
+EX040,2021-08-19,Liquid,custody_and_business_systems,I+M,LIQUID21;LIQUIDELL,https://cointelegraph.com/news/breaking-liquid-exchange-hacked-to-the-tune-of-80-million;https://www.elliptic.co/insights/liquid-exchange-hacked-94-million-stolen/
+EX041,2021-08-28—29,Bilaxy,custody_and_business_systems,C,SM5,https://hacked.slowmist.io/?c=Exchange&page=5
+EX042,2021-12-04,BitMart,custody_and_business_systems,P,BITMART;BITMART26,https://www.bitmart.com/en-US/support/articles/7922665245339/7923672421147/4411998987419;https://bitmart.zendesk.com/hc/en-us/articles/56571281537051-Announcement-on-BitMart-s-Initial-Indicative-Proposal-and-Roadmap
+EX043,2021-12-11,AscendEX,custody_and_business_systems,P+M,ASCEND;SM5;ASCENDUSD,https://ascendex.com/hi/support/articles/62199-dec-11-security-incident-timing-for-resuming-deposit-and-withdraw;https://hacked.slowmist.io/?c=Exchange&page=5;https://www.theblock.co/news/regulation/2021-12-12-crypto-exchange-ascendex-hacked-for-78-million-in-latest-swindle-127231
+EX044,2022-01-08,LCX,custody_and_business_systems,P,LCX;LCXCOURT,https://lcx.com/de/hot-wallet-incident-report;https://www.hklaw.com/-/media/files/generalpages/lcx-ag-v-doe/exhibit2_nyscefno8.pdf?la=en
+EX045,2022-01-17,Crypto.com,customer_accounts_and_information,M,CRYPTODGA;CRYPTOUSD,https://dga.gov.sa/sites/default/files/2023-08/Digital%20Fraud%20-%20Research%20Study.pdf;https://www.theblock.co/news/regulation/2022-01-19-crypto-com-ceo-confirms-400-accounts-were-compromised-in-recent-hack-130857
+EX046,2022-02-01,Bitbns,custody_and_business_systems,C,SM5,https://hacked.slowmist.io/?c=Exchange&page=5
+EX047,2022-08-01—02,ZB.com,custody_and_business_systems,C,SM5,https://hacked.slowmist.io/?c=Exchange&page=5
+EX048,2022-11-01—02,Deribit,custody_and_business_systems,M,DERIBIT,https://cointelegraph.com/news/deribit-crypto-exchange-halts-withdrawals-amid-28m-hot-wallet-hack
+EX049,2022-11-11,FTX,custody_and_business_systems,I,CASA;SM4;SINBAD,https://casa.io/exchange-hacks;https://hacked.slowmist.io/?c=Exchange&page=4;https://www.elliptic.co/insights/sinbad-crypto-mixer-flagged-by-elliptic-sanctioned-and-seized/
+EX050,2022-12-28 (disclosed),3Commas / exchange accounts,customer_accounts_and_information,P,THREEC;THREEFAQ,https://3commas.io/blog/notice-on-api-data-disclosure-incident;https://3commas.io/blog/api-security-incident-faq
+EX051,2023-04-09,GDAC,custody_and_business_systems,M,GDAC,https://www.coindesk.com/tech/2023/04/10/s-korean-crypto-exchange-gdac-hacked-for-nearly-13m
+EX052,2023-04-14,Bitrue,custody_and_business_systems,P,SM4;BITRUE23,https://hacked.slowmist.io/?c=Exchange&page=4;https://support.bitrue.com/hc/en-001/articles/17538384324121-Update-on-Bitrue-s-Security-Breach
+EX053,2023-04-24,KuCoin social account,customer_accounts_and_information,C,SM4,https://hacked.slowmist.io/?c=Exchange&page=4
+EX054,2023-05 (disclosed),Patricia,custody_and_business_systems,C,SM4,https://hacked.slowmist.io/?c=Exchange&page=4
+EX055,2023-06-11,Floating Point Group,related_service,C,SM4,https://hacked.slowmist.io/?c=Exchange&page=4
+EX056,2023-07-23,CoinList social account,customer_accounts_and_information,C,SM4,https://hacked.slowmist.io/?c=Exchange&page=4
+EX057,2023-09-07,Fortress Trust,related_service,C,SM4,https://hacked.slowmist.io/?c=Exchange&page=4
+EX058,2023-09-12,CoinEx,custody_and_business_systems,I,SM4;SINBAD,https://hacked.slowmist.io/?c=Exchange&page=4;https://www.elliptic.co/insights/sinbad-crypto-mixer-flagged-by-elliptic-sanctioned-and-seized/
+EX059,2023-09-14,Remitano,custody_and_business_systems,C,SM4,https://hacked.slowmist.io/?c=Exchange&page=4
+EX060,2023-09-24,HTX,custody_and_business_systems,C,SM4,https://hacked.slowmist.io/?c=Exchange&page=4
+EX061,2023-09-24,Upbit / fake APT deposits,customer_accounts_and_information,C,SM3,https://hacked.slowmist.io/?c=Exchange&page=3
+EX062,2023-10-17,Coins.ph,custody_and_business_systems,M,COINSPH,https://www.theblock.co/news/business/2023-10-20-philippines-based-exchange-coins-ph-appears-to-have-lost-12-2-million-xrp-in-possible-exploit-258701
+EX063,2023-11-08,CoinSpot,custody_and_business_systems,C,SM3,https://hacked.slowmist.io/?c=Exchange&page=3
+EX064,2023-11-10,Poloniex,custody_and_business_systems,I,SM3;CASA;POLOCERT,https://hacked.slowmist.io/?c=Exchange&page=3;https://casa.io/exchange-hacks;https://www.certik.com/blog/poloniex-incident-analysis
+EX065,2023-11-22,HTX / HECO related incident,custody_and_business_systems,C,SM3,https://hacked.slowmist.io/?c=Exchange&page=3
+EX066,2023-12-20 (disclosed),INX related vendor,related_service,C,SM3,https://hacked.slowmist.io/?c=Exchange&page=3
+EX067,2024-02-18 (disclosed),FixedFloat,related_service,C,SM3,https://hacked.slowmist.io/?c=Exchange&page=3
+EX068,2024-03-31—04-01,FixedFloat,related_service,C,SM3,https://hacked.slowmist.io/?c=Exchange&page=3
+EX069,2024-04-29,Rain,custody_and_business_systems,I,SM2;SM2024,https://hacked.slowmist.io/?c=Exchange&page=2;https://www.slowmist.com/report/2024-Blockchain-Security-and-AML-Annual-Report%28EN%29.pdf
+EX070,2024-05-31,DMM Bitcoin,custody_and_business_systems,P,DMM;DMMREG,https://www.fbi.gov/news/press-releases/fbi-dc3-and-npa-identification-of-north-korean-cyber-actors-tracked-as-tradertraitor-responsible-for-theft-of-308-million-from-bitcoindmmcom;https://lfb.mof.go.jp/kantou/kinyuu/pagekthp0270000030.html
+EX071,2024-06 (early),Lykke,custody_and_business_systems,C,SM2,https://hacked.slowmist.io/?c=Exchange&page=2
+EX072,2024-06-09 (reported),Kraken deposit-crediting flaw,customer_accounts_and_information,P,KRAKEN;CERTIK24,https://blog.kraken.com/product/security/kraken-bug-bounty-program-patches-isolated-bug;https://www.certik.com/blog/certik-statement-on-kraken-vulnerability
+EX073,2024-06-22,BtcTurk,custody_and_business_systems,M,SM2;CASA;BTCTURK24,https://hacked.slowmist.io/?c=Exchange&page=2;https://casa.io/exchange-hacks;https://www.theblock.co/news/regulation/2024-06-22-binance-freezes-5-million-in-funds-looted-from-btcturk-after-alleged-54-million-hack-of-turkish-exchange-301340
+EX074,2024-07-18,WazirX,custody_and_business_systems,P+I,WAZIR;WAZIRELL,https://wazirx.com/blog/important-update-cyber-attack-incident-and-measures-to-protect-your-assets/;https://www.elliptic.co/insights/235-million-lost-by-wazirx-in-north-korea-linked-breach/
+EX075,2024-09-11,Indodax,custody_and_business_systems,I,SM2;SM2024,https://hacked.slowmist.io/?c=Exchange&page=2;https://www.slowmist.com/report/2024-Blockchain-Security-and-AML-Annual-Report%28EN%29.pdf
+EX076,2024-09-20,BingX,custody_and_business_systems,I,SM2;SM2024,https://hacked.slowmist.io/?c=Exchange&page=2;https://www.slowmist.com/report/2024-Blockchain-Security-and-AML-Annual-Report%28EN%29.pdf
+EX077,2024-10-31,M2,custody_and_business_systems,C,SM2,https://hacked.slowmist.io/?c=Exchange&page=2
+EX078,2024-11-28,XT.com,custody_and_business_systems,C,SM2,https://hacked.slowmist.io/?c=Exchange&page=2
+EX079,2025-01-01,NoOnes,related_service,C,SM1,https://hacked.slowmist.io/?c=Exchange
+EX080,2025-01-23,Phemex,custody_and_business_systems,P+I+M,SM1;CASA;PHEMEX;PHEMEX69;PHEMEX85,https://hacked.slowmist.io/?c=Exchange;https://casa.io/exchange-hacks;https://phemex.com/announcements/phemex-hot-wallet-security-incident-update-and-timeline;https://assets.ctfassets.net/t3wqy70tc3bv/1Vj4VSUY97UCFp3mLgG7ov/f1de70826f9c2992c481b124d849aa55/Immunefi_Crypto_Losses_January_2025.pdf;https://www.bleepingcomputer.com/news/security/hackers-steal-85-million-worth-of-cryptocurrency-from-phemex/amp/
+EX081,2025-02-21,Bybit,custody_and_business_systems,P+I,BYBIT;BYFBI,https://www.sygnia.co/blog/sygnia-investigation-bybit-hack/;https://www.ic3.gov/PSA/2025/PSA250226
+EX082,2025-05-08 UTC,BitoPro,custody_and_business_systems,P+I,BITOPRO25;SM1;SM2025H1,https://www.bitopro.com/ns/en-US/announcements/1226;https://hacked.slowmist.io/?c=Exchange;https://www.slowmist.com/report/SlowMist-first-half-of-the-2025-report%28EN%29.pdf
+EX083,2025-05-15 (disclosed),Coinbase support-personnel incident,customer_accounts_and_information,P,COINBASE;COINBASESEC,https://www.coinbase.com/en-nl/blog/protecting-our-customers-standing-up-to-extortionists;https://www.sec.gov/Archives/edgar/data/1679788/000167978825000094/coin-20250514.htm
+EX084,2025-06-18,Nobitex,custody_and_business_systems,I,NOBITEX,https://www.chainalysis.com/blog/nobitex-iranian-exchange-exploit-june-2025/
+EX085,2025-07-16,BigONE,custody_and_business_systems,P+M,BIGONE;BIGLOGIC;SM1;BIGUSD,https://bigone.zendesk.com/hc/en-us/articles/48906456010393-Announcement-Regarding-BigONE-Security-Incident-on-16-July-2025;https://bigoneeurasia.ladesk.com/275817-Temporary-Platform-Maintenance;https://hacked.slowmist.io/?c=Exchange;https://www.theblock.co/news/regulation/2025-07-16-bigone-hack-362814
+EX086,2025-07-19,CoinDCX,custody_and_business_systems,P+I,CDX25;SM1;SM2025,https://coindcx.com/blog/announcements/incident-report-july-19-2025;https://hacked.slowmist.io/?c=Exchange;https://www.slowmist.com/report/2025-Blockchain-Security-and-AML-Annual-Report%28EN%29.pdf
+EX087,2025-07-24,WOO X,custody_and_business_systems,P,WOO,https://woox.io/blog/july-24th-security-incident-post-mortem
+EX088,2025-08-14,BtcTurk,custody_and_business_systems,I,SM1;CASA;BTCTURK25,https://hacked.slowmist.io/?c=Exchange;https://casa.io/exchange-hacks;https://www.beosin.com/resources/fund-flow-analysis-of-btcturk-48-million-hack
+EX089,2025-08-31 (operation); 2025-09-08 (discovered),SwissBorg / Kiln,related_service,P,KILN;SWISS,https://www.kiln.fi/post/re-enablement-of-kiln-services-and-security-incident-information;https://swissborg.com/blog/swissborg-security-update-kiln-breach
+EX090,2025-11-27,Upbit,custody_and_business_systems,M,SM1;UPBIT25USD,https://hacked.slowmist.io/?c=Exchange;https://www.koreatimes.co.kr/economy/cryptocurrency/20251208/repeat-cyberthefts-raise-questions-about-upbits-security-governance
+EX091,2026-04-16,Grinex,custody_and_business_systems,C,SM1,https://hacked.slowmist.io/?c=Exchange
+EX092,2026-03–07; 2026-07-19 (reported),KuCoin / Zilliqa Ledger application,custody_and_business_systems,P,ZIL,https://www.zilliqa.com/ledger-incident/post-mortem/
+EX093,2026-09-24,Bitget,custody_and_business_systems,P+I,BITGET;BGAMT;BGCHAIN,https://www.bitget.com/academy/bitget-security-incident-what-happened-timeline-impact-response;https://www.bitget.com/support/articles/12560603896108;https://www.chainalysis.com/blog/387m-bitget-theft-2026/
+EX094,2026-10-21,CoinDCX legacy wallet,custody_and_business_systems,P,CDX26,https://coindcx.com/blog/coindcx-news/on-chain-wallet-activity-update-21-oct-2026
+EX095,2026-10-29,Binance,custody_and_business_systems,P+I,BNINITIAL26;BINANCE26;BNFBI;BNELL,https://www.binance.com/en/support/announcement/detail/c5a8729a97ac486d963784d96c5642d7;https://www.binance.com/en-TR/support/announcement/detail/d3306d9dca5243548c813b605e1d1751;https://www.fbi.gov/investigate/cyber/alerts/2026/north-korea-responsible-for-6-billion-binance-attack;https://www.elliptic.co/insights/binance-largest-hack-in-history/
+EX096,2019-06-17,Coinbase Firefox double zero-day attack,customer_accounts_and_information,P,COINBASE19,https://www.coinbase.com/blog/responding-to-firefox-0-days-in-the-wild
+EX097,2023-02-05,Coinbase employee social engineering,customer_accounts_and_information,P,COINBASE23,https://www.coinbase.com/en-ca/blog/social-engineering-a-coinbase-case-study
+EX098,2021-03–05-20; 2021-09-24 (notice),Coinbase SMS account recovery,customer_accounts_and_information,P,CB21NOTICE,https://oag.ca.gov/system/files/09-24-2021%20Customer%20Notification.pdf

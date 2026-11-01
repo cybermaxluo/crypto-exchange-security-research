@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="480pt" viewBox="0 0 864 480" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-01T23:17:56.857899</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 480
+L 864 480
+L 864 0
+L 0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 264 158.4
+L 332.8 158.4
+L 332.8 177.6
+L 264 177.6
+z
+" clip-path="url(#p2569f06e4e)" style="fill: #376b88"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 552 158.4
+L 732.1528 158.4
+L 732.1528 177.6
+L 552 177.6
+z
+" clip-path="url(#p2569f06e4e)" style="fill: #bd554a"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 264 240
+L 436 240
+L 436 259.2
+L 264 259.2
+z
+" clip-path="url(#p2569f06e4e)" style="fill: #376b88"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 552 240
+L 570.689348 240
+L 570.689348 259.2
+L 552 259.2
+z
+" clip-path="url(#p2569f06e4e)" style="fill: #bd554a"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 264 321.6
+L 305.28 321.6
+L 305.28 340.8
+L 264 340.8
+z
+" clip-path="url(#p2569f06e4e)" style="fill: #376b88"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 552 321.6
+L 552.383044 321.6
+L 552.383044 340.8
+L 552 340.8
+z
+" clip-path="url(#p2569f06e4e)" style="fill: #bd554a"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 38.4 432
+L 825.6 432
+" clip-path="url(#p2569f06e4e)" style="fill: none; stroke: #dce4e9; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #20333f" x="38.4" y="43.91875" transform="rotate(-0 38.4 43.91875)">Incident counts and losses by amount band</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #687985" x="38.4" y="71.95125" transform="rotate(-0 38.4 71.95125)">41 monetary observations; separate axes for counts and dollar values</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #376b88" x="264" y="120.046562" transform="rotate(-0 264 120.046562)">Incidents</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #376b88" x="552" y="119.535703" transform="rotate(-0 552 119.535703)">Losses / USD million</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #20333f" x="38.4" y="171.983281" transform="rotate(-0 38.4 171.983281)">At least $100m</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #20333f" x="341.44" y="172.731797" transform="rotate(-0 341.44 172.731797)">10</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #20333f" x="740.7928" y="171.755625" transform="rotate(-0 740.7928 171.755625)">10,474.00</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #20333f" x="38.4" y="253.583281" transform="rotate(-0 38.4 253.583281)">$10m to below $100m</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #20333f" x="444.64" y="254.331797" transform="rotate(-0 444.64 254.331797)">25</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #20333f" x="579.329348" y="253.355625" transform="rotate(-0 579.329348 253.355625)">1,086.59</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #20333f" x="38.4" y="335.183281" transform="rotate(-0 38.4 335.183281)">Below $10m</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #20333f" x="313.92" y="335.931797" transform="rotate(-0 313.92 335.931797)">6</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #20333f" x="561.023044" y="335.653125" transform="rotate(-0 561.023044 335.653125)">22.27</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #687985" x="38.4" y="457.799375" transform="rotate(-0 38.4 457.799375)">Source: loss-sample.csv. Public-source selection does not represent the industry's full loss distribution.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p2569f06e4e">
+   <rect x="0" y="0" width="864" height="480"/>
+  </clipPath>
+ </defs>
+</svg>

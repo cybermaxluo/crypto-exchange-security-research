@@ -1,0 +1,341 @@
+{
+  "SM1": {
+    "url": "https://hacked.slowmist.io/?c=Exchange"
+  },
+  "SM2": {
+    "url": "https://hacked.slowmist.io/?c=Exchange&page=2"
+  },
+  "SM3": {
+    "url": "https://hacked.slowmist.io/?c=Exchange&page=3"
+  },
+  "SM4": {
+    "url": "https://hacked.slowmist.io/?c=Exchange&page=4"
+  },
+  "SM5": {
+    "url": "https://hacked.slowmist.io/?c=Exchange&page=5"
+  },
+  "SM6": {
+    "url": "https://hacked.slowmist.io/?c=Exchange&page=6"
+  },
+  "SM7": {
+    "url": "https://hacked.slowmist.io/?c=Exchange&page=7"
+  },
+  "SM8": {
+    "url": "https://hacked.slowmist.io/?c=Exchange&page=8"
+  },
+  "SM9": {
+    "url": "https://hacked.slowmist.io/?c=Exchange&page=9"
+  },
+  "CASA": {
+    "url": "https://casa.io/exchange-hacks"
+  },
+  "CS": {
+    "url": "https://www.chainsec.io/exchange-hacks"
+  },
+  "SHAPE": {
+    "url": "https://postmortem.io/incidents/shapeshift--2016-04-19--cyberattack-postmortem/"
+  },
+  "GATECOIN": {
+    "url": "https://www.csidb.net/csidb/incidents/8673c914-86b4-47c8-b3fe-0e776431f512/"
+  },
+  "BFDOJ": {
+    "url": "https://www.justice.gov/usao-dc/2016-bitfinex-hack"
+  },
+  "BFFAQ": {
+    "url": "https://support.bitfinex.com/hc/en-us/articles/4417401349657-2016-Security-Breach-Bitcoin-Recovery-Frequently-Asked-Questions-FAQ"
+  },
+  "BITCUREX": {
+    "url": "https://news.bitcoin.com/bitcurex-forced-million-theft/"
+  },
+  "YOUBIT": {
+    "url": "https://en.yna.co.kr/view/AEN20171219015800320"
+  },
+  "BITHUMB17": {
+    "url": "https://bravenewcoin.com/insights/fourth-largest-bitcoin-exchange-bithumb-hacked-for-billions-of-won"
+  },
+  "COINCHECK": {
+    "url": "https://www.coincheckgroup.com/sec-filings/all-sec-filings/content/0001213900-25-007203/0001213900-25-007203.pdf"
+  },
+  "BITGRAIL": {
+    "url": "https://techcrunch.com/2018/02/12/bitgrail-hack-nano/"
+  },
+  "VIA": {
+    "url": "https://www.binance.com/en/support/announcement/detail/360001547431"
+  },
+  "ESET": {
+    "url": "https://www.welivesecurity.com/2018/11/06/supply-chain-attack-cryptocurrency-exchange-gate-io/"
+  },
+  "GATEETC": {
+    "url": "https://www.gate.com/ru/announcements/article/16740"
+  },
+  "CRYPTOPIA": {
+    "url": "https://www.grantthornton.co.nz/globalassets/1.-member-firms/new-zealand/pdfs/cryptopia/2023/affidavit-of-david-ian-ruscoe-in-support-of-originating-application-1.pdf"
+  },
+  "COINMAMA": {
+    "url": "https://www.ccn.com/breaking-major-crypto-brokerage-coinmama-hacked-450000-users-affected-in-massive-worldwide-breach/"
+  },
+  "BINANCE19": {
+    "url": "https://www.binance.com/en-AU/support/announcement/detail/360028031711"
+  },
+  "BITOPRO19": {
+    "url": "https://www.bitopro.com/ns/announcements/173"
+  },
+  "ETC20": {
+    "url": "https://etccooperative.org/ETC-Coop-Board-Package-August-2020.pdf"
+  },
+  "KUCOIN20": {
+    "url": "https://www.kucoin.com/fil/announcement/a-letter-from-kucoin-ceo-2020-2021-and-beyond"
+  },
+  "EXMO": {
+    "url": "https://exmo.com/blog/en/notifications/exmo-security-incident-update"
+  },
+  "LIQUID21": {
+    "url": "https://cointelegraph.com/news/breaking-liquid-exchange-hacked-to-the-tune-of-80-million"
+  },
+  "BITMART": {
+    "url": "https://www.bitmart.com/en-US/support/articles/7922665245339/7923672421147/4411998987419"
+  },
+  "ASCEND": {
+    "url": "https://ascendex.com/hi/support/articles/62199-dec-11-security-incident-timing-for-resuming-deposit-and-withdraw"
+  },
+  "LCX": {
+    "url": "https://lcx.com/de/hot-wallet-incident-report"
+  },
+  "CRYPTOCOM": {
+    "url": "https://crypto.com/nl/company-news/crypto-com-january-2022-updates/"
+  },
+  "DERIBIT": {
+    "url": "https://cointelegraph.com/news/deribit-crypto-exchange-halts-withdrawals-amid-28m-hot-wallet-hack"
+  },
+  "THREEC": {
+    "url": "https://3commas.io/blog/notice-on-api-data-disclosure-incident"
+  },
+  "THREEFAQ": {
+    "url": "https://3commas.io/blog/api-security-incident-faq"
+  },
+  "GDAC": {
+    "url": "https://www.coindesk.com/tech/2023/04/10/s-korean-crypto-exchange-gdac-hacked-for-nearly-13m"
+  },
+  "COINSPH": {
+    "url": "https://www.theblock.co/news/business/2023-10-20-philippines-based-exchange-coins-ph-appears-to-have-lost-12-2-million-xrp-in-possible-exploit-258701"
+  },
+  "DMM": {
+    "url": "https://www.fbi.gov/news/press-releases/fbi-dc3-and-npa-identification-of-north-korean-cyber-actors-tracked-as-tradertraitor-responsible-for-theft-of-308-million-from-bitcoindmmcom"
+  },
+  "DMMREG": {
+    "url": "https://lfb.mof.go.jp/kantou/kinyuu/pagekthp0270000030.html"
+  },
+  "KRAKEN": {
+    "url": "https://blog.kraken.com/product/security/kraken-bug-bounty-program-patches-isolated-bug"
+  },
+  "WAZIR": {
+    "url": "https://wazirx.com/blog/important-update-cyber-attack-incident-and-measures-to-protect-your-assets/"
+  },
+  "BYBIT": {
+    "url": "https://www.sygnia.co/blog/sygnia-investigation-bybit-hack/"
+  },
+  "BYFBI": {
+    "url": "https://www.ic3.gov/PSA/2025/PSA250226"
+  },
+  "BITOPRO25": {
+    "url": "https://www.bitopro.com/ns/en-US/announcements/1226"
+  },
+  "COINBASE": {
+    "url": "https://www.coinbase.com/en-nl/blog/protecting-our-customers-standing-up-to-extortionists"
+  },
+  "COINBASESEC": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978825000094/coin-20250514.htm"
+  },
+  "NOBITEX": {
+    "url": "https://www.chainalysis.com/blog/nobitex-iranian-exchange-exploit-june-2025/"
+  },
+  "BIGONE": {
+    "url": "https://bigone.zendesk.com/hc/en-us/articles/48906456010393-Announcement-Regarding-BigONE-Security-Incident-on-16-July-2025"
+  },
+  "BIGLOGIC": {
+    "url": "https://bigoneeurasia.ladesk.com/275817-Temporary-Platform-Maintenance"
+  },
+  "CDX25": {
+    "url": "https://coindcx.com/blog/announcements/incident-report-july-19-2025"
+  },
+  "WOO": {
+    "url": "https://woox.io/blog/july-24th-security-incident-post-mortem"
+  },
+  "KILN": {
+    "url": "https://www.kiln.fi/post/re-enablement-of-kiln-services-and-security-incident-information"
+  },
+  "SWISS": {
+    "url": "https://swissborg.com/blog/swissborg-security-update-kiln-breach"
+  },
+  "ZIL": {
+    "url": "https://www.zilliqa.com/ledger-incident/post-mortem/"
+  },
+  "BITGET": {
+    "url": "https://www.bitget.com/academy/bitget-security-incident-what-happened-timeline-impact-response"
+  },
+  "BGAMT": {
+    "url": "https://www.bitget.com/support/articles/12560603896108"
+  },
+  "BGCHAIN": {
+    "url": "https://www.chainalysis.com/blog/387m-bitget-theft-2026/"
+  },
+  "CDX26": {
+    "url": "https://coindcx.com/blog/coindcx-news/on-chain-wallet-activity-update-21-oct-2026"
+  },
+  "BINANCE26": {
+    "url": "https://www.binance.com/en-TR/support/announcement/detail/d3306d9dca5243548c813b605e1d1751"
+  },
+  "BNFBI": {
+    "url": "https://www.fbi.gov/investigate/cyber/alerts/2026/north-korea-responsible-for-6-billion-binance-attack"
+  },
+  "EIP": {
+    "url": "https://eips.ethereum.org/EIPS/eip-7702"
+  },
+  "ERC20": {
+    "url": "https://eips.ethereum.org/EIPS/eip-20"
+  },
+  "AI": {
+    "url": "https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai"
+  },
+  "ISO": {
+    "url": "https://www.iso.org/standard/27001"
+  },
+  "MAPLE": {
+    "url": "https://blockonomi.com/maplechange-hacked-scam/"
+  },
+  "COINBASE19": {
+    "url": "https://www.coinbase.com/blog/responding-to-firefox-0-days-in-the-wild"
+  },
+  "COINBASE23": {
+    "url": "https://www.coinbase.com/en-ca/blog/social-engineering-a-coinbase-case-study"
+  },
+  "ELLIPTIC23": {
+    "url": "https://www.elliptic.co/insights/how-the-lazarus-group-is-stepping-up-crypto-hacks-and-changing-its-tactics/"
+  },
+  "CCFAQ": {
+    "url": "https://coincheck.com/info/faq_nem"
+  },
+  "CCUSD": {
+    "url": "https://www.investing.com/news/stock-market-news/exclusive-coincheck-hackers-attempting-to-sell-stolen-cryptocurrency--executive-1171410"
+  },
+  "COINRAILUSD": {
+    "url": "https://en.yna.co.kr/view/AEN20180611009700320"
+  },
+  "ZAIFUSD": {
+    "url": "https://www.investing.com/news/cryptocurrency-news/japan-hit-by-another-cryptocurrency-heist-60-million-stolen-1616872"
+  },
+  "UPBIT19USD": {
+    "url": "https://www.koreatimes.co.kr/economy/20191128/security-concerns-grow-over-cryptocurrency-exchanges"
+  },
+  "LIQUIDELL": {
+    "url": "https://www.elliptic.co/insights/liquid-exchange-hacked-94-million-stolen/"
+  },
+  "BITMART26": {
+    "url": "https://bitmart.zendesk.com/hc/en-us/articles/56571281537051-Announcement-on-BitMart-s-Initial-Indicative-Proposal-and-Roadmap"
+  },
+  "ASCENDUSD": {
+    "url": "https://www.theblock.co/news/regulation/2021-12-12-crypto-exchange-ascendex-hacked-for-78-million-in-latest-swindle-127231"
+  },
+  "LCXCOURT": {
+    "url": "https://www.hklaw.com/-/media/files/generalpages/lcx-ag-v-doe/exhibit2_nyscefno8.pdf?la=en"
+  },
+  "CRYPTODGA": {
+    "url": "https://dga.gov.sa/sites/default/files/2023-08/Digital%20Fraud%20-%20Research%20Study.pdf"
+  },
+  "SINBAD": {
+    "url": "https://www.elliptic.co/insights/sinbad-crypto-mixer-flagged-by-elliptic-sanctioned-and-seized/"
+  },
+  "BITRUE23": {
+    "url": "https://support.bitrue.com/hc/en-001/articles/17538384324121-Update-on-Bitrue-s-Security-Breach"
+  },
+  "POLOCERT": {
+    "url": "https://www.certik.com/blog/poloniex-incident-analysis"
+  },
+  "SM2024": {
+    "url": "https://www.slowmist.com/report/2024-Blockchain-Security-and-AML-Annual-Report%28EN%29.pdf"
+  },
+  "BTCTURK24": {
+    "url": "https://www.theblock.co/news/regulation/2024-06-22-binance-freezes-5-million-in-funds-looted-from-btcturk-after-alleged-54-million-hack-of-turkish-exchange-301340"
+  },
+  "WAZIRELL": {
+    "url": "https://www.elliptic.co/insights/235-million-lost-by-wazirx-in-north-korea-linked-breach/"
+  },
+  "PHEMEX": {
+    "url": "https://phemex.com/announcements/phemex-hot-wallet-security-incident-update-and-timeline"
+  },
+  "PHEMEX69": {
+    "url": "https://assets.ctfassets.net/t3wqy70tc3bv/1Vj4VSUY97UCFp3mLgG7ov/f1de70826f9c2992c481b124d849aa55/Immunefi_Crypto_Losses_January_2025.pdf"
+  },
+  "PHEMEX85": {
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-steal-85-million-worth-of-cryptocurrency-from-phemex/amp/"
+  },
+  "SM2025H1": {
+    "url": "https://www.slowmist.com/report/SlowMist-first-half-of-the-2025-report%28EN%29.pdf"
+  },
+  "SM2025": {
+    "url": "https://www.slowmist.com/report/2025-Blockchain-Security-and-AML-Annual-Report%28EN%29.pdf"
+  },
+  "BIGUSD": {
+    "url": "https://www.theblock.co/news/regulation/2025-07-16-bigone-hack-362814"
+  },
+  "BTCTURK25": {
+    "url": "https://www.beosin.com/resources/fund-flow-analysis-of-btcturk-48-million-hack"
+  },
+  "UPBIT25USD": {
+    "url": "https://www.koreatimes.co.kr/economy/cryptocurrency/20251208/repeat-cyberthefts-raise-questions-about-upbits-security-governance"
+  },
+  "BNELL": {
+    "url": "https://www.elliptic.co/insights/binance-largest-hack-in-history/"
+  },
+  "CERT2019": {
+    "url": "https://cert.europa.eu/publications/threat-intelligence/threat-memo-191126-1/pdf"
+  },
+  "CA2025": {
+    "url": "https://www.chainalysis.com/blog/crypto-hacking-stolen-funds-2026-/"
+  },
+  "CRYPTOUSD": {
+    "url": "https://www.theblock.co/news/regulation/2022-01-19-crypto-com-ceo-confirms-400-accounts-were-compromised-in-recent-hack-130857"
+  },
+  "APPLEJEUS": {
+    "url": "https://www.kaspersky.co.uk/blog/lazarus-crypto-exchange-attack/14314/"
+  },
+  "TRADER2022": {
+    "url": "https://www.ic3.gov/CSA/2022/220418.pdf"
+  },
+  "CB21NOTICE": {
+    "url": "https://oag.ca.gov/system/files/09-24-2021%20Customer%20Notification.pdf"
+  },
+  "MANGOMECH": {
+    "url": "https://www.chainalysis.com/blog/oracle-manipulation-attacks-rising/"
+  },
+  "PARITY17": {
+    "url": "https://www.openzeppelin.com/news/on-the-parity-wallet-multisig-hack-405a8c12e8f7"
+  },
+  "BFDOJ24": {
+    "url": "https://www.justice.gov/archives/opa/pr/bitfinex-hacker-sentenced-money-laundering-conspiracy-involving-billions-stolen"
+  },
+  "BNRESUME26": {
+    "url": "https://www.binance.com/en/support/announcement/detail/73911fb819b240f88b88256bdd318eda"
+  },
+  "FBI24SOCIAL": {
+    "url": "https://www.ic3.gov/PSA/2024/PSA240903"
+  },
+  "NISTAUTH": {
+    "url": "https://pages.nist.gov/800-63-4/sp800-63b/authenticators/"
+  },
+  "NISTSESSION": {
+    "url": "https://pages.nist.gov/800-63-4/sp800-63b/session/"
+  },
+  "CERTIK24": {
+    "url": "https://www.certik.com/blog/certik-statement-on-kraken-vulnerability"
+  },
+  "OWASPTX": {
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/Transaction_Authorization_Cheat_Sheet.html"
+  },
+  "OWASPBIZ": {
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/Business_Logic_Security_Cheat_Sheet.html"
+  },
+  "BNINITIAL26": {
+    "url": "https://www.binance.com/en/support/announcement/detail/c5a8729a97ac486d963784d96c5642d7"
+  }
+}

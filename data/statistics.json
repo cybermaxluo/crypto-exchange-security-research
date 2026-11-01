@@ -1,0 +1,140 @@
+{
+  "as_of": "2026-11-01",
+  "registry_n": 98,
+  "source_n": 113,
+  "registry_evidence_counts": {
+    "P": 21,
+    "I+M": 2,
+    "M": 15,
+    "P+M": 3,
+    "C": 38,
+    "I": 9,
+    "P+C": 3,
+    "P+I": 6,
+    "P+I+M": 1
+  },
+  "disputed_count": 5,
+  "all": {
+    "n": 41,
+    "total_usd_million": 11582.86,
+    "median_usd_million": 45,
+    "mean_usd_million": 282.50878048780487,
+    "top1_share": 0.54390711793115,
+    "top5_share": 0.7938022215584061,
+    "ge_100m_count": 10,
+    "ge_100m_share": 0.9042671671763277
+  },
+  "without_binance_2026": {
+    "n": 40,
+    "total_usd_million": 5282.86,
+    "median_usd_million": 44.6,
+    "mean_usd_million": 132.0715,
+    "top1_share": 0.2839371098230883,
+    "top5_share": 0.6083825806476038,
+    "ge_100m_count": 9,
+    "ge_100m_share": 0.7901023309343803
+  },
+  "without_binance_2026_and_bybit": {
+    "n": 39,
+    "total_usd_million": 3782.86,
+    "median_usd_million": 44.2,
+    "mean_usd_million": 96.99641025641026,
+    "top1_share": 0.14010563436130336,
+    "top5_share": 0.5345162126010479,
+    "ge_100m_count": 8,
+    "ge_100m_share": 0.7068725778908022
+  },
+  "alternative_estimates_scenario": {
+    "n": 41,
+    "total_usd_million": 11572.76,
+    "median_usd_million": 45,
+    "mean_usd_million": 282.26243902439023,
+    "top1_share": 0.5556150823139856,
+    "top5_share": 0.8025311161728058,
+    "ge_100m_count": 10,
+    "ge_100m_share": 0.9022480376332007
+  },
+  "bitmart_196m_scenario": {
+    "n": 41,
+    "total_usd_million": 11459.36,
+    "median_usd_million": 45,
+    "mean_usd_million": 279.49658536585366,
+    "top1_share": 0.5497689225227238,
+    "top5_share": 0.8023571997039974,
+    "ge_100m_count": 10,
+    "ge_100m_share": 0.9032354337415004
+  },
+  "annual": [
+    {
+      "year": 2016,
+      "registry_count": 4,
+      "amount_count": 4,
+      "usd_million": 75.73
+    },
+    {
+      "year": 2017,
+      "registry_count": 3,
+      "amount_count": 1,
+      "usd_million": 5
+    },
+    {
+      "year": 2018,
+      "registry_count": 9,
+      "amount_count": 3,
+      "usd_million": 627.2
+    },
+    {
+      "year": 2019,
+      "registry_count": 13,
+      "amount_count": 2,
+      "usd_million": 89
+    },
+    {
+      "year": 2020,
+      "registry_count": 10,
+      "amount_count": 2,
+      "usd_million": 290.6
+    },
+    {
+      "year": 2021,
+      "registry_count": 6,
+      "amount_count": 3,
+      "usd_million": 494.2
+    },
+    {
+      "year": 2022,
+      "registry_count": 7,
+      "amount_count": 4,
+      "usd_million": 546.74
+    },
+    {
+      "year": 2023,
+      "registry_count": 17,
+      "amount_count": 4,
+      "usd_million": 238
+    },
+    {
+      "year": 2024,
+      "registry_count": 12,
+      "amount_count": 6,
+      "usd_million": 678.8
+    },
+    {
+      "year": 2025,
+      "registry_count": 12,
+      "amount_count": 9,
+      "usd_million": 1834.1
+    },
+    {
+      "year": 2026,
+      "registry_count": 5,
+      "amount_count": 3,
+      "usd_million": 6703.49
+    }
+  ],
+  "observed_timeline_days": {
+    "Bybit_first_observed_compromise_to_theft": 17,
+    "WOO_backdoor_to_theft": 16,
+    "Kiln_malicious_signing_to_discovery": 8
+  }
+}

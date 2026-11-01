@@ -1,0 +1,42 @@
+case_id,date,target,usd_million,amount_source_id,amount_source_url
+EX001,2016-03—04,ShapeShift,0.23,SHAPE,https://postmortem.io/incidents/shapeshift--2016-04-19--cyberattack-postmortem/
+EX002,2016-05,Gatecoin,2,CERT2019,https://cert.europa.eu/publications/threat-intelligence/threat-memo-191126-1/pdf
+EX003,2016-08-02,Bitfinex,72,BFDOJ,https://www.justice.gov/usao-dc/2016-bitfinex-hack
+EX004,2016-10-13,Bitcurex,1.5,BITCUREX,https://news.bitcoin.com/bitcurex-forced-million-theft/
+EX005,2017-04,Yapizon,5,CERT2019,https://cert.europa.eu/publications/threat-intelligence/threat-memo-191126-1/pdf
+EX008,2018-01-26,Coincheck,530,CCUSD,https://www.investing.com/news/stock-market-news/exclusive-coincheck-hackers-attempting-to-sell-stolen-cryptocurrency--executive-1171410
+EX012,2018-06-10,Coinrail,37.2,COINRAILUSD,https://en.yna.co.kr/view/AEN20180611009700320
+EX014,2018-09-14,Zaif,60,ZAIFUSD,https://www.investing.com/news/cryptocurrency-news/japan-hit-by-another-cryptocurrency-heist-60-million-stolen-1616872
+EX024,2019-05-07,Binance,40,BINANCE19,https://www.binance.com/en-AU/support/announcement/detail/360028031711
+EX028,2019-11-27,Upbit,49,UPBIT19USD,https://www.koreatimes.co.kr/economy/20191128/security-concerns-grow-over-cryptocurrency-exchanges
+EX032,2020-07-31—08,OKEx / ETC,5.6,ETC20,https://etccooperative.org/ETC-Coop-Board-Package-August-2020.pdf
+EX034,2020-09-26,KuCoin,285,KUCOIN20,https://www.kucoin.com/fil/announcement/a-letter-from-kucoin-ceo-2020-2021-and-beyond
+EX040,2021-08-19,Liquid,97,LIQUIDELL,https://www.elliptic.co/insights/liquid-exchange-hacked-94-million-stolen/
+EX042,2021-12-04,BitMart,319.5,BITMART26,https://bitmart.zendesk.com/hc/en-us/articles/56571281537051-Announcement-on-BitMart-s-Initial-Indicative-Proposal-and-Roadmap
+EX043,2021-12-11,AscendEX,77.7,ASCENDUSD,https://www.theblock.co/news/regulation/2021-12-12-crypto-exchange-ascendex-hacked-for-78-million-in-latest-swindle-127231
+EX044,2022-01-08,LCX,7.94,LCXCOURT,https://www.hklaw.com/-/media/files/generalpages/lcx-ag-v-doe/exhibit2_nyscefno8.pdf?la=en
+EX045,2022-01-17,Crypto.com,33.8,CRYPTOUSD,https://www.theblock.co/news/regulation/2022-01-19-crypto-com-ceo-confirms-400-accounts-were-compromised-in-recent-hack-130857
+EX048,2022-11-01—02,Deribit,28,DERIBIT,https://cointelegraph.com/news/deribit-crypto-exchange-halts-withdrawals-amid-28m-hot-wallet-hack
+EX049,2022-11-11,FTX,477,SINBAD,https://www.elliptic.co/insights/sinbad-crypto-mixer-flagged-by-elliptic-sanctioned-and-seized/
+EX051,2023-04-09,GDAC,13,GDAC,https://www.coindesk.com/tech/2023/04/10/s-korean-crypto-exchange-gdac-hacked-for-nearly-13m
+EX052,2023-04-14,Bitrue,23,BITRUE23,https://support.bitrue.com/hc/en-001/articles/17538384324121-Update-on-Bitrue-s-Security-Breach
+EX058,2023-09-12,CoinEx,70,SINBAD,https://www.elliptic.co/insights/sinbad-crypto-mixer-flagged-by-elliptic-sanctioned-and-seized/
+EX064,2023-11-10,Poloniex,132,POLOCERT,https://www.certik.com/blog/poloniex-incident-analysis
+EX069,2024-04-29,Rain,14.8,SM2024,https://www.slowmist.com/report/2024-Blockchain-Security-and-AML-Annual-Report%28EN%29.pdf
+EX070,2024-05-31,DMM Bitcoin,308,DMM,https://www.fbi.gov/news/press-releases/fbi-dc3-and-npa-identification-of-north-korean-cyber-actors-tracked-as-tradertraitor-responsible-for-theft-of-308-million-from-bitcoindmmcom
+EX073,2024-06-22,BtcTurk,54,BTCTURK24,https://www.theblock.co/news/regulation/2024-06-22-binance-freezes-5-million-in-funds-looted-from-btcturk-after-alleged-54-million-hack-of-turkish-exchange-301340
+EX074,2024-07-18,WazirX,235,WAZIRELL,https://www.elliptic.co/insights/235-million-lost-by-wazirx-in-north-korea-linked-breach/
+EX075,2024-09-11,Indodax,22,SM2024,https://www.slowmist.com/report/2024-Blockchain-Security-and-AML-Annual-Report%28EN%29.pdf
+EX076,2024-09-20,BingX,45,SM2024,https://www.slowmist.com/report/2024-Blockchain-Security-and-AML-Annual-Report%28EN%29.pdf
+EX080,2025-01-23,Phemex,69.1,PHEMEX69,https://assets.ctfassets.net/t3wqy70tc3bv/1Vj4VSUY97UCFp3mLgG7ov/f1de70826f9c2992c481b124d849aa55/Immunefi_Crypto_Losses_January_2025.pdf
+EX081,2025-02-21,Bybit,1500,BYFBI,https://www.ic3.gov/PSA/2025/PSA250226
+EX082,2025-05-08 UTC,BitoPro,11.5,SM2025H1,https://www.slowmist.com/report/SlowMist-first-half-of-the-2025-report%28EN%29.pdf
+EX084,2025-06-18,Nobitex,90,NOBITEX,https://www.chainalysis.com/blog/nobitex-iranian-exchange-exploit-june-2025/
+EX085,2025-07-16,BigONE,27,BIGUSD,https://www.theblock.co/news/regulation/2025-07-16-bigone-hack-362814
+EX086,2025-07-19,CoinDCX,44.2,SM2025,https://www.slowmist.com/report/2025-Blockchain-Security-and-AML-Annual-Report%28EN%29.pdf
+EX087,2025-07-24,WOO X,14,WOO,https://woox.io/blog/july-24th-security-incident-post-mortem
+EX088,2025-08-14,BtcTurk,48,BTCTURK25,https://www.beosin.com/resources/fund-flow-analysis-of-btcturk-48-million-hack
+EX090,2025-11-27,Upbit,30.3,UPBIT25USD,https://www.koreatimes.co.kr/economy/cryptocurrency/20251208/repeat-cyberthefts-raise-questions-about-upbits-security-governance
+EX093,2026-09-24,Bitget,387.5,BGAMT,https://www.bitget.com/support/articles/12560603896108
+EX094,2026-10-21,CoinDCX legacy wallet,15.99,CDX26,https://coindcx.com/blog/coindcx-news/on-chain-wallet-activity-update-21-oct-2026
+EX095,2026-10-29,Binance,6300,BINANCE26,https://www.binance.com/en-TR/support/announcement/detail/d3306d9dca5243548c813b605e1d1751

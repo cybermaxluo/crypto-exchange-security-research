@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="480pt" viewBox="0 0 864 480" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-01T23:17:57.634787</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 480
+L 864 480
+L 864 0
+L 0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 38.4 144
+L 213.6 144
+L 213.6 201.6
+L 38.4 201.6
+z
+" clip-path="url(#p7445f713d2)" style="fill: #f1f5f7"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 38.4 144
+L 40.32 144
+L 40.32 201.6
+L 38.4 201.6
+z
+" clip-path="url(#p7445f713d2)" style="fill: #376b88"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 242.4 144
+L 417.6 144
+L 417.6 201.6
+L 242.4 201.6
+z
+" clip-path="url(#p7445f713d2)" style="fill: #faf0ed"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 242.4 144
+L 244.32 144
+L 244.32 201.6
+L 242.4 201.6
+z
+" clip-path="url(#p7445f713d2)" style="fill: #bd554a"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 446.4 144
+L 621.6 144
+L 621.6 201.6
+L 446.4 201.6
+z
+" clip-path="url(#p7445f713d2)" style="fill: #faf0ed"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 446.4 144
+L 448.32 144
+L 448.32 201.6
+L 446.4 201.6
+z
+" clip-path="url(#p7445f713d2)" style="fill: #bd554a"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 650.4 144
+L 825.6 144
+L 825.6 201.6
+L 650.4 201.6
+z
+" clip-path="url(#p7445f713d2)" style="fill: #faf0ed"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 650.4 144
+L 652.32 144
+L 652.32 201.6
+L 650.4 201.6
+z
+" clip-path="url(#p7445f713d2)" style="fill: #bd554a"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 215.600391 172.8
+Q 228.000771 172.8 239.059511 172.8
+" clip-path="url(#p7445f713d2)" style="fill: none; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 233.859511 170.2
+L 239.059511 172.8
+L 233.859511 175.4
+z
+" clip-path="url(#p7445f713d2)" style="fill: #376b88; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 419.600391 172.8
+Q 432.000771 172.8 443.059511 172.8
+" clip-path="url(#p7445f713d2)" style="fill: none; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 437.859511 170.2
+L 443.059511 172.8
+L 437.859511 175.4
+z
+" clip-path="url(#p7445f713d2)" style="fill: #376b88; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 623.600391 172.8
+Q 636.000771 172.8 647.059511 172.8
+" clip-path="url(#p7445f713d2)" style="fill: none; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 641.859511 170.2
+L 647.059511 172.8
+L 641.859511 175.4
+z
+" clip-path="url(#p7445f713d2)" style="fill: #376b88; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 38.4 302.4
+L 393.6 302.4
+L 393.6 360
+L 38.4 360
+z
+" clip-path="url(#p7445f713d2)" style="fill: #faf0ed"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 38.4 302.4
+L 40.32 302.4
+L 40.32 360
+L 38.4 360
+z
+" clip-path="url(#p7445f713d2)" style="fill: #bd554a"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 470.4 302.4
+L 825.6 302.4
+L 825.6 360
+L 470.4 360
+z
+" clip-path="url(#p7445f713d2)" style="fill: #faf0ed"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 470.4 302.4
+L 472.32 302.4
+L 472.32 360
+L 470.4 360
+z
+" clip-path="url(#p7445f713d2)" style="fill: #bd554a"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 395.601562 331.2
+Q 431.99869 331.2 467.054177 331.2
+" clip-path="url(#p7445f713d2)" style="fill: none; stroke: #bd554a; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 461.854177 328.6
+L 467.054177 331.2
+L 461.854177 333.8
+z
+" clip-path="url(#p7445f713d2)" style="fill: #bd554a; stroke: #bd554a; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 737.76 203.602588
+Q 737.76 252.001802 737.76 299.059376
+" clip-path="url(#p7445f713d2)" style="fill: none; stroke: #bd554a; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 740.36 293.859376
+L 737.76 299.059376
+L 735.16 293.859376
+z
+" clip-path="url(#p7445f713d2)" style="fill: #bd554a; stroke: #bd554a; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 38.4 432
+L 825.6 432
+" clip-path="url(#p7445f713d2)" style="fill: none; stroke: #dce4e9; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #20333f" x="38.4" y="43.91875" transform="rotate(-0 38.4 43.91875)">P5  Erroneous crediting and double spending</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #687985" x="38.4" y="71.95125" transform="rotate(-0 38.4 71.95125)">A reorganization may remove the deposit only after the exchange has paid out</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #20333f" x="126" y="167.747187" transform="rotate(-0 126 167.747187)">Deposit on-chain</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #687985" x="126" y="191.825344" transform="rotate(-0 126 191.825344)">Original history</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bd554a" x="330" y="169.006562" transform="rotate(-0 330 169.006562)">Available balance</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #687985" x="330" y="191.825344" transform="rotate(-0 330 191.825344)">Credited by exchange</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bd554a" x="534" y="168.495703" transform="rotate(-0 534 168.495703)">Convert / withdraw</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #687985" x="534" y="191.825344" transform="rotate(-0 534 191.825344)">Real assets paid out</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bd554a" x="738" y="167.747187" transform="rotate(-0 738 167.747187)">Later reorganization</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #687985" x="738" y="191.825344" transform="rotate(-0 738 191.825344)">Original deposit removed</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bd554a" x="216" y="326.147187" transform="rotate(-0 216 326.147187)">Kraken's separate crediting branch</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #687985" x="216" y="350.225344" transform="rotate(-0 216 350.225344)">Incomplete deposits created spendable balances</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bd554a" x="648" y="326.032422" transform="rotate(-0 648 326.032422)">Common asset consequence</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #687985" x="648" y="350.225344" transform="rotate(-0 648 350.225344)">Payout lacks valid deposit backing</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #687985" x="38.4" y="457.799375" transform="rotate(-0 38.4 457.799375)">Sources: ETC Cooperative and Kraken. Arrows show sequence, not elapsed time. Kraken's research authorization was disputed.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p7445f713d2">
+   <rect x="0" y="0" width="864" height="480"/>
+  </clipPath>
+ </defs>
+</svg>
