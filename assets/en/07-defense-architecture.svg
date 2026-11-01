@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-01T23:56:00.742073</dc:date>
+    <dc:date>2026-11-02T00:14:50.442264</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -35,7 +35,7 @@ L 825.6 105.6
 L 825.6 139.2
 L 38.4 139.2
 z
-" clip-path="url(#p29f3634951)" style="fill: #f1f5f7"/>
+" clip-path="url(#p4ddb3e3415)" style="fill: #f1f5f7"/>
    </g>
    <g id="patch_3">
     <path d="M 38.4 105.6
@@ -43,7 +43,7 @@ L 40.32 105.6
 L 40.32 139.2
 L 38.4 139.2
 z
-" clip-path="url(#p29f3634951)" style="fill: #376b88"/>
+" clip-path="url(#p4ddb3e3415)" style="fill: #376b88"/>
    </g>
    <g id="patch_4">
     <path d="M 38.4 182.4
@@ -51,7 +51,7 @@ L 182.4 182.4
 L 182.4 249.6
 L 38.4 249.6
 z
-" clip-path="url(#p29f3634951)" style="fill: #f1f5f7"/>
+" clip-path="url(#p4ddb3e3415)" style="fill: #f1f5f7"/>
    </g>
    <g id="patch_5">
     <path d="M 38.4 182.4
@@ -59,7 +59,7 @@ L 40.32 182.4
 L 40.32 249.6
 L 38.4 249.6
 z
-" clip-path="url(#p29f3634951)" style="fill: #376b88"/>
+" clip-path="url(#p4ddb3e3415)" style="fill: #376b88"/>
    </g>
    <g id="patch_6">
     <path d="M 199.2 182.4
@@ -67,7 +67,7 @@ L 343.2 182.4
 L 343.2 249.6
 L 199.2 249.6
 z
-" clip-path="url(#p29f3634951)" style="fill: #f1f5f7"/>
+" clip-path="url(#p4ddb3e3415)" style="fill: #f1f5f7"/>
    </g>
    <g id="patch_7">
     <path d="M 199.2 182.4
@@ -75,7 +75,7 @@ L 201.12 182.4
 L 201.12 249.6
 L 199.2 249.6
 z
-" clip-path="url(#p29f3634951)" style="fill: #376b88"/>
+" clip-path="url(#p4ddb3e3415)" style="fill: #376b88"/>
    </g>
    <g id="patch_8">
     <path d="M 360 182.4
@@ -83,7 +83,7 @@ L 504 182.4
 L 504 249.6
 L 360 249.6
 z
-" clip-path="url(#p29f3634951)" style="fill: #f1f5f7"/>
+" clip-path="url(#p4ddb3e3415)" style="fill: #f1f5f7"/>
    </g>
    <g id="patch_9">
     <path d="M 360 182.4
@@ -91,7 +91,7 @@ L 361.92 182.4
 L 361.92 249.6
 L 360 249.6
 z
-" clip-path="url(#p29f3634951)" style="fill: #376b88"/>
+" clip-path="url(#p4ddb3e3415)" style="fill: #376b88"/>
    </g>
    <g id="patch_10">
     <path d="M 520.8 182.4
@@ -99,7 +99,7 @@ L 664.8 182.4
 L 664.8 249.6
 L 520.8 249.6
 z
-" clip-path="url(#p29f3634951)" style="fill: #f1f5f7"/>
+" clip-path="url(#p4ddb3e3415)" style="fill: #f1f5f7"/>
    </g>
    <g id="patch_11">
     <path d="M 520.8 182.4
@@ -107,7 +107,7 @@ L 522.72 182.4
 L 522.72 249.6
 L 520.8 249.6
 z
-" clip-path="url(#p29f3634951)" style="fill: #376b88"/>
+" clip-path="url(#p4ddb3e3415)" style="fill: #376b88"/>
    </g>
    <g id="patch_12">
     <path d="M 681.6 182.4
@@ -115,7 +115,7 @@ L 825.6 182.4
 L 825.6 249.6
 L 681.6 249.6
 z
-" clip-path="url(#p29f3634951)" style="fill: #f1f5f7"/>
+" clip-path="url(#p4ddb3e3415)" style="fill: #f1f5f7"/>
    </g>
    <g id="patch_13">
     <path d="M 681.6 182.4
@@ -123,47 +123,47 @@ L 683.52 182.4
 L 683.52 249.6
 L 681.6 249.6
 z
-" clip-path="url(#p29f3634951)" style="fill: #376b88"/>
+" clip-path="url(#p4ddb3e3415)" style="fill: #376b88"/>
    </g>
    <g id="patch_14">
     <path d="M 184.397461 216
 Q 190.799487 216 195.859872 216
-" clip-path="url(#p29f3634951)" style="fill: none; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#p4ddb3e3415)" style="fill: none; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 190.659872 213.4
 L 195.859872 216
 L 190.659872 218.6
 z
-" clip-path="url(#p29f3634951)" style="fill: #376b88; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#p4ddb3e3415)" style="fill: #376b88; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="patch_15">
     <path d="M 345.197461 216
 Q 351.599487 216 356.659872 216
-" clip-path="url(#p29f3634951)" style="fill: none; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#p4ddb3e3415)" style="fill: none; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 351.459872 213.4
 L 356.659872 216
 L 351.459872 218.6
 z
-" clip-path="url(#p29f3634951)" style="fill: #376b88; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#p4ddb3e3415)" style="fill: #376b88; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="patch_16">
     <path d="M 505.997461 216
 Q 512.399487 216 517.459872 216
-" clip-path="url(#p29f3634951)" style="fill: none; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#p4ddb3e3415)" style="fill: none; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 512.259872 213.4
 L 517.459872 216
 L 512.259872 218.6
 z
-" clip-path="url(#p29f3634951)" style="fill: #376b88; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#p4ddb3e3415)" style="fill: #376b88; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="patch_17">
     <path d="M 666.797461 216
 Q 673.199487 216 678.259872 216
-" clip-path="url(#p29f3634951)" style="fill: none; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#p4ddb3e3415)" style="fill: none; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 673.059872 213.4
 L 678.259872 216
 L 673.059872 218.6
 z
-" clip-path="url(#p29f3634951)" style="fill: #376b88; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#p4ddb3e3415)" style="fill: #376b88; stroke: #376b88; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="patch_18">
     <path d="M 38.4 316.8
@@ -171,7 +171,7 @@ L 259.2 316.8
 L 259.2 374.4
 L 38.4 374.4
 z
-" clip-path="url(#p29f3634951)" style="fill: #faf0ed"/>
+" clip-path="url(#p4ddb3e3415)" style="fill: #faf0ed"/>
    </g>
    <g id="patch_19">
     <path d="M 38.4 316.8
@@ -179,17 +179,17 @@ L 40.32 316.8
 L 40.32 374.4
 L 38.4 374.4
 z
-" clip-path="url(#p29f3634951)" style="fill: #bd554a"/>
+" clip-path="url(#p4ddb3e3415)" style="fill: #bd554a"/>
    </g>
    <g id="patch_20">
     <path d="M 266.002954 345.6
 Q 460.802109 345.6 654.259622 345.6
-" clip-path="url(#p29f3634951)" style="fill: none; stroke: #bd554a; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#p4ddb3e3415)" style="fill: none; stroke: #bd554a; stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 649.059622 343
 L 654.259622 345.6
 L 649.059622 348.2
 z
-" clip-path="url(#p29f3634951)" style="fill: #bd554a; stroke: #bd554a; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#p4ddb3e3415)" style="fill: #bd554a; stroke: #bd554a; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="patch_21">
     <path d="M 662.4 316.8
@@ -197,7 +197,7 @@ L 825.6 316.8
 L 825.6 374.4
 L 662.4 374.4
 z
-" clip-path="url(#p29f3634951)" style="fill: #f1f5f7"/>
+" clip-path="url(#p4ddb3e3415)" style="fill: #f1f5f7"/>
    </g>
    <g id="patch_22">
     <path d="M 662.4 316.8
@@ -205,12 +205,12 @@ L 664.32 316.8
 L 664.32 374.4
 L 662.4 374.4
 z
-" clip-path="url(#p29f3634951)" style="fill: #376b88"/>
+" clip-path="url(#p4ddb3e3415)" style="fill: #376b88"/>
    </g>
    <g id="line2d_1">
     <path d="M 38.4 432
 L 825.6 432
-" clip-path="url(#p29f3634951)" style="fill: none; stroke: #dce4e9; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#p4ddb3e3415)" style="fill: none; stroke: #dce4e9; stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="text_1">
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #20333f" x="38.4" y="43.91875" transform="rotate(-0 38.4 43.91875)">Controls across custody, trading, and withdrawals</text>
@@ -222,58 +222,74 @@ L 825.6 432
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #20333f" x="432" y="125.987188" transform="rotate(-0 432 125.987188)">Independent approval evidence, risk decisions, and restriction versions</text>
    </g>
    <g id="text_4">
-    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #20333f" x="110.4" y="210.255703" transform="rotate(-0 110.4 210.255703)">Settlement / credit</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #376b88" x="110.4" y="171.931641" transform="rotate(-0 110.4 171.931641)">P5</text>
    </g>
    <g id="text_5">
-    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #687985" x="110.4" y="237.713344" transform="rotate(-0 110.4 237.713344)">Asset received; reorgs</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #376b88" x="271.2" y="172.009844" transform="rotate(-0 271.2 172.009844)">P4</text>
    </g>
    <g id="text_6">
-    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #20333f" x="271.2" y="209.507187" transform="rotate(-0 271.2 209.507187)">Trading / lending</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #376b88" x="432" y="171.571563" transform="rotate(-0 432 171.571563)">P3 / P6</text>
    </g>
    <g id="text_7">
-    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #687985" x="271.2" y="237.713344" transform="rotate(-0 271.2 237.713344)">Depth; valuation</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #376b88" x="592.8" y="172.082031" transform="rotate(-0 592.8 172.082031)">P2</text>
    </g>
    <g id="text_8">
-    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #20333f" x="432" y="209.507187" transform="rotate(-0 432 209.507187)">Withdrawal authority</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #376b88" x="753.6" y="171.571563" transform="rotate(-0 753.6 171.571563)">P1 / P2</text>
    </g>
    <g id="text_9">
-    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #687985" x="432" y="237.713344" transform="rotate(-0 432 237.713344)">Recovery; anti-fraud</text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #20333f" x="110.4" y="210.255703" transform="rotate(-0 110.4 210.255703)">Settlement / credit</text>
    </g>
    <g id="text_10">
-    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #20333f" x="592.8" y="210.766562" transform="rotate(-0 592.8 210.766562)">Transaction contents</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #687985" x="110.4" y="237.713344" transform="rotate(-0 110.4 237.713344)">Asset received; reorgs</text>
    </g>
    <g id="text_11">
-    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #687985" x="592.8" y="237.713344" transform="rotate(-0 592.8 237.713344)">Request; signed bytes</text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #20333f" x="271.2" y="209.507187" transform="rotate(-0 271.2 209.507187)">Trading / lending</text>
    </g>
    <g id="text_12">
-    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #20333f" x="753.6" y="209.507187" transform="rotate(-0 753.6 209.507187)">Signing / broadcast</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #687985" x="271.2" y="237.713344" transform="rotate(-0 271.2 237.713344)">Depth; valuation</text>
    </g>
    <g id="text_13">
-    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #687985" x="753.6" y="237.713344" transform="rotate(-0 753.6 237.713344)">Keys; authority changes</text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #20333f" x="432" y="209.507187" transform="rotate(-0 432 209.507187)">Withdrawal authority</text>
    </g>
    <g id="text_14">
-    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bd554a" x="148.8" y="340.547187" transform="rotate(-0 148.8 340.547187)">Leaked key / malicious grant</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #687985" x="432" y="237.713344" transform="rotate(-0 432 237.713344)">Recovery; anti-fraud</text>
    </g>
    <g id="text_15">
-    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #687985" x="148.8" y="364.625344" transform="rotate(-0 148.8 364.625344)">External execution may remain</text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #20333f" x="592.8" y="210.766562" transform="rotate(-0 592.8 210.766562)">Transaction contents</text>
    </g>
    <g id="text_16">
-    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bd554a" x="460.8" y="324.91125" transform="rotate(-0 460.8 324.91125)">Outside the exchange's application path</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #687985" x="592.8" y="237.713344" transform="rotate(-0 592.8 237.713344)">Request; signed bytes</text>
    </g>
    <g id="text_17">
-    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #20333f" x="744" y="341.806562" transform="rotate(-0 744 341.806562)">On-chain assets</text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #20333f" x="753.6" y="209.507187" transform="rotate(-0 753.6 209.507187)">Signing / broadcast</text>
    </g>
    <g id="text_18">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #687985" x="753.6" y="237.713344" transform="rotate(-0 753.6 237.713344)">Keys; authority changes</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bd554a" x="148.8" y="340.547187" transform="rotate(-0 148.8 340.547187)">Leaked key / malicious grant</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #687985" x="148.8" y="364.625344" transform="rotate(-0 148.8 364.625344)">External execution may remain</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bd554a" x="460.8" y="324.91125" transform="rotate(-0 460.8 324.91125)">Outside the exchange's application path</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #20333f" x="744" y="341.806562" transform="rotate(-0 744 341.806562)">On-chain assets</text>
+   </g>
+   <g id="text_23">
     <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; fill: #687985" transform="translate(677.884453 357.275344)">Revoke or migrate where</text>
     <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; fill: #687985" transform="translate(722.504531 371.975344)">possible</text>
    </g>
-   <g id="text_19">
-    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #687985" x="38.4" y="457.799375" transform="rotate(-0 38.4 457.799375)">Foundation: endpoint, identity, cloud, deployment and audit controls. Existing signatures and external authority require separate handling.</text>
+   <g id="text_24">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #687985" transform="translate(38.4 450.799375)">Foundation: endpoint, identity, cloud, deployment and audit controls. Transfers and authority changes may enter mid-flow; external powers need</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #687985" transform="translate(38.4 464.799375)">separate handling.</text>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="p29f3634951">
+  <clipPath id="p4ddb3e3415">
    <rect x="0" y="0" width="864" height="480"/>
   </clipPath>
  </defs>

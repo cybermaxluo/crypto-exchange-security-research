@@ -1,6 +1,8 @@
 # 统计方法与数据说明
 
-[English](../en/methodology.md) | **简体中文**
+[仓库首页](../../README.zh-CN.md) · [English](../en/methodology.md) | **简体中文**
+
+[调查正文](research.md) · [六类攻击路径](attack-paths.md) · [防御矩阵](defense-matrix.md) · [案例目录](case-catalogue.md) · **统计方法**
 
 ## 研究范围
 

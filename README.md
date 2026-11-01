@@ -16,13 +16,13 @@ The research follows six routes to financial harm: signing-material compromise, 
 | Exchange Security Case Catalogue | All 98 records, with losses, attack sequences, attribution, evidence limits, and source links | [English](docs/en/case-catalogue.md) · [中文](docs/zh-CN/case-catalogue.md) |
 | Methodology and data | Sample boundaries, monetary estimates, response metrics, data schema, and reproducibility | [English](docs/en/methodology.md) · [中文](docs/zh-CN/methodology.md) |
 
-Start with the investigation for the findings, then use the defense matrix to examine your own operations. The attack-path reference supplies technical detail for application security, security operations, wallet security, and red-team work.
+Start with the investigation for the cross-case findings, follow the six attack paths for technical detail, then use the defense matrix to examine your own operations. Use the case catalogue to check individual incidents and the methodology before reusing statistics.
 
 ## Dataset
 
 | Material | Scope |
 | --- | --- |
-| [Case registry](data/case-registry.csv) | 98 public incidents and leads; includes 38 index-only records |
+| [Case registry (CSV)](data/case-registry.csv) | 98 public incidents and leads; includes 38 index-only records |
 | [Loss sample](data/loss-sample.csv) | 41 incidents included in the loss calculation; total $11,582.86 million |
 | [Statistics](data/statistics.json) | Sample distribution, annual counts, and sensitivity calculations |
 | [Source index](data/sources.json) | 113 source URLs used in the underlying research |

@@ -70,6 +70,13 @@ def main():
         en=ROOT/"docs/en"/name;zh=ROOT/"docs/zh-CN"/name
         assert en.exists() and zh.exists(),name
         assert "../zh-CN/"+name in en.read_text() and "../en/"+name in zh.read_text(),name
+        for path,home in [(en,"../../README.md"),(zh,"../../README.zh-CN.md")]:
+            navigation="\n".join(path.read_text().splitlines()[:6])
+            assert home in navigation,(path,"missing home link")
+            for sibling in docs:
+                if sibling!=name:
+                    assert f"]({sibling})" in navigation,(path,"missing document link",sibling)
+    catalogue_orders={}
     for language in ["en","zh-CN"]:
         article=(ROOT/"docs"/language/"research.md").read_text()
         assert len(re.findall(r"^## ",article,re.M))==5,language
@@ -82,11 +89,14 @@ def main():
         catalogue=(ROOT/"docs"/language/"case-catalogue.md").read_text()
         catalogue_ids=re.findall(r"^\| (EX\d{3})<br>",catalogue,re.M)
         assert len(catalogue_ids)==98 and set(catalogue_ids)==set(byid),language
+        catalogue_orders[language]=catalogue_ids
+        assert re.findall(r"^### (20\d{2})$",catalogue,re.M)==[str(y) for y in range(2016,2027)],language
         anchors=set(re.findall(r'<a id="([^"]+)"',catalogue))
         for anchor in re.findall(r"\]\(#([^)]+)\)",catalogue):
             assert anchor in anchors,(language,anchor)
         catalogue_urls=set(re.findall(r"https?://[^\s)]+",catalogue))
         assert catalogue_urls=={s["url"] for s in sources.values()},language
+    assert catalogue_orders["en"]==catalogue_orders["zh-CN"],"bilingual catalogue order differs"
     en_urls=set(re.findall(r"https?://[^\s)]+",(ROOT/"docs/en/research.md").read_text()))
     zh_urls=set(re.findall(r"https?://[^\s)]+",(ROOT/"docs/zh-CN/research.md").read_text()))
     assert en_urls==zh_urls

@@ -1,6 +1,8 @@
 # Six Attack Paths Against Crypto Exchanges
 
-**English** | [简体中文](../zh-CN/attack-paths.md)
+[Repository home](../../README.md) · **English** | [简体中文](../zh-CN/attack-paths.md)
+
+[Research](research.md) · **Attack paths** · [Defense matrix](defense-matrix.md) · [Case catalogue](case-catalogue.md) · [Methodology](methodology.md)
 
 These six paths describe how attackers bypass or compromise controls over funds. Initial access methods, tools, and actor attribution are recorded separately. P1–P5 concern platform funds and accounts; P6 extends to customers. One incident may involve several paths. The categories therefore overlap and do not cover every type of cyber risk.
 

@@ -1,6 +1,8 @@
 # Methodology and Data
 
-**English** | [简体中文](../zh-CN/methodology.md)
+[Repository home](../../README.md) · **English** | [简体中文](../zh-CN/methodology.md)
+
+[Research](research.md) · [Attack paths](attack-paths.md) · [Defense matrix](defense-matrix.md) · [Case catalogue](case-catalogue.md) · **Methodology**
 
 ## Scope
 

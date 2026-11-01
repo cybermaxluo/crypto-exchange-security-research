@@ -1,6 +1,8 @@
 # From Bybit to Binance: How Attackers Breach Crypto Exchanges
 
-**English** | [简体中文](../zh-CN/research.md)
+[Repository home](../../README.md) · **English** | [简体中文](../zh-CN/research.md)
+
+**Research** · [Attack paths](attack-paths.md) · [Defense matrix](defense-matrix.md) · [Case catalogue](case-catalogue.md) · [Methodology](methodology.md)
 
 **Authors**
 

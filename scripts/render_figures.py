@@ -147,7 +147,7 @@ def diagrams():
            ("P3 Account authority",["Recovery / backend","Change identity","Withdrawal accepted","Platform pays out"]),
            ("P4 Trading / value",["Trading access","Manipulate trades","Transfer / inflate value","Withdraw / borrow"]),
            ("P5 Crediting",["Flaw / double spend","Available balance","Convert / withdraw","Asset shortfall"]),
-           ("P6 Customer fraud",["Impersonate","False explanation","Customer authorizes","Fraudulent recipient"])]
+           ("P6 Customer fraud",["Impersonate","False explanation","Customer authorizes","Transfer / grant authority"])]
     for i,(name,steps) in enumerate(paths):
         y=240+i*120;f.text(80,y+40,name,12,BLUE,width=22)
         f.row(y,[(s,"",True) for s in steps],xs=[430,760,1090,1420],w=295,h=83)
@@ -156,12 +156,14 @@ def diagrams():
     f=Figure("Controls across custody, trading, and withdrawals", "Verify each operation where it changes assets or customer balances")
     f.box(80,220,1640,"Independent approval evidence, risk decisions, and restriction versions",h=70)
     nodes=[("Settlement / credit","Asset received; reorgs"),("Trading / lending","Depth; valuation"),("Withdrawal authority","Recovery; anti-fraud"),("Transaction contents","Request; signed bytes"),("Signing / broadcast","Keys; authority changes")]
+    for x,label in zip([230,565,900,1235,1570],["P5","P4","P3 / P6","P2","P1 / P2"]):
+        f.text(x,350,label,11,BLUE,True)
     f.row(380,nodes,xs=[80,415,750,1085,1420],w=300,h=140)
     f.box(80,660,460,"Leaked key / malicious grant","External execution may remain",True)
     f.arrow([(550,720),(1370,720)],RED)
     f.text(960,670,"Outside the exchange's application path",12,RED,True)
     f.box(1380,660,340,"On-chain assets","Revoke or migrate where possible")
-    f.save(7,"Foundation: endpoint, identity, cloud, deployment and audit controls. Existing signatures and external authority require separate handling.")
+    f.save(7,"Foundation: endpoint, identity, cloud, deployment and audit controls. Transfers and authority changes may enter mid-flow; external powers need separate handling.")
 
     f=Figure("Production-access incident handoffs", "Preauthorized targeted restrictions; access isolation and business limits proceed in parallel",1300)
     xs=[140,440,740,1040,1340,1640]
@@ -274,7 +276,7 @@ def diagrams():
     rows=[("Coinbase","2019 / 2023",("Employee / endpoint attack","Exploit or social engineering",True),("Detected and interrupted","Endpoint action / staff contact",False),("No customer-fund loss","Reported in both cases",False)),
           ("Binance VIA","2018",("Abusive trades occur","Customer value affected",True),("Withdrawals suspended","External payout blocked",False),("Some trades irreversible","Uninvolved counterparties",True)),
           ("Binance / WOO / Kraken","2019 / 2025 / 2024",("Funds have left","Before disclosed intervention",True),("Alert / issue detected","Different discovery methods",False),("Suspension / mitigation","Earlier payout not prevented",False)),
-          ("Bybit / Kiln","2025",("Malicious transaction approved","Signers approved the request",True),("On-chain control changes","Logic or withdrawal authority",True),("Assets transferred","Authority remains in effect",True))]
+          ("Bybit / Kiln","2025",("Malicious transaction approved","Signers approved the request",True),("On-chain control changes","Logic or withdrawal authority",True),("Assets transferred","Withdrawal halt does not revoke authority",True))]
     for i,(case,year,a,b,c) in enumerate(rows):
         y=250+i*185;f.text(80,y+35,case,11,width=22);f.text(80,y+92,year,10,MUTED)
         f.row(y,[a,b],xs=[465,900],w=385)

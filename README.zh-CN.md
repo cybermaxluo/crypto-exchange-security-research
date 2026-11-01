@@ -12,17 +12,17 @@
 | --- | --- | --- |
 | 从 Bybit 到币安：黑客如何攻破交易所 | 五部分调查，包含跨案例比较、攻击归因、响应分析、防御优先级及15幅配图 | [English](docs/en/research.md) · [中文](docs/zh-CN/research.md) |
 | 从资损案例看交易所防御 | 18项建设工作，明确专业职能、部门交接和验收证据 | [English](docs/en/defense-matrix.md) · [中文](docs/zh-CN/defense-matrix.md) |
-| 交易所六类攻击路径解析 | 攻击机制、逐案依据、调查记录和验证场景 | [English](docs/en/attack-paths.md) · [中文](docs/zh-CN/attack-paths.md) |
+| 交易所六类攻击路径解读 | 攻击机制、逐案依据、调查记录和验证场景 | [English](docs/en/attack-paths.md) · [中文](docs/zh-CN/attack-paths.md) |
 | 交易所安全案例目录 | 98条记录，逐案列出资损、攻击过程、归因、证据限制及来源 | [English](docs/en/case-catalogue.md) · [中文](docs/zh-CN/case-catalogue.md) |
 | 统计方法与数据说明 | 样本范围、金额口径、响应指标、数据字段和复算方式 | [English](docs/en/methodology.md) · [中文](docs/zh-CN/methodology.md) |
 
-建议先读调查文章，再用防御矩阵检查自身业务。攻击路径解析供应用安全、安全运营、钱包安全和红队人员核对技术细节。
+建议先读调查正文，再沿六类攻击路径核对技术细节，最后用防御矩阵检查自身业务。逐案依据见案例目录；复用统计数字前，先读统计方法。
 
 ## 研究数据
 
 | 材料 | 范围 |
 | --- | --- |
-| [事件目录](data/case-registry.csv) | 98条公开事件及线索，其中38条仅有索引材料 |
+| [结构化事件索引（CSV）](data/case-registry.csv) | 98条公开事件及线索，其中38条仅有索引材料 |
 | [金额样本](data/loss-sample.csv) | 41起有可单独统计估值的事件，合计11,582.86百万美元 |
 | [统计结果](data/statistics.json) | 金额分布、年度收录及敏感性计算 |
 | [来源索引](data/sources.json) | 底层研究引用的113项来源URL |

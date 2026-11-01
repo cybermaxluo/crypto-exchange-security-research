@@ -1,6 +1,8 @@
 # Exchange Defense Matrix: Lessons from Security Incidents
 
-**English** | [简体中文](../zh-CN/defense-matrix.md)
+[Repository home](../../README.md) · **English** | [简体中文](../zh-CN/defense-matrix.md)
+
+[Research](research.md) · [Attack paths](attack-paths.md) · **Defense matrix** · [Case catalogue](case-catalogue.md) · [Methodology](methodology.md)
 
 This matrix derives defense requirements and acceptance criteria primarily from publicly disclosed security incidents that caused exchange losses over the past decade. It follows how attackers obtained access, bypassed controls, and transferred assets. Successful interventions and related technical cases provide additional validation scenarios. Six attack paths map to 18 areas of work, each with business and security responsibilities, handoffs, and evidence required for sign-off. The work is organized by business risk and the assets, identities, or operations being protected. Application security, GRC, and red teams contribute their respective expertise; code auditing is part of application security. See the [case catalogue](case-catalogue.md) and [Six Attack Paths Against Crypto Exchanges](attack-paths.md).
 
