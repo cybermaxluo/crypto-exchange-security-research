@@ -104,8 +104,8 @@ def numeric_figures(losses, cases, stats):
         f.text(1600,y,f"{v:,.2f}",12)
     f.save(2,"Source: loss-sample.csv. Freezing, recovery and reimbursement are not deducted. BitMart uses its retrospective estimate.")
 
-    f=Figure("Known intervals in three attacks", "Calendar days between disclosed nodes; endpoints differ")
-    rows=[("Bybit / Safe","Earliest known activity to asset attack",17),("WOO X","Backdoor installation to loss date",16),("Kiln","Malicious authority signature to discovery",8)]
+    f=Figure("Known intervals in three attacks", "Calendar days between disclosed events; endpoints differ")
+    rows=[("Bybit / Safe","Earliest known activity to asset theft",17),("WOO X","Backdoor installation to loss date",16),("Kiln","Signing the authority change to discovery",8)]
     for i,(name,desc,days) in enumerate(rows):
         y=330+i*180
         f.text(80,y-30,name,16);f.text(80,y+46,desc,11,MUTED,width=39)
@@ -143,7 +143,7 @@ def numeric_figures(losses, cases, stats):
 def diagrams():
     f=Figure("Six principal attack paths", "Paths can combine within one incident; actor attribution is recorded separately",1100)
     paths=[("P1 Signing material",["Expose material","Obtain signing power","Sign externally","Transfer assets"]),
-           ("P2 Transaction",["Alter construction","Change operation","Approval passes","Execute substitution"]),
+           ("P2 Transaction",["Tamper with builder","Replace operation","Obtain approval","Execute altered action"]),
            ("P3 Account authority",["Recovery / backend","Change identity","Withdrawal accepted","Platform pays out"]),
            ("P4 Trading / value",["Trading access","Manipulate trades","Transfer / inflate value","Withdraw / borrow"]),
            ("P5 Crediting",["Flaw / double spend","Available balance","Convert / withdraw","Asset shortfall"]),
@@ -167,7 +167,7 @@ def diagrams():
     xs=[140,440,740,1040,1340,1640]
     for x,label in zip(xs,["Security\noperations","Identity / platform\nengineering","Business\nrisk","Withdrawal\norchestration","Wallet","Incident\ncommand"]):
         f.text(x,230,label,12,center=True);f.ax.plot([x,x],[280,1090],color=LINE,ls="--",lw=1)
-    messages=[(140,440,350,"Identity / session:\nisolate and revoke",False),(140,740,455,"Reachable business + evidence:\napply temporary limits",False),(440,740,565,"Actual writes / unknown scope:\nmap customers and orders",False),(740,1040,650,"Order + restriction version",False),(1040,1340,750,"Signing request / batch:\nhold signing and broadcast",False),(1340,1040,850,"Transaction stage + proof:\nfailures and residual capability",True),(1040,740,950,"Aggregate receipts per order",True),(740,140,1045,"Fund anomalies can trigger intrusion investigation",True)]
+    messages=[(140,440,350,"Identity / session:\nisolate and revoke",False),(140,740,455,"Accessible services + evidence:\napply temporary limits",False),(440,740,565,"Actual writes / unknown scope:\nmap customers and requests",False),(740,1040,650,"Request + restriction version",False),(1040,1340,750,"Signing request / batch:\nhold signing and broadcast",False),(1340,1040,850,"Transaction stage + evidence:\nfailures and residual capability",True),(1040,740,950,"Aggregate results per request",True),(740,140,1045,"Fund anomalies can trigger intrusion investigation",True)]
     for a,b,y,label,reply in messages:
         f.arrow([(a,y),(b,y)],dashed=reply)
         obj=f.text((a+b)/2,y-35,label,10.5,BLUE,True)
@@ -187,9 +187,9 @@ def diagrams():
     f.box(1400,440,320,"Recovery review","Access; monitoring;\nasset reconciliation",h=150)
     f.arrow([(1310,380),(1355,380),(1355,480),(1400,480)])
     f.arrow([(1310,585),(1355,585),(1355,530),(1400,530)])
-    f.box(1400,740,320,"Authorized staged release","Scope, limits, observation")
+    f.box(1400,740,320,"Approved staged recovery","Scope, limits, observation")
     f.arrow([(1560,590),(1560,740)])
-    f.text(80,930,"Unverified controls retain restrictions. Renewed anomalies or lost monitoring trigger re-restriction.",12,MUTED)
+    f.text(80,930,"Keep restrictions where controls remain unverified; reapply them after renewed anomalies or loss of monitoring.",12,MUTED)
     f.save(9,"Recovery reference. Delegation, token allowance and private-key exposure are separate. Broadcast transactions are not guaranteed reversible.")
 
     f=Figure("P1  Signing-material compromise", "Sufficient material lets an attacker create valid signatures in an external environment")
@@ -201,8 +201,8 @@ def diagrams():
     f.save(10,"Coincheck and BitMart. The external signing path bypasses the exchange's application approvals, limits and local signing interface.")
 
     f=Figure("P2  Transaction tampering", "Bybit: supplier frontend compromise influenced a cold-wallet transaction")
-    f.row(280,[("Developer endpoint","Safe supplier access",True),("Cloud / frontend","Modified resources",True),("Tampered display","Selected wallet",True),("Malicious transaction","Different operation",True)])
-    f.row(610,[("Business transfer","Original request"),("Signers approve","Shared display",True),("Execution logic changes","Malicious transaction",True),("Assets transferred","No original reapproval",True)])
+    f.row(280,[("Developer endpoint","Safe's environment",True),("Cloud / frontend","Modified resources",True),("Tampered display","Selected wallet",True),("Malicious transaction","Different operation",True)])
+    f.row(610,[("Business transfer","Original request"),("Signers approve","Shared display",True),("Execution logic changes","Malicious transaction",True),("Assets transferred","No further multisig approval",True)])
     f.arrow([(1112,400),(1112,505),(687,505),(687,610)],RED,dashed=True)
     f.text(900,475,"Shared approval input",11,RED,True)
     f.save(11,"Source: Sygnia. Dashed link identifies the compromised information used by signers; it is not a second independent check.")
@@ -219,7 +219,7 @@ def diagrams():
 
     f=Figure("P4  Trading and valuation manipulation", "Customer value can be harmed before external withdrawal",1200)
     f.text(80,230,"BINANCE VIA 2018",13,BLUE)
-    f.box(80,290,350,"Stolen customer APIs","Market buy orders",True)
+    f.box(80,290,350,"Victim API keys","Market buy orders",True)
     f.box(80,470,350,"31 prepared accounts","Sell at elevated prices",True)
     f.box(560,380,350,"Harmful trades","Customer value transferred",True)
     f.arrow([(430,350),(495,350),(495,440),(560,440)],RED)
@@ -229,13 +229,13 @@ def diagrams():
     f.arrow([(910,440),(980,440),(980,350),(1050,350)])
     f.arrow([(910,440),(980,440),(980,530),(1050,530)],RED)
     f.text(80,735,"MANGO MARKETS 2022 — EXTERNAL DEX COMPARISON",13,BLUE)
-    f.row(810,[("Own accounts","No stolen API required",True),("Thin-market price","Manipulated input",True),("Inflated collateral","Larger borrowing capacity",True),("Real assets borrowed","Asset shortfall",True)])
+    f.row(810,[("Own accounts","No stolen API keys needed",True),("Thin-market price","Manipulated input",True),("Inflated collateral","Larger borrowing capacity",True),("Real assets borrowed","Asset shortfall",True)])
     f.save(13,"Sources: Binance and Chainalysis. VIA's blocked withdrawals did not reverse all harmful trades. Mango is outside the CEX monetary sample.")
 
     f=Figure("P5  Erroneous crediting and double spending", "A reorganization may remove the deposit only after the exchange has paid out")
     f.row(300,[("Deposit on-chain","Original history"),("Available balance","Credited by exchange",True),("Convert / withdraw","Real assets paid out",True),("Later reorganization","Original deposit removed",True)])
     f.box(80,630,740,"Kraken's separate crediting branch","Incomplete deposits created spendable balances",True)
-    f.box(980,630,740,"Common asset consequence","Payout lacks valid deposit backing",True)
+    f.box(980,630,740,"Shared consequence","Payout lacks valid deposit backing",True)
     f.arrow([(820,690),(980,690)],RED)
     f.arrow([(1537,420),(1537,630)],RED)
     f.save(14,"Sources: ETC Cooperative and Kraken. Arrows show sequence, not elapsed time. Kraken's research authorization was disputed.")
@@ -247,7 +247,7 @@ def diagrams():
     f.save(15,"Source: Coinbase 2025 disclosure. The attackers did not obtain customer passwords or private keys.")
 
     f=Figure("Attacker profiles", "Disclosed access, selection and outcomes; attribution strength is stated in the article",1200)
-    profiles=[("TraderTraitor","Bybit / FBI","Supplier endpoint; cloud; frontend","Specific cold wallet","Malicious approval; changed wallet control"),
+    profiles=[("TraderTraitor","Bybit / FBI","Supplier endpoint; cloud; frontend","Specific cold wallet","Tampered transaction approved; wallet control changed"),
               ("UNC1069","Mandiant research","Telegram identity; fake meeting; audio-fix lure","Crypto staff, developers, investment firms","Credentials and sessions; loss unknown"),
               ("Unknown actor","Kiln supplier report","GitHub / CI credentials; running API modification","Withdrawal authority with >150,000 SOL staked","Customer approved authority change; loss"),
               ("Unknown actor","Coinbase disclosure","Bribed support personnel; customer information","Exposed customers; other filters unknown","Customer-authorized fraudulent transfers"),
@@ -261,8 +261,8 @@ def diagrams():
     f.save(16,"Sources: FBI, Sygnia, Mandiant, Kiln, Coinbase and Chainalysis. UNC1069 is not an additional event in the loss sample.")
 
     f=Figure("After transaction, identity, or balance records change", "Case comparison: the downstream operation can still be approved",1120)
-    rows=[("Bybit 2025",("Transaction / display","Tampered frontend"),("Multiple approvals","Malicious signature"),("Execution logic changes","Later transfers")),
-          ("Kiln 2025",("API transaction","Withdrawal grant added"),("Custody approves","Signing threshold passed"),("Authority changes","Subsequent loss")),
+    rows=[("Bybit 2025",("Transaction / display","Tampered frontend"),("Multiple approvals","Altered transaction signed"),("Execution logic changes","Later transfers")),
+          ("Kiln 2025",("API transaction","Authority-change instruction"),("Custody approves","Required signatures obtained"),("Authority changes","Subsequent loss")),
           ("WOO X 2025",("Identity records","Email, password, MFA"),("Account takeover","Withdrawal request"),("Platform pays out","9 accounts affected")),
           ("Kraken 2024",("Available balance","Deposit incomplete"),("Withdrawal allowed","Crediting flaw"),("Real assets leave","Research dispute"))]
     for i,(case,*nodes) in enumerate(rows):
@@ -273,7 +273,7 @@ def diagrams():
     f=Figure("Intervention stage and financial outcome", "Disclosed process on the left; outcome and residual impact on the right",1120)
     rows=[("Coinbase","2019 / 2023",("Employee / endpoint attack","Exploit or social engineering",True),("Detected and interrupted","Endpoint action / staff contact",False),("No customer-fund loss","Reported in both cases",False)),
           ("Binance VIA","2018",("Abusive trades occur","Customer value affected",True),("Withdrawals suspended","External payout blocked",False),("Some trades irreversible","Uninvolved counterparties",True)),
-          ("Binance / WOO / Kraken","2019 / 2025 / 2024",("Funds have left","Before disclosed intervention",True),("Alert / issue learned","Different discovery methods",False),("Suspension / mitigation","Earlier payout not prevented",False)),
+          ("Binance / WOO / Kraken","2019 / 2025 / 2024",("Funds have left","Before disclosed intervention",True),("Alert / issue detected","Different discovery methods",False),("Suspension / mitigation","Earlier payout not prevented",False)),
           ("Bybit / Kiln","2025",("Malicious transaction approved","Signing did not reject",True),("On-chain control changes","Logic or withdrawal authority",True),("Assets transferred","Local stop does not revoke",True))]
     for i,(case,year,a,b,c) in enumerate(rows):
         y=250+i*185;f.text(80,y+35,case,11,width=22);f.text(80,y+92,year,10,MUTED)

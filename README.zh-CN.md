@@ -51,6 +51,6 @@ python3 scripts/render_figures.py
 ## 作者与勘误
 
 - **Max Luo** — 加密交易所AI安全与自动化负责人；[cybermaxluo](https://github.com/cybermaxluo)。
-- **Morgan Chen** — 加密交易所AI SOC平台负责人。
+- **Morgan Chen** — 加密交易所AI SOC平台负责人；[Extrader-home](https://github.com/Extrader-home)。
 
 欢迎通过Issue提交更正，请附事件ID、原文位置、来源URL及该来源支持的具体修改。区分已确认事实、调查判断和建议的验证场景。第三方来源内容归各自发布者所有。

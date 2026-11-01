@@ -8,13 +8,13 @@ The research covers public material from 2016 through November 1, 2026. It does 
 
 The registry contains **98 incidents and leads**: 90 involving exchanges or their customers and 8 related services. It retains successful interventions, data incidents, and researcher disputes as well as thefts. Thirty-eight records currently have only incident-index evidence; five records have disputed nature or attribution. Mango Markets and Parity are external mechanism comparisons, outside the registry and monetary sample. UNC1069 is a threat-research profile, not an additional counted loss event.
 
-The 41-event monetary sample requires an identifiable exchange custody or business loss, an explicit dollar estimate beyond an index entry, and separation from unrelated services, response costs, and returns. Missing estimates are not zero. The article's 15-case comparison and 12-case attribution/response review are different subsets with different purposes.
+The 41-event monetary sample requires an identifiable loss involving exchange custody or business operations, a dollar estimate supported by more than an index entry, and figures that distinguish the loss from amounts involving other services, response costs, and funds returned. Missing estimates are not zero. The article's 15-case comparison and 12-case attribution/response review are different subsets with different purposes.
 
 The sample favors large incidents, English-language disclosure, and recent coverage. It cannot establish industry-wide incidence, attack success rates, or the failure probability of a technology. Annual counts describe this registry's coverage, not the number of attacks that actually occurred.
 
 ## Monetary values
 
-Use nominal incident-time dollar estimates. Do not reprice at today's token price or adjust for inflation. Do not subtract freezing, recovery, or reimbursement from reported theft. Stablecoin face value is an approximation, and public estimates are not a unified audit.
+Amounts use nominal dollar estimates at the time of each incident, without repricing at current token prices or adjusting for inflation. Frozen assets, recovered funds, and reimbursements are not deducted from reported theft. Stablecoin face value is an approximation; the public estimates were not produced under a common audit methodology.
 
 BitMart uses the platform's later retrospective estimate of **$319.5 million**, valued at the time of its December 4, 2021 incident. The commonly reported **$196 million** is retained as an alternative. Nobitex's “more than $90 million” is represented by $90 million as an approximation, not an upper bound. Coinbase's 2025 response/reimbursement costs, combined HTX/HECO figures, and Kraken's disputed research withdrawal are excluded from the monetary sum.
 
@@ -26,7 +26,7 @@ BitMart uses the platform's later retrospective estimate of **$319.5 million**, 
 | Apply listed alternative estimates | 41 | 11,572.76 | 45.00 | 55.6% | 80.3% |
 | Only replace BitMart with $196 million | 41 | 11,459.36 | 45.00 | 55.0% | 80.2% |
 
-The full sample is used in the article. Omission calculations inspect dependence on exceptionally large observations; they do not delete source records or produce a more accurate industry total. Every calculation reranks its own top five. Alternative estimates test specific known valuation differences, not a confidence interval or all possible error.
+The article uses the full sample. Calculations that exclude the largest events show how much the results depend on those events; the source records remain in the dataset, and the smaller totals are not more accurate industry estimates. The top five events are ranked again for each scenario. Alternative estimates test specific known valuation differences. They do not form a confidence interval or cover every source of error.
 
 ![Loss concentration under different subsets](../../assets/en/01-loss-concentration.png)
 
@@ -51,9 +51,9 @@ The six paths classify how fund controls fail. Initial access, attacker identity
 
 ## Response observations
 
-Seven time observations are available across five of the twelve response cases. TTD starts at an established compromise and ends at detection. If initial compromise is unknown, retain a known-behavior interval with its own label. TTC ends when a specified containment measure has been verified effective. TTR requires an explicit starting point and a defined recovery condition. MTTD or MTTR requires comparable scope, endpoints, and precision.
+Seven time observations are available across five of the twelve response cases. Time to detect (TTD) starts at an established compromise and ends at detection. If initial compromise is unknown, label the interval from a known event to detection separately. Time to contain (TTC) runs from detection to verified effectiveness of the specified containment measure. Time to recover (TTR) requires an explicit starting point and a defined recovery condition. Mean time to detect (MTTD) and mean time to recover (MTTR) require observations with comparable scope, endpoints, and precision.
 
-The observations include transfer spans, supplier-side intrusion intervals, a platform-reported mitigation bound, combined detection/containment nodes, and a recovery-status announcement. They cannot be averaged into one MTTR. Reimbursement, replenishment, freezing, and actual technical recovery remain separate.
+The observations include transfer spans, intervals within supplier-side intrusions, a platform-reported mitigation bound, timeline entries that combine detection and containment, and a recovery-status announcement. They cannot be averaged into one MTTR. Reimbursement, replenishment, freezing, and actual technical recovery remain separate.
 
 ## Files and fields
 
@@ -64,7 +64,7 @@ The observations include transfer spans, supplier-side intrusion intervals, a pl
 | [alternative-estimates.csv](../../data/alternative-estimates.csv) | Case-specific alternative values for the sensitivity calculation |
 | [response-observations.csv](../../data/response-observations.csv) | Seven observations with their definitions and limits |
 | [sources.json](../../data/sources.json) | Research source identifiers mapped to URLs |
-| [statistics.json](../../data/statistics.json) | Monetary summaries, annual coverage, evidence counts, and known-node intervals |
+| [statistics.json](../../data/statistics.json) | Monetary summaries, annual coverage, evidence counts, and intervals between disclosed events |
 
 Dates retain disclosed precision. A date range is not silently converted into one timestamp. Registry scope values are `custody_and_business_systems`, `customer_accounts_and_information`, and `related_service`. Multiple source identifiers and URLs are separated by semicolons. Absence from the monetary sample means **not included under its selection rules**, not no loss.
 

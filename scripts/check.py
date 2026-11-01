@@ -89,12 +89,27 @@ def main():
         assert catalogue_urls=={s["url"] for s in sources.values()},language
     en_urls=set(re.findall(r"https?://[^\s)]+",(ROOT/"docs/en/research.md").read_text()))
     zh_urls=set(re.findall(r"https?://[^\s)]+",(ROOT/"docs/zh-CN/research.md").read_text()))
-    assert en_urls==zh_urls and len(en_urls)==49
+    assert en_urls==zh_urls
+    for language,heading in [("en","**References**"),("zh-CN","**参考资料**")]:
+        article=(ROOT/"docs"/language/"research.md").read_text()
+        reference_urls=set(re.findall(r"https?://[^\s)]+",article.split(heading,1)[1]))
+        assert len(reference_urls)==49,language
 
     checked=0
     for p in ROOT.rglob("*.md"):
         text=p.read_text()
         assert not re.search(r"/Users/|file://|\.wechat-build|\.wechat-state",text),p
+        table_width=None
+        for number,line in enumerate(text.splitlines(),1):
+            if not line.startswith("|"):
+                table_width=None
+                continue
+            cells=re.split(r"(?<!\\)\|",line)[1:-1]
+            if table_width is None:
+                table_width=len(cells)
+            assert len(cells)==table_width,(p,number,"inconsistent table columns")
+            if all(re.fullmatch(r"[\s:-]+",cell) for cell in cells):
+                assert all(re.fullmatch(r"\s*:?-{3,}:?\s*",cell) for cell in cells),(p,number,"invalid table separator")
         for target in re.findall(r"\]\(([^)]+)\)",text):
             if urlsplit(target).scheme or target.startswith("#"):continue
             local=(p.parent/unquote(target.split("#",1)[0])).resolve()

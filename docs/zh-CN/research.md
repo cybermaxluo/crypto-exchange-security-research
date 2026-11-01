@@ -5,7 +5,7 @@
 **作者：**
 
 Max Luo｜加密交易所 AI 安全与自动化负责人<br>
-Morgan Chen｜加密交易所 AI SOC 平台负责人
+[Morgan Chen](https://github.com/Extrader-home)｜加密交易所 AI SOC 平台负责人
 
 > 回溯交易所近十年的安全事件，追踪攻击者如何进入系统、取得资金控制权，分析防御失效的环节与反复出现的安全盲点。
 

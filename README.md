@@ -23,7 +23,7 @@ Start with the investigation for the findings, then use the defense matrix to ex
 | Material | Scope |
 | --- | --- |
 | [Case registry](data/case-registry.csv) | 98 public incidents and leads; includes 38 index-only records |
-| [Monetary sample](data/loss-sample.csv) | 41 incidents with separable estimates, totaling $11,582.86 million |
+| [Monetary sample](data/loss-sample.csv) | 41 incidents included in the loss calculation; total $11,582.86 million |
 | [Statistics](data/statistics.json) | Sample distribution, annual counts, and sensitivity calculations |
 | [Source index](data/sources.json) | 113 source URLs used in the underlying research |
 
@@ -51,6 +51,6 @@ Chinese illustrations retain the source article's figures. Both language edition
 ## Authors and corrections
 
 - **Max Luo** — AI Security and Automation Lead, Crypto Exchange; [cybermaxluo](https://github.com/cybermaxluo).
-- **Morgan Chen** — AI SOC Platform Lead, Crypto Exchange.
+- **Morgan Chen** — AI SOC Platform Lead, Crypto Exchange; [Extrader-home](https://github.com/Extrader-home).
 
 To propose a correction, open an issue with the case ID, relevant passage, source URL, and the specific change supported by that source. Keep confirmed facts, investigative assessments, and proposed validation scenarios distinct. Third-party sources remain the work of their respective publishers.
