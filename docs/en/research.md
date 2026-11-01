@@ -207,7 +207,7 @@ The 12 cases provide 7 usable measurements of elapsed time. Four cases have inte
 | --- | --- | ---: | --- |
 | Coincheck 2018: disclosed transfer span | January 26, 00:02 → 08:26, Japan time | 504 minutes | Transfer span; detection unknown |
 | Kraken 2024: discovery to mitigation | Platform awareness → mitigation; absolute timestamps undisclosed | Under 60 minutes | Self-reported upper bound, not recovery or return of funds |
-| Bybit 2025: earliest known supplier compromise to theft | February 4 → February 21 | 17 calendar days | Begins at Safe; does not establish when Bybit could have detected the attack |
+| Bybit 2025: earliest known supplier compromise to theft | February 4 → February 21 | 17 calendar days | Measured from the earliest known Safe compromise; public materials do not establish when Bybit could first detect an anomaly |
 | WOO X 2025: backdoor installation to loss date | July 8 → July 24 | 16 calendar days | Interval between disclosed events, not complete dwell time |
 | WOO X 2025: timeline entry containing the first withdrawal to detection/containment | July 24, 13:50 → 15:40, UTC+8 | 110 minutes | Each entry groups several actions; detection and containment cannot be timed separately |
 | Kiln 2025: signing the malicious authority change to discovery | August 31 → September 8 | 8 calendar days | Authority change to discovery by the supplier |

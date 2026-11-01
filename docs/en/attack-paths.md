@@ -12,13 +12,13 @@ Each case records the initial access method, subsequent permission changes, atta
 
 | Risk | Path | Coverage |
 | --- | --- | --- |
-| Private keys, backups, signing nonce defects | P1 | Distinguish secret exposure from implementation flaws |
+| Private keys, backups, signing nonce defects | P1 | Check both stolen keys and signing flaws that allow a key to be recovered |
 | Malicious frontend, API output, request display | P2 | Verify approval of the intended operation separately from the custody signature |
-| Account theft, recovery flaws, MFA bypass, production instructions, wallet permissions | P3 | These paths do not all require a cloud compromise |
+| Account theft, recovery flaws, MFA bypass, production instructions, wallet permissions | P3 | Includes flaws in account recovery, production write access, and wallet permission checks |
 | Stolen trading API credentials; price or collateral manipulation using attacker-owned accounts | P4 | An authenticated trade can still cause losses through manipulation |
 | False deposits, erroneous credits, replay, reorganization, double spending | P5 | Test internal accounting flaws separately from external settlement changes |
 | Deception that induces customers to transfer funds or grant permissions | P6 | Targets customers; does not necessarily compromise an exchange wallet |
-| Contract permissions and external protocols | Map to the affected control | Parity and Mango are mechanism comparisons outside the CEX sample; protocol risk is not exhaustively covered |
+| Contract permissions and collateral protocols: Parity and Mango | P3 / P4 | These two cases illustrate attack mechanisms and are excluded from the CEX sample; other protocols require separate analysis |
 | Ransomware, DDoS, data exposure without fund impact | Outside this model | Still part of the threat model, but outside these six paths to financial loss |
 
 ## P1. Signing-material compromise
@@ -31,7 +31,7 @@ Each case records the initial access method, subsequent permission changes, atta
 
 **Validation:** within the actual architecture, simulate compromise of one host, backup, or one party's signing material, then test which additional requirements still prevent signing. Where a complete private key is exposed, separately test asset migration and key retirement. Suspending the exchange's own signing service does not establish that the key is unusable.
 
-**Limits:** BitMart did not fully disclose initial entry. Zilliqa illustrates an implementation flaw and does not require prior endpoint intrusion.
+**Case notes:** BitMart confirmed private-key theft but did not fully disclose the initial intrusion method. In the Zilliqa incident, a nonce-handling flaw in a legacy signing application allowed private keys for affected accounts to be recovered from public signatures.
 
 | Case | Disclosed access and failure | Attribution and limits | Sources |
 | --- | --- | --- | --- |
@@ -49,26 +49,26 @@ Each case records the initial access method, subsequent permission changes, atta
 
 **Validation:** replace a response used in the actual business workflow and verify the request source, business approval, final transaction bytes, and state at execution. Test whether the transaction builder can forge approval records, including wallet-specific triggers and authority changes. Record whether the approval and signing checks each reject the substituted operation, and at which stage.
 
-**Limits:** Gate.io involved withdrawal-page request tampering, not a cold-wallet multisignature flow. Investigators assessed transaction-request manipulation at DMM as likely; they did not establish every step. The cases follow different attack sequences.
+**Case notes:** The Gate.io attack modified requests on the customer withdrawal page. The joint DMM investigation assessed that a legitimate transaction request was likely manipulated; the full sequence has not been disclosed.
 
 | Case | Disclosed access and failure | Attribution and limits | Sources |
 | --- | --- | --- | --- |
-| EX016 — Gate.io / StatCounter 2018 | Compromised analytics JavaScript selectively changed transaction information on the withdrawal page | Unknown actor. Triggers included page path, amount, or balance. ESET did not establish a reliable theft total; this is not classified as private-key exposure. | [ESET](https://www.welivesecurity.com/2018/11/06/supply-chain-attack-cryptocurrency-exchange-gate-io/) |
+| EX016 — Gate.io / StatCounter 2018 | Compromised analytics JavaScript selectively changed transaction information on the withdrawal page | Unknown actor. Triggers included page path, amount, or balance. ESET confirmed withdrawal-page request tampering but did not establish a reliable theft total. | [ESET](https://www.welivesecurity.com/2018/11/06/supply-chain-attack-cryptocurrency-exchange-gate-io/) |
 | EX070 — DMM Bitcoin 2024 | Recruitment-test lure compromised a Ginco employee endpoint/session; supplier communications were likely used to manipulate a legitimate request | TraderTraitor, attributed jointly by FBI/DC3/Japanese police. Request manipulation remains an assessment of what likely happened. Regulatory deficiencies do not themselves prove exploitation. | [DMM](https://www.fbi.gov/news/press-releases/fbi-dc3-and-npa-identification-of-north-korean-cyber-actors-tracked-as-tradertraitor-responsible-for-theft-of-308-million-from-bitcoindmmcom) · [DMMREG](https://lfb.mof.go.jp/kantou/kinyuu/pagekthp0270000030.html) |
-| EX081 — Bybit 2025 | Safe developer endpoint and AWS session compromised; frontend tampering affected the transaction signed from a cold wallet | TraderTraitor, FBI attribution. The evidence does not show a break in the underlying multisignature cryptography. | [BYBIT](https://www.sygnia.co/blog/sygnia-investigation-bybit-hack/) · [BYFBI](https://www.ic3.gov/PSA/2025/PSA250226) |
+| EX081 — Bybit 2025 | Safe developer endpoint and AWS session compromised; frontend tampering affected the transaction signed from a cold wallet | TraderTraitor, FBI attribution. The tampered transaction received valid signatures. | [BYBIT](https://www.sygnia.co/blog/sygnia-investigation-bybit-hack/) · [BYFBI](https://www.ic3.gov/PSA/2025/PSA250226) |
 | EX089 — SwissBorg / Kiln 2025 | A stolen GitHub token led through CI to infrastructure credentials; the transaction-building API returned a malicious transaction that changed withdrawal authority after the customer signed it | Unknown actor. August 31 signing and September 8 discovery are distinct events. | [KILN](https://www.kiln.fi/post/re-enablement-of-kiln-services-and-security-incident-information) · [SWISS](https://swissborg.com/blog/swissborg-security-update-kiln-breach) |
 
 ## P3. Account or withdrawal-authorization takeover
 
 **Sequence:** account recovery or backend controls are compromised → the attacker impersonates an authorized identity or rewrites its records → the platform accepts the withdrawal authorization → funds are paid out.
 
-**Failed control:** account, backend-service, or wallet permissions recognize the attacker as authorized to spend. Cloud access is not required for every branch.
+**Failed control:** a flaw in account recovery, backend authorization, or wallet permission checks grants the attacker financial authority they should not have.
 
 **Evidence:** login, recovery, MFA changes, sessions; production/database writes, service identities, withdrawal instructions; wallet owner, module, threshold, and execution-authority changes.
 
 **Validation:** test customer recovery, forged instructions from production identities, and wallet permission checks separately. Check whether either the normal workflow or account recovery can bypass the intended control.
 
-**Limits:** Coinbase 2021 involved customer account recovery; WOO X involved unauthorized changes to production data; Parity illustrates contract-permission abuse outside an exchange. Each followed a different intrusion sequence.
+**Case notes:** In Coinbase 2021, attackers used an SMS account-recovery flaw to obtain authentication tokens. At WOO X, production write access let attackers change customer identity records. Parity illustrates wallet-permission risk: an initialization flaw allowed the wallet owners and signing threshold to be changed.
 
 | Case | Disclosed access and failure | Attribution and limits | Sources |
 | --- | --- | --- | --- |
@@ -87,7 +87,7 @@ Each case records the initial access method, subsequent permission changes, atta
 
 **Validation:** separately test harmful trades using stolen API credentials and price manipulation using attacker-owned accounts in thin markets. Follow value across spot trading, collateral, lending, and withdrawals.
 
-**Limits:** Mango is a DEX mechanism comparison outside the CEX sample. Price moves or ordinary arbitrage alone do not prove an attack. VIA external withdrawals were blocked while some trades remained irreversible.
+**Case notes:** In the VIA incident, the platform blocked external withdrawals, but some victim trades could not be reversed. Mango illustrates collateral-valuation manipulation and is excluded from the CEX sample. Assessing manipulation also requires examination of orders, account relationships, and fund flows.
 
 | Case | Disclosed access and failure | Attribution and limits | Sources |
 | --- | --- | --- | --- |
@@ -104,7 +104,7 @@ Each case records the initial access method, subsequent permission changes, atta
 
 **Validation:** replay incomplete deposits, reorgs, and duplicate events. Determine whether the resulting balance remains usable across products and when restrictions actually take effect.
 
-**Limits:** Kraken involves research and disputed authorization; it is not counted as an ordinary criminal-theft event. Extending tests into lending is a proposed validation scenario.
+**Case notes:** The Kraken incident arose from researcher testing, with authorization disputed by the parties; it is recorded separately from criminal theft. Testing whether an inflated balance can support borrowing extends the deposit-flaw scenario beyond the disclosed incident.
 
 | Case | Disclosed access and failure | Attribution and limits | Sources |
 | --- | --- | --- | --- |
@@ -116,13 +116,13 @@ Each case records the initial access method, subsequent permission changes, atta
 
 **Sequence:** misuse brand or customer information → fabricate trusted identity → customer accepts a false explanation → customer transfers funds or grants authority.
 
-**Failed control:** the customer confirms an operation based on a false account of its purpose or recipient. Platform private keys need not be stolen, and not every attempt requires prior data leakage.
+**Failed control:** the customer believes a false claim about the recipient or purpose and authorizes the operation. Leaked customer details may make the deception more convincing.
 
 **Evidence:** support queries/exports, recovery records, customer reports, and links between exposed customer groups and unusual asset activity.
 
 **Validation:** use authorized exercises to test support-data access/export restrictions and coordinated checks of account recovery, sessions, and fund activity for customers whose data was exposed.
 
-**Limits:** distinguish this from P3, where the attacker takes over and directly withdraws. Customer-side losses do not automatically mean platform custody assets were stolen.
+**Scope:** In P3, the attacker takes over the account and operates it directly. In P6, the deceived customer transfers funds or grants authority. Loss records should identify where the assets were held and who initiated the operation.
 
 | Case | Disclosed access and failure | Attribution and limits | Sources |
 | --- | --- | --- | --- |
